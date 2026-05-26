@@ -53,16 +53,19 @@ const tools = [
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-zinc-950 text-white p-8">
+    
+    <main className="min-h-screen bg-slate-950 text-white p-8">
       <div className="max-w-5xl mx-auto">
-        <p className="text-zinc-400 mb-2">Small sharp tools for everyday headaches.</p>
+        <p className="text-amber-300 mb-2 font-medium">
+            Goodfolk Digital
+        </p>
 
         <h1 className="text-5xl font-bold mb-4">
-          Goodfolk Utilities
+            Goodfolk Tools
         </h1>
 
-        <p className="text-zinc-400 mb-10 max-w-2xl">
-          A growing collection of practical office and camping tools. Just useful little internet machines.
+        <p className="text-zinc-300 mb-10 max-w-2xl">
+            Small, sharp tools for everyday good folks.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
@@ -70,15 +73,18 @@ export default function Home() {
             <Link
               key={tool.href}
               href={tool.href}
-              className="block bg-zinc-900 border border-zinc-800 rounded-2xl p-6 hover:bg-zinc-800 transition"
+              className="block bg-slate-900 border border-slate-800 rounded-2xl p-6 hover:bg-slate-800 transition"
             >
-              <p className="text-sm text-zinc-500 mb-2">{tool.line}</p>
+              <p className="text-sm text-amber-300 mb-2">{tool.line}</p>
               <h2 className="text-2xl font-semibold mb-2">{tool.name}</h2>
               <p className="text-zinc-400">{tool.description}</p>
             </Link>
           ))}
         </div>
       </div>
+      <footer className="mt-16 text-sm text-zinc-500">
+  © {new Date().getFullYear()} Goodfolk Digital. Built for good folks.
+</footer>
     </main>
   );
 }
