@@ -147,12 +147,12 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="rounded-2xl border border-slate-800 bg-slate-900 p-5 text-sm text-zinc-300">
+          {/* <div className="rounded-2xl border border-slate-800 bg-slate-900 p-5 text-sm text-zinc-300">
             <p className="font-semibold text-white">Current toolbox</p>
             <p className="mt-2">
               {officeTools.length} office tools · {campTools.length} camp tools
             </p>
-          </div>
+          </div> */}
 
            <div className="mt-5 rounded-2xl border border-amber-300/30 bg-amber-300/10 p-5 text-sm text-zinc-300">
   <p className="font-semibold text-white">Goodfolk Tools is free.</p>
@@ -171,7 +171,28 @@ export default function Home() {
 </div>
  
         </header>
+        <section className="mt-10 grid gap-5 md:grid-cols-3">
+  <div className="rounded-2xl border border-slate-800 bg-slate-900 p-5">
+    <p className="font-semibold text-white">Browser-based</p>
+    <p className="mt-2 text-sm text-zinc-400">
+      Most tools run directly in your browser without accounts or uploads.
+    </p>
+  </div>
 
+  <div className="rounded-2xl border border-slate-800 bg-slate-900 p-5">
+    <p className="font-semibold text-white">No signups</p>
+    <p className="mt-2 text-sm text-zinc-400">
+      Open a tool, use it, and get back to your day.
+    </p>
+  </div>
+
+  <div className="rounded-2xl border border-slate-800 bg-slate-900 p-5">
+    <p className="font-semibold text-white">Free to use</p>
+    <p className="mt-2 text-sm text-zinc-400">
+      Support is optional and helps keep the toolbox growing.
+    </p>
+  </div>
+</section>
         <ToolSection
           eyebrow="Office Utilities"
           title="Clean up files, text, and everyday digital messes."

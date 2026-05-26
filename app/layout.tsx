@@ -12,9 +12,13 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: "Goodfolk Tools",
-  description: "Small, sharp tools for office work and camping planning.",
+export const metadata = {
+  title: {
+    default: "Goodfolk Tools",
+    template: "%s | Goodfolk Tools",
+  },
+  description:
+    "Free browser-based tools for office work, file cleanup, text formatting, camping planning, and everyday digital tasks.",
   icons: {
     icon: [{ url: "/icon.svg", type: "image/svg+xml" }],
     shortcut: [{ url: "/icon.svg", type: "image/svg+xml" }],
