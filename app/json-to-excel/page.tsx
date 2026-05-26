@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import ToolPage from "@/components/ToolPage";
 
 export default function Home() {
   const [jsonText, setJsonText] = useState("");
@@ -46,31 +47,26 @@ export default function Home() {
   };
 
   return (
-    <main className="min-h-screen bg-zinc-950 text-white p-8">
-      <div className="max-w-4xl mx-auto">
-        <h1 className="text-4xl font-bold mb-2">
-          GoodFolk Utilities
-        </h1>
-
-        <p className="text-zinc-400 mb-8">
-          JSON → Excel Converter
-        </p>
-
+      <ToolPage
+          line="Goodfolk Office Utilities"
+          title="JSON to Excel Converter"
+          description="Convert JSON data to an Excel spreadsheet."
+      >
         <textarea
           value={jsonText}
           onChange={(e) => setJsonText(e.target.value)}
           placeholder='[{"name":"John","role":"Developer"}]'
-          className="w-full h-96 bg-zinc-900 border border-zinc-800 rounded-xl p-4 font-mono text-sm"
+          className="w-full h-96 bg-slate-900 border border-slate-800 rounded-xl p-4 font-mono text-sm"
         />
 
         <button
           onClick={handleConvert}
           disabled={loading}
-          className="mt-4 px-6 py-3 rounded-xl bg-white text-black font-semibold hover:opacity-90"
+          className="mt-4 px-6 py-3 rounded-xl bg-white text-slate-950 font-semibold hover:opacity-90"
         >
           {loading ? "Converting..." : "Convert to Excel"}
         </button>
-      </div>
-    </main>
+     
+    </ToolPage>
   );
 }

@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import ToolPage from "@/components/ToolPage";
 
 export default function CampBatteryEstimator() {
   const [batteryWh, setBatteryWh] = useState(200);
@@ -50,21 +51,14 @@ export default function CampBatteryEstimator() {
       : "Bring more power ⚠️";
 
   return (
-    <main className="min-h-screen bg-zinc-950 text-white p-8">
-      <div className="max-w-3xl mx-auto">
-        <p className="text-zinc-400 mb-2">Goodfolk Camp Utilities</p>
-
-        <h1 className="text-4xl font-bold mb-4">
-          Camp Battery Estimator
-        </h1>
-
-        <p className="text-zinc-400 mb-8">
-          Estimate whether your battery bank or power station can handle your camping trip.
-        </p>
-
-        <div className="grid gap-5 bg-zinc-900 border border-zinc-800 rounded-2xl p-6">
+    <ToolPage
+     line="Goodfolk Camp Utilities"
+     title="Camp Battery Estimator"
+     description="Estimate how much battery capacity you need for a camping trip."
+    >
+        <div className="grid gap-5 bg-slate-900 border border-slate-800 rounded-2xl p-6">
           <label>
-            <span className="block mb-2 text-sm text-zinc-400">
+            <span className="block mb-2 text-sm text-amber-300">
               Battery Capacity (Wh)
             </span>
             <input
@@ -72,12 +66,12 @@ export default function CampBatteryEstimator() {
               min="1"
               value={batteryWh}
               onChange={(e) => setBatteryWh(Number(e.target.value))}
-              className="w-full rounded-xl bg-zinc-950 border border-zinc-800 p-3"
+              className="w-full rounded-xl bg-slate-950 border border-slate-800 p-3"
             />
           </label>
 
           <label>
-            <span className="block mb-2 text-sm text-zinc-400">
+            <span className="block mb-2 text-sm text-amber-300">
               Trip Nights
             </span>
             <input
@@ -85,12 +79,12 @@ export default function CampBatteryEstimator() {
               min="1"
               value={nights}
               onChange={(e) => setNights(Number(e.target.value))}
-              className="w-full rounded-xl bg-zinc-950 border border-zinc-800 p-3"
+              className="w-full rounded-xl bg-slate-950 border border-slate-800 p-3"
             />
           </label>
 
           <label>
-            <span className="block mb-2 text-sm text-zinc-400">
+            <span className="block mb-2 text-sm text-amber-300">
               Phone Charges Per Day
             </span>
             <input
@@ -99,13 +93,13 @@ export default function CampBatteryEstimator() {
               step="0.5"
               value={phoneCharges}
               onChange={(e) => setPhoneCharges(Number(e.target.value))}
-              className="w-full rounded-xl bg-zinc-950 border border-zinc-800 p-3"
+              className="w-full rounded-xl bg-slate-950 border border-slate-800 p-3"
             />
           </label>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <label>
-              <span className="block mb-2 text-sm text-zinc-400">
+              <span className="block mb-2 text-sm text-amber-300">
                 Fan Watts
               </span>
               <input
@@ -113,12 +107,12 @@ export default function CampBatteryEstimator() {
                 min="0"
                 value={fanWatts}
                 onChange={(e) => setFanWatts(Number(e.target.value))}
-                className="w-full rounded-xl bg-zinc-950 border border-zinc-800 p-3"
+                className="w-full rounded-xl bg-slate-950 border border-slate-800 p-3"
               />
             </label>
 
             <label>
-              <span className="block mb-2 text-sm text-zinc-400">
+              <span className="block mb-2 text-sm text-amber-300">
                 Fan Hours Per Night
               </span>
               <input
@@ -126,14 +120,14 @@ export default function CampBatteryEstimator() {
                 min="0"
                 value={fanHours}
                 onChange={(e) => setFanHours(Number(e.target.value))}
-                className="w-full rounded-xl bg-zinc-950 border border-zinc-800 p-3"
+                className="w-full rounded-xl bg-slate-950 border border-slate-800 p-3"
               />
             </label>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <label>
-              <span className="block mb-2 text-sm text-zinc-400">
+              <span className="block mb-2 text-sm text-amber-300">
                 Light Watts
               </span>
               <input
@@ -141,12 +135,12 @@ export default function CampBatteryEstimator() {
                 min="0"
                 value={lightWatts}
                 onChange={(e) => setLightWatts(Number(e.target.value))}
-                className="w-full rounded-xl bg-zinc-950 border border-zinc-800 p-3"
+                className="w-full rounded-xl bg-slate-950 border border-slate-800 p-3"
               />
             </label>
 
             <label>
-              <span className="block mb-2 text-sm text-zinc-400">
+              <span className="block mb-2 text-sm text-amber-300">
                 Light Hours Per Night
               </span>
               <input
@@ -154,13 +148,13 @@ export default function CampBatteryEstimator() {
                 min="0"
                 value={lightHours}
                 onChange={(e) => setLightHours(Number(e.target.value))}
-                className="w-full rounded-xl bg-zinc-950 border border-zinc-800 p-3"
+                className="w-full rounded-xl bg-slate-950 border border-slate-800 p-3"
               />
             </label>
           </div>
 
           <label>
-            <span className="block mb-2 text-sm text-zinc-400">
+            <span className="block mb-2 text-sm text-amber-300">
               Extra Device Usage (Wh per day)
             </span>
             <input
@@ -168,7 +162,7 @@ export default function CampBatteryEstimator() {
               min="0"
               value={extraWhPerDay}
               onChange={(e) => setExtraWhPerDay(Number(e.target.value))}
-              className="w-full rounded-xl bg-zinc-950 border border-zinc-800 p-3"
+              className="w-full rounded-xl bg-slate-950 border border-slate-800 p-3"
             />
           </label>
         </div>
@@ -198,7 +192,7 @@ export default function CampBatteryEstimator() {
           </p>
         </div>
 
-        <div className="mt-6 text-sm text-zinc-400">
+        <div className="mt-6 text-sm text-white-300">
           <p>Breakdown:</p>
           <ul className="list-disc pl-5 mt-2 space-y-1">
             <li>Phone: {results.phoneWh.toFixed(2)} Wh</li>
@@ -209,10 +203,9 @@ export default function CampBatteryEstimator() {
           </ul>
         </div>
 
-        <p className="text-zinc-500 text-sm mt-6">
+        <p className="text-amber-300 text-sm mt-6">
           This is an estimate. Cold weather, battery age, inverter losses, and high-power devices can reduce real-world runtime.
         </p>
-      </div>
-    </main>
+    </ToolPage>
   );
 }

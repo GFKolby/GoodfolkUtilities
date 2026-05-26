@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import ToolPage from "@/components/ToolPage";
 
 export default function CampWaterPlanner() {
   const [people, setPeople] = useState(1);
@@ -24,19 +25,12 @@ export default function CampWaterPlanner() {
   const liters = gallons * 3.78541;
 
   return (
-    <main className="min-h-screen bg-zinc-950 text-white p-8">
-      <div className="max-w-3xl mx-auto">
-        <p className="text-zinc-400 mb-2">Goodfolk Camp Utilities</p>
-
-        <h1 className="text-4xl font-bold mb-4">
-          Camp Water Planner
-        </h1>
-
-        <p className="text-zinc-400 mb-8">
-          Estimate how much water to bring for a camping trip.
-        </p>
-
-        <div className="grid gap-5 bg-zinc-900 border border-zinc-800 rounded-2xl p-6">
+    <ToolPage
+  line="Goodfolk Camp Utilities"
+  title="Camp Water Planner"
+  description="Estimate how much water to bring for a camping trip."
+>
+        <div className="grid gap-5 bg-slate-900 border border-slate-800 rounded-2xl p-6">
           <label>
             <span className="block mb-2 text-sm text-zinc-400">
               People
@@ -46,7 +40,7 @@ export default function CampWaterPlanner() {
               min="1"
               value={people}
               onChange={(e) => setPeople(Number(e.target.value))}
-              className="w-full rounded-xl bg-zinc-950 border border-zinc-800 p-3"
+              className="w-full rounded-xl bg-slate-950 border border-slate-800 p-3"
             />
           </label>
 
@@ -59,7 +53,7 @@ export default function CampWaterPlanner() {
               min="1"
               value={days}
               onChange={(e) => setDays(Number(e.target.value))}
-              className="w-full rounded-xl bg-zinc-950 border border-zinc-800 p-3"
+              className="w-full rounded-xl bg-slate-950 border border-slate-800 p-3"
             />
           </label>
 
@@ -70,7 +64,7 @@ export default function CampWaterPlanner() {
             <select
               value={hiking}
               onChange={(e) => setHiking(e.target.value)}
-              className="w-full rounded-xl bg-zinc-950 border border-zinc-800 p-3"
+              className="w-full rounded-xl bg-slate-950 border border-slate-800 p-3"
             >
               <option value="none">None</option>
               <option value="light">Light</option>
@@ -98,8 +92,8 @@ export default function CampWaterPlanner() {
           </label>
         </div>
 
-        <div className="mt-8 bg-white text-black rounded-2xl p-6">
-          <p className="text-sm font-semibold text-zinc-600">
+        <div className="mt-8 bg-amber-300 text-slate-950 rounded-2xl p-6">
+          <p className="text-sm font-semibold">
             Recommended Water
           </p>
 
@@ -107,7 +101,7 @@ export default function CampWaterPlanner() {
             {gallons.toFixed(2)} gal
           </p>
 
-          <p className="text-zinc-600 mt-2">
+          <p className="text-slate-700 mt-2">
             About {liters.toFixed(2)} liters total.
           </p>
         </div>
@@ -116,7 +110,6 @@ export default function CampWaterPlanner() {
           This is a planning estimate. Bring extra water when temperatures are high,
           when hiking heavily, or when camping somewhere without reliable water access.
         </p>
-      </div>
-    </main>
+      </ToolPage>
   );
 }

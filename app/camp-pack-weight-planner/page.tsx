@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import ToolPage from "@/components/ToolPage";
 
 type Item = {
   id: number;
@@ -61,24 +62,17 @@ export default function CampPackWeightPlanner() {
       : "Heavy goblin mode ⚠️";
 
   return (
-    <main className="min-h-screen bg-zinc-950 text-white p-8">
-      <div className="max-w-4xl mx-auto">
-        <p className="text-zinc-400 mb-2">Goodfolk Camp Utilities</p>
-
-        <h1 className="text-4xl font-bold mb-4">
-          Camp Pack Weight Planner
-        </h1>
-
-        <p className="text-zinc-400 mb-8">
-          Add your camping gear and estimate your total pack weight.
-        </p>
-
-        <div className="grid gap-4 bg-zinc-900 border border-zinc-800 rounded-2xl p-6">
+      <ToolPage
+            line="Goodfolk Camp Utilities"
+            title="Camp Pack Weight Planner"
+            description="Add your camping gear and estimate your total pack weight."
+      >
+        <div className="grid gap-4 bg-slate-900 border border-slate-800 rounded-2xl p-6">
           <input
             value={name}
             onChange={(e) => setName(e.target.value)}
             placeholder="Item name"
-            className="rounded-xl bg-zinc-950 border border-zinc-800 p-3"
+            className="rounded-xl bg-slate-950 border border-slate-800 p-3"
           />
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -88,13 +82,13 @@ export default function CampPackWeightPlanner() {
               step="0.01"
               value={weight}
               onChange={(e) => setWeight(Number(e.target.value))}
-              className="rounded-xl bg-zinc-950 border border-zinc-800 p-3"
+              className="rounded-xl text-white bg-slate-950 border border-slate-800 p-3"
             />
 
             <select
               value={unit}
               onChange={(e) => setUnit(e.target.value as "oz" | "lb")}
-              className="rounded-xl bg-zinc-950 border border-zinc-800 p-3"
+              className="rounded-xl bg-slate-950 border border-slate-800 p-3"
             >
               <option value="lb">lb</option>
               <option value="oz">oz</option>
@@ -104,19 +98,19 @@ export default function CampPackWeightPlanner() {
               value={category}
               onChange={(e) => setCategory(e.target.value)}
               placeholder="Category"
-              className="rounded-xl bg-zinc-950 border border-zinc-800 p-3"
+              className="rounded-xl bg-slate-950 border border-slate-800 p-3"
             />
           </div>
 
           <button
             onClick={addItem}
-            className="rounded-xl bg-white text-black font-semibold p-3 hover:opacity-90"
+            className="rounded-xl bg-white text-slate-900 font-semibold p-3 hover:opacity-90"
           >
             Add Item
           </button>
         </div>
 
-        <div className="mt-8 bg-white text-black rounded-2xl p-6">
+        <div className="mt-8 bg-amber-300 text-slate-900 rounded-2xl p-6">
           <p className="text-sm font-semibold text-zinc-600">
             Total Pack Weight
           </p>
@@ -128,9 +122,9 @@ export default function CampPackWeightPlanner() {
           <p className="text-zinc-700 mt-3">{status}</p>
         </div>
 
-        <div className="mt-8 overflow-hidden border border-zinc-800 rounded-2xl">
+        <div className="mt-8 overflow-hidden border border-slate-800 rounded-2xl">
           <table className="w-full text-sm">
-            <thead className="bg-zinc-900 text-zinc-400">
+            <thead className="bg-slate-900 text-zinc-400">
               <tr>
                 <th className="text-left p-3">Item</th>
                 <th className="text-left p-3">Category</th>
@@ -141,9 +135,9 @@ export default function CampPackWeightPlanner() {
 
             <tbody>
               {items.map((item) => (
-                <tr key={item.id} className="border-t border-zinc-800">
+                <tr key={item.id} className="border-t border-slate-800">
                   <td className="p-3">{item.name}</td>
-                  <td className="p-3 text-zinc-400">{item.category}</td>
+                  <td className="p-3 text-amber-300">{item.category}</td>
                   <td className="p-3">
                     {item.weight.toFixed(2)} {item.unit}
                   </td>
@@ -161,10 +155,9 @@ export default function CampPackWeightPlanner() {
           </table>
         </div>
 
-        <p className="text-zinc-500 text-sm mt-6">
+        <p className="text-amber-300 text-sm mt-6">
           Tip: For backpacking, remember to separate base weight from consumables like water, food, and fuel.
         </p>
-      </div>
-    </main>
+    </ToolPage>
   );
 }

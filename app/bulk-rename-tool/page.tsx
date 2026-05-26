@@ -2,6 +2,8 @@
 
 import { useMemo, useState } from "react";
 import JSZip from "jszip";
+import ToolPage from "@/components/ToolPage";
+import FilePicker from "@/components/FilePicker";
 
 type RenameMode = "prefix" | "suffix" | "replace" | "numbered";
 
@@ -81,26 +83,20 @@ export default function BulkRenameTool() {
   };
 
   return (
-    <main className="min-h-screen bg-zinc-950 text-white p-8">
-      <div className="max-w-5xl mx-auto">
-        <p className="text-zinc-400 mb-2">Goodfolk Office Utilities</p>
-
-        <h1 className="text-4xl font-bold mb-4">Bulk Rename Tool</h1>
-
-        <p className="text-zinc-400 mb-8">
-          Rename multiple files with prefixes, suffixes, replacement text, or numbered names.
-        </p>
-
-        <div className="grid gap-5 bg-zinc-900 border border-zinc-800 rounded-2xl p-6">
-          <input
-            type="file"
-            multiple
-            onChange={(e) => {
-              const selected = Array.from(e.target.files ?? []);
-              setFiles(selected);
-            }}
-            className="block w-full text-sm text-zinc-300"
-          />
+   <ToolPage
+      line="Goodfolk Office Utilities"
+      title="Bulk Rename Tool"
+      description="Rename multiple files with prefixes, suffixes, replacement text, or numbered names."
+    >
+        <div className="grid gap-5 bg-slate-900 border border-zinc-800 rounded-2xl p-6">
+        <FilePicker
+  label="Choose files"
+  multiple
+  fileCount={files.length}
+  onChange={(selectedFiles) => {
+    setFiles(selectedFiles);
+  }}
+/>
 
           <label>
             <span className="block mb-2 text-sm text-zinc-400">
@@ -110,7 +106,7 @@ export default function BulkRenameTool() {
             <select
               value={mode}
               onChange={(e) => setMode(e.target.value as RenameMode)}
-              className="w-full rounded-xl bg-zinc-950 border border-zinc-800 p-3"
+              className="w-full rounded-xl bg-slate-950 border border-zinc-800 p-3"
             >
               <option value="prefix">Add Prefix</option>
               <option value="suffix">Add Suffix</option>
@@ -129,7 +125,7 @@ export default function BulkRenameTool() {
                 value={findText}
                 onChange={(e) => setFindText(e.target.value)}
                 placeholder="old-text"
-                className="w-full rounded-xl bg-zinc-950 border border-zinc-800 p-3"
+                className="w-full rounded-xl bg-slate-950 border border-zinc-800 p-3"
               />
             </label>
           )}
@@ -143,14 +139,14 @@ export default function BulkRenameTool() {
               value={text}
               onChange={(e) => setText(e.target.value)}
               placeholder="goodfolk-"
-              className="w-full rounded-xl bg-zinc-950 border border-zinc-800 p-3"
+              className="w-full rounded-xl bg-slate-950 border border-zinc-800 p-3"
             />
           </label>
 
           <button
             onClick={downloadZip}
             disabled={renamedFiles.length === 0 || loading}
-            className="rounded-xl bg-white text-black font-semibold p-3 hover:opacity-90 disabled:opacity-50"
+            className="rounded-xl bg-amber-300 text-slate-950 font-semibold p-3 hover:opacity-90 disabled:opacity-50"
           >
             {loading ? "Building ZIP..." : "Download Renamed Files"}
           </button>
@@ -159,7 +155,7 @@ export default function BulkRenameTool() {
         {renamedFiles.length > 0 && (
           <div className="mt-8 overflow-hidden border border-zinc-800 rounded-2xl">
             <table className="w-full text-sm">
-              <thead className="bg-zinc-900 text-zinc-400">
+              <thead className="bg-slate-900 text-zinc-400">
                 <tr>
                   <th className="text-left p-3">Original Name</th>
                   <th className="text-left p-3">New Name</th>
@@ -181,7 +177,6 @@ export default function BulkRenameTool() {
         <p className="text-zinc-500 text-sm mt-6">
           Your files stay in your browser. The renamed copies are packaged into a ZIP for download.
         </p>
-      </div>
-    </main>
+      </ToolPage>
   );
 }

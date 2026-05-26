@@ -4,6 +4,9 @@ import { useState } from "react";
 import { PDFDocument } from "pdf-lib";
 import JSZip from "jszip";
 
+import ToolPage from "@/components/ToolPage";
+import FilePicker from "@/components/FilePicker";
+
 export default function PdfSplitter() {
   const [file, setFile] = useState<File | null>(null);
   const [pageCount, setPageCount] = useState<number | null>(null);
@@ -56,34 +59,28 @@ export default function PdfSplitter() {
   };
 
   return (
-    <main className="min-h-screen bg-zinc-950 text-white p-8">
-      <div className="max-w-3xl mx-auto">
-        <p className="text-zinc-400 mb-2">Goodfolk Office Utilities</p>
-
-        <h1 className="text-4xl font-bold mb-4">PDF Splitter</h1>
-
-        <p className="text-zinc-400 mb-8">
-          Upload a PDF and split each page into its own PDF file.
-        </p>
-
-        <div className="grid gap-5 bg-zinc-900 border border-zinc-800 rounded-2xl p-6">
-          <input
-            type="file"
-            accept="application/pdf"
-            onChange={(e) => {
-              const selected = e.target.files?.[0];
-              if (selected) loadPdf(selected);
-            }}
-            className="block w-full text-sm text-zinc-300"
-          />
+     <ToolPage
+              line="Goodfolk Office Utilities"
+              title="PDF Splitter"
+              description="Upload a PDF and split each page into its own PDF file."
+    >
+        <div className="grid gap-5 bg-slate-900 border border-slate-800 rounded-2xl p-6">
+          <FilePicker
+  accept="application/pdf"
+  fileName={file?.name}
+  onChange={(files) => {
+    const selected = files[0];
+    if (selected) loadPdf(selected);
+  }}
+/>
 
           {file && (
             <div className="bg-white text-black rounded-2xl p-6">
               <p className="font-semibold">Selected PDF</p>
-              <p className="text-zinc-700 mt-2">{file.name}</p>
+              <p className="text-slate-700 mt-2">{file.name}</p>
 
               {pageCount !== null && (
-                <p className="text-zinc-700">
+                <p className="text-slate-700">
                   Pages detected: <strong>{pageCount}</strong>
                 </p>
               )}
@@ -102,7 +99,6 @@ export default function PdfSplitter() {
         <p className="text-zinc-500 text-sm mt-6">
           Your PDF stays in your browser. Split pages are packaged into a ZIP for download.
         </p>
-      </div>
-    </main>
+     </ToolPage>
   );
 }

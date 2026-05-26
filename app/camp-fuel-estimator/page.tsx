@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import ToolPage from "@/components/ToolPage";
 
 export default function CampFuelEstimator() {
   const [people, setPeople] = useState(1);
@@ -37,21 +38,15 @@ export default function CampFuelEstimator() {
   ]);
 
   return (
-    <main className="min-h-screen bg-zinc-950 text-white p-8">
-      <div className="max-w-3xl mx-auto">
-        <p className="text-zinc-400 mb-2">Goodfolk Camp Utilities</p>
+     <ToolPage
+         line="Goodfolk Camp Utilities"
+         title="Camp Battery Estimator"
+         description="Estimate how much battery capacity you need for a camping trip."
+    >
 
-        <h1 className="text-4xl font-bold mb-4">
-          Camp Fuel Estimator
-        </h1>
-
-        <p className="text-zinc-400 mb-8">
-          Estimate stove fuel usage for camping meals, coffee, and boiling water.
-        </p>
-
-        <div className="grid gap-5 bg-zinc-900 border border-zinc-800 rounded-2xl p-6">
+        <div className="grid gap-5 bg-slate-900 border border-slate-800 rounded-2xl p-6">
           <label>
-            <span className="block mb-2 text-sm text-zinc-400">
+            <span className="block mb-2 text-sm text-amber-300">
               People
             </span>
 
@@ -60,12 +55,12 @@ export default function CampFuelEstimator() {
               min="1"
               value={people}
               onChange={(e) => setPeople(Number(e.target.value))}
-              className="w-full rounded-xl bg-zinc-950 border border-zinc-800 p-3"
+              className="w-full rounded-xl bg-slate-950 border border-slate-800 p-3"
             />
           </label>
 
           <label>
-            <span className="block mb-2 text-sm text-zinc-400">
+            <span className="block mb-2 text-sm text-amber-300">
               Days
             </span>
 
@@ -74,12 +69,12 @@ export default function CampFuelEstimator() {
               min="1"
               value={days}
               onChange={(e) => setDays(Number(e.target.value))}
-              className="w-full rounded-xl bg-zinc-950 border border-zinc-800 p-3"
+              className="w-full rounded-xl bg-slate-950 border border-slate-800 p-3"
             />
           </label>
 
           <label>
-            <span className="block mb-2 text-sm text-zinc-400">
+            <span className="block mb-2 text-sm text-amber-300">
               Boils Per Person Per Day
             </span>
 
@@ -88,7 +83,7 @@ export default function CampFuelEstimator() {
               min="1"
               value={boilsPerDay}
               onChange={(e) => setBoilsPerDay(Number(e.target.value))}
-              className="w-full rounded-xl bg-zinc-950 border border-zinc-800 p-3"
+              className="w-full rounded-xl bg-slate-950 border border-slate-800 p-3"
             />
           </label>
 
@@ -113,7 +108,7 @@ export default function CampFuelEstimator() {
           </label>
         </div>
 
-        <div className="mt-8 bg-white text-black rounded-2xl p-6">
+        <div className="mt-8 bg-amber-300 text-slate-900 rounded-2xl p-6">
           <p className="text-sm font-semibold text-zinc-600">
             Estimated Fuel Usage
           </p>
@@ -140,11 +135,10 @@ export default function CampFuelEstimator() {
           </div>
         </div>
 
-        <p className="text-zinc-500 text-sm mt-6">
+        <p className="text-white text-sm mt-6">
           Estimates assume average backpacking stove efficiency. Wind, altitude,
           and stove type can significantly affect real-world fuel usage.
         </p>
-      </div>
-    </main>
+    </ToolPage>
   );
 }

@@ -3,6 +3,9 @@
 import { useState } from "react";
 import Papa from "papaparse";
 
+import ToolPage from "@/components/ToolPage";
+import FilePicker from "@/components/FilePicker";
+
 type Row = Record<string, string>;
 
 export default function CsvCleaner() {
@@ -66,29 +69,23 @@ export default function CsvCleaner() {
   };
 
   return (
-    <main className="min-h-screen bg-zinc-950 text-white p-8">
-      <div className="max-w-4xl mx-auto">
-        <p className="text-zinc-400 mb-2">Goodfolk Office Utilities</p>
-
-        <h1 className="text-4xl font-bold mb-4">CSV Cleaner</h1>
-
-        <p className="text-zinc-400 mb-8">
-          Upload a CSV, clean headers, trim spaces, remove duplicate rows, and download a fresh file.
-        </p>
-
-        <div className="bg-zinc-900 border border-zinc-800 rounded-2xl p-6">
-          <input
-            type="file"
+     <ToolPage
+              line="Goodfolk Office Utilities"
+              title="CSV Cleaner"
+              description="Upload a CSV, clean headers, trim spaces, remove duplicate rows, and download a fresh file."
+      >
+        <div className="bg-slate-900 border border-zinc-800 rounded-2xl p-6">
+          <FilePicker
             accept=".csv,text/csv"
-            onChange={(e) => {
-              const file = e.target.files?.[0];
+            fileName={fileName === "cleaned.csv" ? undefined : fileName.replace("-cleaned.csv", ".csv")}
+            onChange={(files) => {
+              const file = files[0];
               if (file) handleFile(file);
             }}
-            className="block w-full text-sm text-zinc-300"
           />
 
           {summary && (
-            <div className="mt-6 bg-white text-black rounded-2xl p-6">
+            <div className="mt-6 bg-white text-slate-950 rounded-2xl p-6">
               <p className="font-semibold">Result</p>
               <p className="text-zinc-700 mt-2">{summary}</p>
 
@@ -105,7 +102,7 @@ export default function CsvCleaner() {
         {rows.length > 0 && (
           <div className="mt-8 overflow-auto border border-zinc-800 rounded-2xl">
             <table className="w-full text-sm">
-              <thead className="bg-zinc-900 text-zinc-400">
+              <thead className="bg-slate-900 text-zinc-400">
                 <tr>
                   {Object.keys(rows[0]).map((key) => (
                     <th key={key} className="text-left p-3">
@@ -133,7 +130,6 @@ export default function CsvCleaner() {
         <p className="text-zinc-500 text-sm mt-6">
           Preview shows the first 10 rows only. Your full cleaned CSV will be included in the download.
         </p>
-      </div>
-    </main>
+    </ToolPage>
   );
 }
