@@ -1,7 +1,9 @@
 "use client";
 
 import { useMemo, useState } from "react";
+
 import ToolPage from "@/components/ToolPage";
+import RelatedTools from "@/components/RelatedTools";
 
 export default function CampChecklistGenerator() {
   const [nights, setNights] = useState(2);
@@ -234,6 +236,7 @@ export default function CampChecklistGenerator() {
         This is a starter checklist. Add location-specific items like permits,
         bear storage, fire restrictions, or campground reservation details.
       </p>
+      <RelatedTools currentHref="/camp-checklist-generator" line="camp" />
     </ToolPage>
   );
 }

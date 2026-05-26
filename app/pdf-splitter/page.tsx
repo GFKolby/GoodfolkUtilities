@@ -6,6 +6,7 @@ import JSZip from "jszip";
 
 import ToolPage from "@/components/ToolPage";
 import FilePicker from "@/components/FilePicker";
+import RelatedTools from "@/components/RelatedTools";
 
 export default function PdfSplitter() {
   const [file, setFile] = useState<File | null>(null);
@@ -99,6 +100,7 @@ export default function PdfSplitter() {
         <p className="text-zinc-500 text-sm mt-6">
           Your PDF stays in your browser. Split pages are packaged into a ZIP for download.
         </p>
+        <RelatedTools currentHref="/pdf-splitter" line="office" />
      </ToolPage>
   );
 }

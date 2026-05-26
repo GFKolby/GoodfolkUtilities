@@ -1,7 +1,9 @@
 "use client";
 
 import { useState } from "react";
+
 import ToolPage from "@/components/ToolPage";
+import RelatedTools from "@/components/RelatedTools";
 
 export default function Home() {
   const [jsonText, setJsonText] = useState("");
@@ -66,7 +68,7 @@ export default function Home() {
         >
           {loading ? "Converting..." : "Convert to Excel"}
         </button>
-     
+        <RelatedTools currentHref="/json-to-excel" line="office" />
     </ToolPage>
   );
 }

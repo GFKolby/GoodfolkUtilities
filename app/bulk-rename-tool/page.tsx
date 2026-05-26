@@ -2,8 +2,10 @@
 
 import { useMemo, useState } from "react";
 import JSZip from "jszip";
+
 import ToolPage from "@/components/ToolPage";
 import FilePicker from "@/components/FilePicker";
+import RelatedTools from "@/components/RelatedTools";
 
 type RenameMode = "prefix" | "suffix" | "replace" | "numbered";
 
@@ -177,6 +179,7 @@ export default function BulkRenameTool() {
         <p className="text-zinc-500 text-sm mt-6">
           Your files stay in your browser. The renamed copies are packaged into a ZIP for download.
         </p>
+        <RelatedTools currentHref="/bulk-rename-tool" line="camp" />
       </ToolPage>
   );
 }

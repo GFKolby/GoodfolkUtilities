@@ -1,7 +1,9 @@
 "use client";
 
 import { useMemo, useState } from "react";
+
 import ToolPage from "@/components/ToolPage";
+import RelatedTools from "@/components/RelatedTools";
 
 export default function PasswordGenerator() {
   const [length, setLength] = useState(18);
@@ -167,6 +169,7 @@ export default function PasswordGenerator() {
       <p className="mt-6 text-sm text-zinc-500">
         Passwords are generated in your browser. Nothing is sent or saved.
       </p>
+      <RelatedTools currentHref="/password-generator" line="office" />
     </ToolPage>
   );
 }

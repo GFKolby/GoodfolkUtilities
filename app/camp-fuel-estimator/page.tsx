@@ -1,7 +1,9 @@
 "use client";
 
 import { useMemo, useState } from "react";
+
 import ToolPage from "@/components/ToolPage";
+import RelatedTools from "@/components/RelatedTools";
 
 export default function CampFuelEstimator() {
   const [people, setPeople] = useState(1);
@@ -139,6 +141,7 @@ export default function CampFuelEstimator() {
           Estimates assume average backpacking stove efficiency. Wind, altitude,
           and stove type can significantly affect real-world fuel usage.
         </p>
+        <RelatedTools currentHref="/camp-fuel-estimator" line="camp" />
     </ToolPage>
   );
 }

@@ -1,7 +1,9 @@
 "use client";
 
 import { useMemo, useState } from "react";
+
 import ToolPage from "@/components/ToolPage";
+import RelatedTools from "@/components/RelatedTools";
 
 export default function CampWeatherComfort() {
   const [temperature, setTemperature] = useState(65);
@@ -162,6 +164,7 @@ export default function CampWeatherComfort() {
       <p className="mt-6 text-sm text-zinc-500">
         This is a planning estimate. Always check the local forecast before leaving and pack backup layers like a responsible little trail goblin.
       </p>
+      <RelatedTools currentHref="/camp-weather-comfort" line="camp" />
     </ToolPage>
   );
 }

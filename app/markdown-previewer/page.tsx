@@ -1,7 +1,9 @@
 "use client";
 
 import { useMemo, useState } from "react";
+
 import ToolPage from "@/components/ToolPage";
+import RelatedTools from "@/components/RelatedTools";
 
 export default function MarkdownPreviewer() {
   const [markdown, setMarkdown] = useState(`# Goodfolk Notes
@@ -76,6 +78,7 @@ export default function MarkdownPreviewer() {
       <p className="mt-6 text-sm text-zinc-500">
         Supports basic headings, bold, italic, links, and simple list items.
       </p>
+      <RelatedTools currentHref="/markdown-previewer" line="office" />
     </ToolPage>
   );
 }

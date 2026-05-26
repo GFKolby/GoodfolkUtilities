@@ -1,7 +1,9 @@
 "use client";
 
 import { useMemo, useState } from "react";
+
 import ToolPage from "@/components/ToolPage";
+import RelatedTools from "@/components/RelatedTools";
 
 export default function WordCharacterCounter() {
   const [text, setText] = useState("");
@@ -101,6 +103,7 @@ export default function WordCharacterCounter() {
         Handy for assignments, emails, social posts, meta descriptions, form limits,
         and tiny writing goblin math.
       </p>
+      <RelatedTools currentHref="/word-character-counter" line="office" />
     </ToolPage>
   );
 }

@@ -1,7 +1,9 @@
 "use client";
 
 import { useMemo, useState } from "react";
+
 import ToolPage from "@/components/ToolPage";
+import RelatedTools from "@/components/RelatedTools";
 
 export default function CampTripCostCalculator() {
   const [nights, setNights] = useState(2);
@@ -246,6 +248,7 @@ export default function CampTripCostCalculator() {
         This is a planning estimate. Add a buffer for firewood, snacks, forgotten
         supplies, and the classic “I need one more camp gadget” situation.
       </p>
+      <RelatedTools currentHref="/camp-trip-cost-calculator" line="camp" />
     </ToolPage>
   );
 }

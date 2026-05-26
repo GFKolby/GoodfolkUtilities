@@ -1,7 +1,9 @@
 "use client";
 
 import { useMemo, useState } from "react";
+
 import ToolPage from "@/components/ToolPage";
+import RelatedTools from "@/components/RelatedTools";
 
 export default function CampWaterPlanner() {
   const [people, setPeople] = useState(1);
@@ -110,6 +112,7 @@ export default function CampWaterPlanner() {
           This is a planning estimate. Bring extra water when temperatures are high,
           when hiking heavily, or when camping somewhere without reliable water access.
         </p>
+        <RelatedTools currentHref="/camp-water-planner" line="camp" />
       </ToolPage>
   );
 }

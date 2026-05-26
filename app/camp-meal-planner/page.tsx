@@ -1,7 +1,9 @@
 "use client";
 
 import { useMemo, useState } from "react";
+
 import ToolPage from "@/components/ToolPage";
+import RelatedTools from "@/components/RelatedTools";
 
 export default function CampMealPlanner() {
   const [people, setPeople] = useState(1);
@@ -162,6 +164,7 @@ export default function CampMealPlanner() {
         This is a planning estimate. Add extra food for long hikes, cold weather,
         delays, or snack goblin emergencies.
       </p>
+      <RelatedTools currentHref="/camp-meal-planner" line="camp" />
     </ToolPage>
   );
 }

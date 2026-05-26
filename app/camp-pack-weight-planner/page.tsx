@@ -1,7 +1,9 @@
 "use client";
 
 import { useMemo, useState } from "react";
+
 import ToolPage from "@/components/ToolPage";
+import RelatedTools from "@/components/RelatedTools";
 
 type Item = {
   id: number;
@@ -158,6 +160,7 @@ export default function CampPackWeightPlanner() {
         <p className="text-amber-300 text-sm mt-6">
           Tip: For backpacking, remember to separate base weight from consumables like water, food, and fuel.
         </p>
+        <RelatedTools currentHref="/camp-pack-weight-planner" line="camp" />
     </ToolPage>
   );
 }

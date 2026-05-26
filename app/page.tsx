@@ -1,90 +1,5 @@
 import Link from "next/link";
-
-const officeTools = [
-  {
-    name: "JSON to Excel Converter",
-    href: "/json-to-excel",
-    description: "Convert JSON arrays into downloadable Excel files.",
-  },
-  {
-    name: "CSV Cleaner",
-    href: "/csv-cleaner",
-    description: "Clean headers, trim spaces, and remove duplicate CSV rows.",
-  },
-  {
-    name: "Bulk Rename Tool",
-    href: "/bulk-rename-tool",
-    description: "Rename multiple files and download renamed copies in a ZIP.",
-  },
-  {
-    name: "PDF Splitter",
-    href: "/pdf-splitter",
-    description: "Split a PDF into individual page files and download them as a ZIP.",
-  },
-  {
-    name: "Text Case Converter",
-    href: "/text-case-converter",
-    description: "Convert text into uppercase, lowercase, title case, snake_case, and more.",
-  },
-  {
-    name: "Word & Character Counter",
-    href: "/word-character-counter",
-    description: "Count words, characters, sentences, paragraphs, and reading time.",
-  },
-  {
-    name: "Password Generator",
-    href: "/password-generator",
-    description: "Generate strong random passwords with custom options.",
-  },
-  {
-    name: "Markdown Previewer",
-    href: "/markdown-previewer",
-    description: "Write Markdown and preview the formatted output instantly.",
-  },
-];
-
-const campTools = [
-  {
-    name: "Camp Water Planner",
-    href: "/camp-water-planner",
-    description: "Estimate how much water to bring for a camping trip.",
-  },
-  {
-    name: "Camp Battery Estimator",
-    href: "/camp-battery-estimator",
-    description: "Estimate battery needs for phones, lights, fans, and devices.",
-  },
-  {
-    name: "Camp Pack Weight Planner",
-    href: "/camp-pack-weight-planner",
-    description: "Add gear items and estimate your total pack weight.",
-  },
-  {
-    name: "Camp Fuel Estimator",
-    href: "/camp-fuel-estimator",
-    description: "Estimate stove fuel usage for meals, coffee, and boiling water.",
-  },
-  {
-    name: "Camp Meal Planner",
-    href: "/camp-meal-planner",
-    description: "Estimate meals, snacks, and calories for a camping trip.",
-  },
-  {
-    name: "Camp Weather Comfort Calculator",
-    href: "/camp-weather-comfort",
-    description: "Estimate camping comfort based on temperature, rain, wind, and overnight lows.",
-  },
-  {
-    name: "Camp Checklist Generator",
-    href: "/camp-checklist-generator",
-    description: "Generate a camping checklist based on trip style, weather, and activities.",
-  },
-  {
-    name: "Camp Trip Cost Calculator",
-    href: "/camp-trip-cost-calculator",
-    description: "Estimate campsite fees, gas, food, gear, and total trip cost.",
-  },
-];
+import { officeTools, campTools } from "@/lib/tools";
 
 function ToolSection({
   title,
@@ -201,6 +116,34 @@ export default function Home() {
     </p>
   </div>
 </section>
+
+<div className="mt-10 grid gap-5 md:grid-cols-2">
+  <Link
+    href="/office"
+    className="rounded-2xl border border-slate-800 bg-slate-900 p-6 transition hover:border-amber-300/60 hover:bg-slate-800"
+  >
+    <p className="text-sm font-semibold text-amber-300">
+      Office Utilities
+    </p>
+    <h2 className="mt-2 text-2xl font-bold">Browse office tools</h2>
+    <p className="mt-2 text-zinc-400">
+      File cleanup, text formatting, passwords, Markdown, and everyday digital tasks.
+    </p>
+  </Link>
+
+  <Link
+    href="/camp"
+    className="rounded-2xl border border-slate-800 bg-slate-900 p-6 transition hover:border-amber-300/60 hover:bg-slate-800"
+  >
+    <p className="text-sm font-semibold text-amber-300">
+      Camp Utilities
+    </p>
+    <h2 className="mt-2 text-2xl font-bold">Browse camp tools</h2>
+    <p className="mt-2 text-zinc-400">
+      Water, power, meals, fuel, weather, checklist, packing, and trip costs.
+    </p>
+  </Link>
+</div>
         <ToolSection
           eyebrow="Office Utilities"
           title="Clean up files, text, and everyday digital messes."
