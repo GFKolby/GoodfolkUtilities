@@ -36,6 +36,11 @@ const officeTools = [
     href: "/password-generator",
     description: "Generate strong random passwords with custom options.",
   },
+  {
+    name: "Markdown Previewer",
+    href: "/markdown-previewer",
+    description: "Write Markdown and preview the formatted output instantly.",
+  },
 ];
 
 const campTools = [
