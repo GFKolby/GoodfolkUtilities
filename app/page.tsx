@@ -38,6 +38,12 @@ const tools = [
     description: "Count words, characters, sentences, paragraphs, and estimated reading time.",
   },
   {
+    name: "Password Generator",
+    href: "/password-generator",
+    line: "Office Utilities",
+    description: "Generate strong random passwords with custom length and character options.",
+  },
+  {
     name: "Camp Water Planner",
     href: "/camp-water-planner",
     line: "Camp Utilities",
