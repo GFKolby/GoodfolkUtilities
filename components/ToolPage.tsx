@@ -32,8 +32,15 @@ export default function ToolPage({
         {children}
 
         <footer className="mt-16 text-sm text-zinc-500">
-          © {new Date().getFullYear()} Goodfolk Digital. Built for good folks.
-        </footer>
+  © {new Date().getFullYear()}{" "}
+  <a
+    href="https://goodfolkdigital.com"
+    className="text-zinc-400 hover:text-amber-300"
+  >
+    Goodfolk Digital
+  </a>
+  . Built for good folks.
+</footer>
       </div>
     </main>
   );
