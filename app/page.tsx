@@ -55,6 +55,12 @@ const tools = [
     line: "Camp Utilities",
     description: "Estimate camping stove fuel usage for meals, coffee, and boiling water.",
   },
+  {
+    name: "Camp Meal Planner",
+    href: "/camp-meal-planner",
+    line: "Camp Utilities",
+    description: "Estimate meals, snacks, and calories for a camping trip.",
+  },
 ];
 
 export default function Home() {
