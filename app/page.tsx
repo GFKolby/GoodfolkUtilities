@@ -26,6 +26,12 @@ const tools = [
     description: "Split a PDF into individual page files and download them as a ZIP.",
   },
   {
+    name: "Text Case Converter",
+    href: "/text-case-converter",
+    line: "Office Utilities",
+    description: "Convert text into uppercase, lowercase, title case, kebab-case, snake_case, and camelCase.",
+  },
+  {
     name: "Camp Water Planner",
     href: "/camp-water-planner",
     line: "Camp Utilities",
