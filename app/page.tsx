@@ -170,14 +170,12 @@ export default function Home() {
     If these tools saved you time, you can support the toolbox and help keep new tools coming.
   </p>
 
-  <a
-    href="https://ko-fi.com/goodfolkdigital"
-    target="_blank"
-    rel="noreferrer"
-    className="mt-4 inline-block rounded-xl bg-amber-300 px-5 py-3 font-semibold text-slate-950 transition hover:bg-amber-200"
-  >
-    Support Goodfolk
-  </a>
+  <Link
+  href="/support"
+  className="mt-4 inline-block rounded-xl bg-amber-300 px-5 py-3 font-semibold text-slate-950 transition hover:bg-amber-200"
+>
+  Support Goodfolk
+</Link>
 </div>
  
         </header>
