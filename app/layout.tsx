@@ -12,7 +12,8 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata = {
+export const metadata: Metadata = {
+  metadataBase: new URL("https://tools.goodfolkdigital.com"),
   title: {
     default: "Goodfolk Tools",
     template: "%s | Goodfolk Tools",
@@ -23,6 +24,14 @@ export const metadata = {
     icon: [{ url: "/icon.svg", type: "image/svg+xml" }],
     shortcut: [{ url: "/icon.svg", type: "image/svg+xml" }],
     apple: [{ url: "/icon.svg", type: "image/svg+xml" }],
+  },
+  openGraph: {
+    title: "Goodfolk Tools",
+    description:
+      "Free browser-based tools for office work, file cleanup, text formatting, camping planning, and everyday digital tasks.",
+    url: "https://tools.goodfolkdigital.com",
+    siteName: "Goodfolk Tools",
+    type: "website",
   },
 };
 
