@@ -147,12 +147,28 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="rounded-2xl border border-slate-800 bg-slate-500 p-5 text-sm text-zinc-300">
+          <div className="rounded-2xl border border-slate-800 bg-slate-900 p-5 text-sm text-zinc-300">
             <p className="font-semibold text-white">Current toolbox</p>
             <p className="mt-2">
               {officeTools.length} office tools · {campTools.length} camp tools
             </p>
+                     <div className="mt-5 rounded-2xl border border-amber-300/30 bg-amber-300/10 p-5 text-sm text-zinc-300">
+  <p className="font-semibold text-white">Goodfolk Tools is free.</p>
+  <p className="mt-2">
+    If these tools saved you time, you can support the toolbox and help keep new tools coming.
+  </p>
+
+  <a
+    href="https://ko-fi.com/goodfolkdigital"
+    target="_blank"
+    rel="noreferrer"
+    className="mt-4 inline-block rounded-xl bg-amber-300 px-5 py-3 font-semibold text-slate-950 transition hover:bg-amber-200"
+  >
+    Support Goodfolk
+  </a>
+</div>
           </div>
+ 
         </header>
 
         <ToolSection
