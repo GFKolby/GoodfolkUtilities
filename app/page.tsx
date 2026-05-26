@@ -147,7 +147,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="rounded-2xl border border-slate-800 bg-amber-500 p-5 text-sm text-zinc-300">
+          <div className="rounded-2xl border border-slate-800 bg-slate-500 p-5 text-sm text-zinc-300">
             <p className="font-semibold text-white">Current toolbox</p>
             <p className="mt-2">
               {officeTools.length} office tools · {campTools.length} camp tools
