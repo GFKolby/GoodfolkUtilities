@@ -79,6 +79,11 @@ const campTools = [
     href: "/camp-checklist-generator",
     description: "Generate a camping checklist based on trip style, weather, and activities.",
   },
+  {
+    name: "Camp Trip Cost Calculator",
+    href: "/camp-trip-cost-calculator",
+    description: "Estimate campsite fees, gas, food, gear, and total trip cost.",
+  },
 ];
 
 function ToolSection({
