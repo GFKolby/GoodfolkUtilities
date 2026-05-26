@@ -152,7 +152,9 @@ export default function Home() {
             <p className="mt-2">
               {officeTools.length} office tools · {campTools.length} camp tools
             </p>
-                     <div className="mt-5 rounded-2xl border border-amber-300/30 bg-amber-300/10 p-5 text-sm text-zinc-300">
+          </div>
+
+           <div className="mt-5 rounded-2xl border border-amber-300/30 bg-amber-300/10 p-5 text-sm text-zinc-300">
   <p className="font-semibold text-white">Goodfolk Tools is free.</p>
   <p className="mt-2">
     If these tools saved you time, you can support the toolbox and help keep new tools coming.
@@ -167,7 +169,6 @@ export default function Home() {
     Support Goodfolk
   </a>
 </div>
-          </div>
  
         </header>
 
