@@ -56,9 +56,12 @@ export default function Home() {
     
     <main className="min-h-screen bg-slate-950 text-white p-8">
       <div className="max-w-5xl mx-auto">
-        <p className="text-amber-300 mb-2 font-medium">
-            Goodfolk Digital
-        </p>
+        <a
+          href="https://goodfolkdigital.com"
+          className="text-amber-300 hover:text-amber-200"
+        >
+          Goodfolk Digital
+        </a>
 
         <h1 className="text-5xl font-bold mb-4">
             Goodfolk Tools
