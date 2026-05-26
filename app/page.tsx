@@ -32,6 +32,12 @@ const tools = [
     description: "Convert text into uppercase, lowercase, title case, kebab-case, snake_case, and camelCase.",
   },
   {
+    name: "Word & Character Counter",
+    href: "/word-character-counter",
+    line: "Office Utilities",
+    description: "Count words, characters, sentences, paragraphs, and estimated reading time.",
+  },
+  {
     name: "Camp Water Planner",
     href: "/camp-water-planner",
     line: "Camp Utilities",
@@ -60,6 +66,12 @@ const tools = [
     href: "/camp-meal-planner",
     line: "Camp Utilities",
     description: "Estimate meals, snacks, and calories for a camping trip.",
+  },
+  {
+    name: "Camp Weather Comfort Calculator",
+    href: "/camp-weather-comfort",
+    line: "Camp Utilities",
+    description: "Estimate camping comfort based on temperature, rain, wind, humidity, and overnight lows.",
   },
 ];
 
