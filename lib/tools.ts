@@ -46,7 +46,7 @@ export const categories: ToolCategory[] = [
     description:
       "Free home utilities for paint planning, room sizes, electricity costs, moving boxes, and project budgets.",
     href: "/home",
-    toolCount: 5,
+    toolCount: 6,
   },
 ];
 
@@ -241,6 +241,14 @@ export const homeTools: ToolItem[] = [
     href: "/home-project-budget-calculator",
     category: "home",
   },
+  {
+  slug: "flooring-calculator",
+  title: "Flooring Calculator",
+  description:
+    "Estimate flooring square footage, waste allowance, boxes needed, and material cost.",
+  href: "/flooring-calculator",
+  category: "home",
+},
 ];
 
 export const allTools: ToolItem[] = [
