@@ -40,6 +40,12 @@ export default function ToolPage({
     Goodfolk Digital
   </a>
   . Built for good folks.
+  <Link href="/privacy" className="text-zinc-400 hover:text-amber-300">
+  Privacy
+</Link>
+<Link href="/about" className="text-zinc-400 hover:text-amber-300">
+  About
+</Link>
 </footer>
       </div>
     </main>
