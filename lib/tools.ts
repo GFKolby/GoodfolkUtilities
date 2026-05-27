@@ -223,22 +223,22 @@ export const homeTools: ToolItem[] = [
     slug: "electricity-cost-calculator",
     title: "Electricity Cost Calculator",
     description: "Estimate how much an appliance or device costs to run.",
-    href: "/electricity-cost-calculator",
+    href: "/electric-cost-calculator",
     category: "home",
   },
   {
-    slug: "moving-box-estimator",
-    title: "Moving Box Estimator",
+    slug: "moving-box-calculator",
+    title: "Moving Box Calculator",
     description: "Estimate how many boxes you may need for a move.",
-    href: "/moving-box-estimator",
+    href: "/moving-box-calculator",
     category: "home",
   },
   {
-    slug: "project-budget-calculator",
+    slug: "home-project-budget-calculator",
     title: "Project Budget Calculator",
     description:
       "Plan a home project budget with materials, labor, and extra cushion.",
-    href: "/project-budget-calculator",
+    href: "/home-project-budget-calculator",
     category: "home",
   },
 ];
