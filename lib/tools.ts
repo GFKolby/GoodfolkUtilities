@@ -152,6 +152,12 @@ export const homeTools: Tool[] = [
     description: "Estimate daily, monthly, and yearly electricity costs from watts, usage, and electric rate.",
     line: "home",
   },
+  {
+    name: "Moving Box Calculator",
+    href: "/moving-box-calculator",
+    description: "Estimate how many moving boxes you need based on rooms, home size, and packing style.",
+    line: "home",
+  },
 ];
 
 export const allTools = [...officeTools, ...campTools, ...homeTools];
