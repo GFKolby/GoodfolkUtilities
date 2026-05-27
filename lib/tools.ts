@@ -54,7 +54,7 @@ export const categories: ToolCategory[] = [
     description:
       "Free finance tools for budgeting, savings goals, debt payoff, subscriptions, and income planning.",
     href: "/finance",
-    toolCount: 5,
+    toolCount: 6,
   },
 ];
 
@@ -295,6 +295,14 @@ export const homeTools: ToolItem[] = [
   description:
     "Convert hourly pay to weekly, monthly, and yearly income estimates.",
   href: "/hourly-to-salary-calculator",
+  category: "finance",
+},
+{
+  slug: "emergency-fund-calculator",
+  title: "Emergency Fund Calculator",
+  description:
+    "Estimate how much emergency savings you may need based on monthly expenses and target months of coverage.",
+  href: "/emergency-fund-calculator",
   category: "finance",
 },
 ];
