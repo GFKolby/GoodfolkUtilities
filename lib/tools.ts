@@ -54,7 +54,7 @@ export const categories: ToolCategory[] = [
     description:
       "Free finance tools for budgeting, savings goals, debt payoff, subscriptions, and income planning.",
     href: "/finance",
-    toolCount: 4,
+    toolCount: 5,
   },
 ];
 
@@ -288,6 +288,14 @@ export const homeTools: ToolItem[] = [
     "Estimate a rough project timeline based on project type, complexity, DIY level, and buffer time.",
   href: "/home-project-timeline-estimator",
   category: "home",
+},
+{
+  slug: "hourly-to-salary-calculator",
+  title: "Hourly to Salary Calculator",
+  description:
+    "Convert hourly pay to weekly, monthly, and yearly income estimates.",
+  href: "/hourly-to-salary-calculator",
+  category: "finance",
 },
 ];
 
