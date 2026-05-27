@@ -54,7 +54,7 @@ export const categories: ToolCategory[] = [
     description:
       "Free finance tools for budgeting, savings goals, debt payoff, subscriptions, and income planning.",
     href: "/finance",
-    toolCount: 9,
+    toolCount: 10,
   },
 ];
 
@@ -311,6 +311,14 @@ export const homeTools: ToolItem[] = [
   description:
     "Estimate your net worth by comparing total assets against total debts and liabilities.",
   href: "/net-worth-calculator",
+  category: "finance",
+},
+{
+  slug: "paycheck-estimator",
+  title: "Paycheck Estimator",
+  description:
+    "Estimate take-home pay after taxes, retirement contributions, benefits, and other deductions.",
+  href: "/paycheck-estimator",
   category: "finance",
 },
 ];
