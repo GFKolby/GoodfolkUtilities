@@ -54,7 +54,7 @@ export const categories: ToolCategory[] = [
     description:
       "Free finance tools for budgeting, savings goals, debt payoff, subscriptions, and income planning.",
     href: "/finance",
-    toolCount: 2,
+    toolCount: 3,
   },
 ];
 
@@ -304,8 +304,16 @@ export const financeTools: ToolItem[] = [
     slug: "debt-payoff-calculator",
     title: "Debt Payoff Calculator",
     description:
-    "Estimate how long it will take to pay off debt based on balance, APR, and monthly payment.",
+      "Estimate how long it will take to pay off debt based on balance, APR, and monthly payment.",
     href: "/debt-payoff-calculator",
+    category: "finance",
+  },
+  {
+    slug: "monthly-budget-calculator",
+    title: "Monthly Budget Calculator",
+    description:
+      "Estimate monthly income, expenses, savings, and leftover money with a simple budget breakdown.",
+    href: "/monthly-budget-calculator",
     category: "finance",
   },
 ];

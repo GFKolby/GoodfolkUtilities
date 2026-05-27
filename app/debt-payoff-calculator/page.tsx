@@ -141,7 +141,7 @@ export default function DebtPayoffCalculatorPage() {
                 Your payment may not be enough to reduce the balance because
                 the monthly interest is about{" "}
                 <span className="font-semibold text-white">
-                  ${results.monthlyInterest.toFixed(2)}
+                  ${(results.monthlyInterest ?? 0).toFixed(2)}
                 </span>
                 . Increase the payment above the monthly interest to make
                 progress.
@@ -150,7 +150,7 @@ export default function DebtPayoffCalculatorPage() {
               <div className="mt-6 space-y-4">
                 <ResultRow
                   label="Total monthly payment"
-                  value={`$${results.payment.toFixed(2)}`}
+                  value={`$${(results.payment ?? 0).toFixed(2)}`}
                 />
                 <ResultRow label="Months to payoff" value={`${results.months}`} />
                 <ResultRow
@@ -159,11 +159,11 @@ export default function DebtPayoffCalculatorPage() {
                 />
                 <ResultRow
                   label="Estimated interest paid"
-                  value={`$${results.totalInterest.toFixed(2)}`}
+                  value={`$${(results.totalInterest ?? 0).toFixed(2)}`}
                 />
                 <ResultRow
                   label="Estimated total paid"
-                  value={`$${results.totalPaid.toFixed(2)}`}
+                  value={`$${(results.totalPaid ?? 0).toFixed(2)}`}
                 />
               </div>
             )
