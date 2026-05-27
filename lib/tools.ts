@@ -54,7 +54,7 @@ export const categories: ToolCategory[] = [
     description:
       "Free finance tools for budgeting, savings goals, debt payoff, subscriptions, and income planning.",
     href: "/finance",
-    toolCount: 7,
+    toolCount: 8,
   },
 ];
 
@@ -346,6 +346,14 @@ export const financeTools: ToolItem[] = [
   description:
     "Estimate monthly loan payments, total interest, and total repayment based on loan amount, APR, and term.",
   href: "/loan-payment-calculator",
+  category: "finance",
+  },
+  {
+  slug: "tip-split-bill-calculator",
+  title: "Tip & Split Bill Calculator",
+  description:
+    "Calculate tip, total bill, and per-person cost when splitting a check.",
+  href: "/tip-split-bill-calculator",
   category: "finance",
   },
 ];
