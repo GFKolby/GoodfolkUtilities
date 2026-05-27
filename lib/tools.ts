@@ -54,7 +54,7 @@ export const categories: ToolCategory[] = [
     description:
       "Free finance tools for budgeting, savings goals, debt payoff, subscriptions, and income planning.",
     href: "/finance",
-    toolCount: 3,
+    toolCount: 4,
   },
 ];
 
@@ -316,6 +316,14 @@ export const financeTools: ToolItem[] = [
     href: "/monthly-budget-calculator",
     category: "finance",
   },
+  {
+  slug: "subscription-cost-calculator",
+  title: "Subscription Cost Calculator",
+  description:
+    "Estimate monthly and yearly subscription costs, including optional annual savings from canceling unused services.",
+  href: "/subscription-cost-calculator",
+  category: "finance",
+},
 ];
 
 export const allTools: ToolItem[] = [
