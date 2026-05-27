@@ -209,28 +209,28 @@ export const homeTools: ToolItem[] = [
     slug: "paint-calculator",
     title: "Paint Calculator",
     description: "Estimate how much paint you need for a room or project.",
-    href: "/home/paint-calculator",
+    href: "/paint-calculator",
     category: "home",
   },
   {
     slug: "room-size-calculator",
     title: "Room Size Calculator",
     description: "Calculate room square footage from length and width.",
-    href: "/home/room-size-calculator",
+    href: "/room-size-calculator",
     category: "home",
   },
   {
     slug: "electricity-cost-calculator",
     title: "Electricity Cost Calculator",
     description: "Estimate how much an appliance or device costs to run.",
-    href: "/home/electricity-cost-calculator",
+    href: "/electricity-cost-calculator",
     category: "home",
   },
   {
     slug: "moving-box-estimator",
     title: "Moving Box Estimator",
     description: "Estimate how many boxes you may need for a move.",
-    href: "/home/moving-box-estimator",
+    href: "/moving-box-estimator",
     category: "home",
   },
   {
@@ -238,7 +238,7 @@ export const homeTools: ToolItem[] = [
     title: "Project Budget Calculator",
     description:
       "Plan a home project budget with materials, labor, and extra cushion.",
-    href: "/home/project-budget-calculator",
+    href: "/project-budget-calculator",
     category: "home",
   },
 ];
