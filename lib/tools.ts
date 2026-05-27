@@ -54,7 +54,7 @@ export const categories: ToolCategory[] = [
     description:
       "Free finance tools for budgeting, savings goals, debt payoff, subscriptions, and income planning.",
     href: "/finance",
-    toolCount: 1,
+    toolCount: 2,
   },
 ];
 
@@ -298,6 +298,14 @@ export const financeTools: ToolItem[] = [
     description:
       "Estimate how long it will take to reach a savings goal based on your starting balance and monthly contributions.",
     href: "/savings-goal-calculator",
+    category: "finance",
+  },
+  {
+    slug: "debt-payoff-calculator",
+    title: "Debt Payoff Calculator",
+    description:
+    "Estimate how long it will take to pay off debt based on balance, APR, and monthly payment.",
+    href: "/debt-payoff-calculator",
     category: "finance",
   },
 ];

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { officeTools, campTools, homeTools } from "@/lib/tools";
+import { officeTools, campTools, homeTools, financeTools } from "@/lib/tools";
 import type { ToolItem } from "@/lib/tools";
 
 function ToolSection({
@@ -152,6 +152,18 @@ export default function Home() {
       Calculators and planners for common home projects and tasks.
     </p>
   </Link>
+  <Link
+  href="/finance"
+  className="rounded-2xl border border-slate-800 bg-slate-900 p-6 transition hover:border-amber-300/60 hover:bg-slate-800"
+>
+  <p className="text-sm font-semibold text-amber-300">
+    Finance Utilities
+  </p>
+  <h2 className="mt-2 text-2xl font-bold">Browse finance tools</h2>
+  <p className="mt-2 text-zinc-400">
+    Budgeting, savings goals, debt payoff, subscriptions, and income planning.
+  </p>
+</Link>
 </div>
         <ToolSection
           eyebrow="Office Utilities"
@@ -172,6 +184,13 @@ export default function Home() {
           title="Useful tools for around the house."
           description="Handy calculators and planners for common home projects and tasks."
           tools={homeTools}
+        />
+
+        <ToolSection
+          eyebrow="Finance Utilities"
+          title="Plan money moves without spreadsheet chaos."
+          description="Simple calculators for savings goals, budgets, debt payoff, subscriptions, and everyday financial planning."
+          tools={financeTools}
         />
 
         <footer className="mt-16 border-t border-slate-800 pt-8 text-sm text-zinc-500">
