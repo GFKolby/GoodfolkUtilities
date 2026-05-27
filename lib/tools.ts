@@ -62,6 +62,12 @@ export const officeTools: Tool[] = [
     description: "Create a downloadable QR code from a URL or short text.",
     line: "office",
   },
+  {
+    name: "Unit Converter",
+    href: "/unit-converter",
+    description: "Convert length, weight, temperature, and volume units.",
+    line: "office",
+  },
 ];
 
 export const campTools: Tool[] = [
