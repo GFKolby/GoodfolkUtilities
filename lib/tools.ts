@@ -46,7 +46,7 @@ export const categories: ToolCategory[] = [
     description:
       "Free home utilities for paint planning, room sizes, electricity costs, moving boxes, and project budgets.",
     href: "/home",
-    toolCount: 9,
+    toolCount: 10,
   },
 ];
 
@@ -271,6 +271,14 @@ export const homeTools: ToolItem[] = [
   description:
     "Estimate wallpaper rolls needed based on wall size, roll coverage, pattern waste, and cost.",
   href: "/wallpaper-calculator",
+  category: "home",
+},
+{
+  slug: "home-project-timeline-estimator",
+  title: "Home Project Timeline Estimator",
+  description:
+    "Estimate a rough project timeline based on project type, complexity, DIY level, and buffer time.",
+  href: "/home-project-timeline-estimator",
   category: "home",
 },
 ];
