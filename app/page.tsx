@@ -61,7 +61,7 @@ export default function Home() {
             </a>
 
             <h1 className="text-5xl font-bold md:text-6xl">
-              Goodfolk Tools
+              Goodfolk Toolbox
             </h1>
 
             <p className="mt-4 max-w-2xl text-lg text-zinc-300">
