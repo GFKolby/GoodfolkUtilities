@@ -146,6 +146,12 @@ export const homeTools: Tool[] = [
     description: "Calculate the square footage of a room based on dimensions.",
     line: "home",
   },
+  {
+    name: "Electric Cost Calculator",
+    href: "/electric-cost-calculator",
+    description: "Estimate daily, monthly, and yearly electricity costs from watts, usage, and electric rate.",
+    line: "home",
+  },
 ];
 
 export const allTools = [...officeTools, ...campTools, ...homeTools];
