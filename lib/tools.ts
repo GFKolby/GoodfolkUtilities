@@ -46,7 +46,7 @@ export const categories: ToolCategory[] = [
     description:
       "Free home utilities for paint planning, room sizes, electricity costs, moving boxes, and project budgets.",
     href: "/home",
-    toolCount: 6,
+    toolCount: 7,
   },
 ];
 
@@ -242,13 +242,21 @@ export const homeTools: ToolItem[] = [
     category: "home",
   },
   {
-  slug: "flooring-calculator",
-  title: "Flooring Calculator",
-  description:
-    "Estimate flooring square footage, waste allowance, boxes needed, and material cost.",
-  href: "/flooring-calculator",
-  category: "home",
-},
+    slug: "flooring-calculator",
+    title: "Flooring Calculator",
+    description:
+      "Estimate flooring square footage, waste allowance, boxes needed, and material cost.",
+    href: "/flooring-calculator",
+    category: "home",
+  },
+  {
+    slug: "mulch-calculator",
+    title: "Mulch Calculator",
+    description:
+      "Estimate mulch volume in cubic feet, cubic yards, and bags based on bed size and depth.",
+    href: "/mulch-calculator",
+    category: "home",
+  },
 ];
 
 export const allTools: ToolItem[] = [
