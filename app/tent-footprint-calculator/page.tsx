@@ -106,8 +106,7 @@ export default function TentFootprintCalculator() {
         </p>
 
         <p className="mt-2 text-5xl font-bold">
-          {results.footprintLength.toFixed(1)}" ×{" "}
-          {results.footprintWidth.toFixed(1)}"
+          {results.footprintLength.toFixed(1)}&quot; × {results.footprintWidth.toFixed(1)}&quot;
         </p>
 
         <p className="mt-3 text-slate-800">

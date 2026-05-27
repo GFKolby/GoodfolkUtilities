@@ -1,4 +1,4 @@
-export type ToolLine = "office" | "camp";
+export type ToolLine = "office" | "camp" | "home";
 
 export type Tool = {
   name: string;
@@ -124,19 +124,28 @@ export const campTools: Tool[] = [
     href: "/campfire-safety-checklist",
     description: "Generate a campfire safety checklist based on conditions and trip plans.",
     line: "camp",
-},
-{
-  name: "Tent Footprint Calculator",
-  href: "/tent-footprint-calculator",
-  description: "Calculate a recommended footprint size for your tent floor.",
-  line: "camp",
-},
+  },
+  { 
+    name: "Tent Footprint Calculator",
+    href: "/tent-footprint-calculator",
+    description: "Calculate a recommended footprint size for your tent floor.",
+    line: "camp",
+  },
 ];
 
-export const allTools = [...officeTools, ...campTools];
+export const homeTools: Tool[] = [
+  {
+    name: "Paint Calculator",
+    href: "/paint-calculator",
+    description: "Estimate the amount of paint needed for your home project.",
+    line: "home",
+  },
+];
+
+export const allTools = [...officeTools, ...campTools, ...homeTools];
 
 export function getRelatedTools(currentHref: string, line: ToolLine, limit = 3) {
-  const source = line === "office" ? officeTools : campTools;
+  const source = line === "office" ? officeTools : line === "camp" ? campTools : homeTools;
 
   return source.filter((tool) => tool.href !== currentHref).slice(0, limit);
 }

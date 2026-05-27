@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 type ToolPageProps = {
-  line: "Goodfolk Office Utilities" | "Goodfolk Camp Utilities";
+  line: "Goodfolk Office Utilities" | "Goodfolk Camp Utilities" | "Goodfolk Home Utilities";
   title: string;
   description: string;
   children: React.ReactNode;
