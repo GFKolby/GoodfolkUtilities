@@ -54,7 +54,7 @@ export const categories: ToolCategory[] = [
     description:
       "Free finance tools for budgeting, savings goals, debt payoff, subscriptions, and income planning.",
     href: "/finance",
-    toolCount: 8,
+    toolCount: 9,
   },
 ];
 
@@ -303,6 +303,14 @@ export const homeTools: ToolItem[] = [
   description:
     "Estimate how much emergency savings you may need based on monthly expenses and target months of coverage.",
   href: "/emergency-fund-calculator",
+  category: "finance",
+},
+{
+  slug: "net-worth-calculator",
+  title: "Net Worth Calculator",
+  description:
+    "Estimate your net worth by comparing total assets against total debts and liabilities.",
+  href: "/net-worth-calculator",
   category: "finance",
 },
 ];
