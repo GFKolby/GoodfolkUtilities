@@ -48,6 +48,14 @@ export const categories: ToolCategory[] = [
     href: "/home",
     toolCount: 10,
   },
+  {
+    slug: "finance",
+    title: "Finance Utilities",
+    description:
+      "Free finance tools for budgeting, savings goals, debt payoff, subscriptions, and income planning.",
+    href: "/finance",
+    toolCount: 1,
+  },
 ];
 
 export const officeTools: ToolItem[] = [
@@ -283,10 +291,22 @@ export const homeTools: ToolItem[] = [
 },
 ];
 
+export const financeTools: ToolItem[] = [
+  {
+    slug: "savings-goal-calculator",
+    title: "Savings Goal Calculator",
+    description:
+      "Estimate how long it will take to reach a savings goal based on your starting balance and monthly contributions.",
+    href: "/savings-goal-calculator",
+    category: "finance",
+  },
+];
+
 export const allTools: ToolItem[] = [
   ...officeTools,
   ...campTools,
   ...homeTools,
+  ...financeTools
 ];
 
 export function getToolsByCategory(category: ToolCategorySlug) {

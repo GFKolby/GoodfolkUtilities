@@ -1,7 +1,11 @@
 import Link from "next/link";
 
 type ToolPageProps = {
-  line: "Goodfolk Office Utilities" | "Goodfolk Camp Utilities" | "Goodfolk Home Utilities";
+  line:
+  "Goodfolk Office Utilities"
+  | "Goodfolk Camp Utilities"
+  | "Goodfolk Home Utilities"
+  | "Goodfolk Finance Utilities";
   title: string;
   description: string;
   children: React.ReactNode;
