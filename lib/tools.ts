@@ -46,7 +46,7 @@ export const categories: ToolCategory[] = [
     description:
       "Free home utilities for paint planning, room sizes, electricity costs, moving boxes, and project budgets.",
     href: "/home",
-    toolCount: 8,
+    toolCount: 9,
   },
 ];
 
@@ -263,6 +263,14 @@ export const homeTools: ToolItem[] = [
   description:
     "Estimate tile count, waste allowance, boxes needed, and material cost for a floor or wall.",
   href: "/tile-calculator",
+  category: "home",
+},
+{
+  slug: "wallpaper-calculator",
+  title: "Wallpaper Calculator",
+  description:
+    "Estimate wallpaper rolls needed based on wall size, roll coverage, pattern waste, and cost.",
+  href: "/wallpaper-calculator",
   category: "home",
 },
 ];
