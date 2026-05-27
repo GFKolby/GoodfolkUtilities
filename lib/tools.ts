@@ -140,6 +140,12 @@ export const homeTools: Tool[] = [
     description: "Estimate the amount of paint needed for your home project.",
     line: "home",
   },
+  {
+    name: "Room Size Calculator",
+    href: "/room-size-calculator",
+    description: "Calculate the square footage of a room based on dimensions.",
+    line: "home",
+  },
 ];
 
 export const allTools = [...officeTools, ...campTools, ...homeTools];

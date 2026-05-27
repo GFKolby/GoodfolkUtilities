@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { officeTools, campTools } from "@/lib/tools";
+import { officeTools, campTools, homeTools } from "@/lib/tools";
 
 function ToolSection({
   title,
@@ -68,7 +68,7 @@ export default function Home() {
             </h1>
 
             <p className="mt-4 max-w-2xl text-lg text-zinc-300">
-              Small, sharp browser-based tools for everyday office work and camping planning.
+              Small, sharp browser-based tools for everyday good folk.
             </p>
           </div>
 
@@ -143,6 +143,18 @@ export default function Home() {
       Water, power, meals, fuel, weather, checklist, packing, and trip costs.
     </p>
   </Link>
+  <Link
+    href="/home"
+    className="rounded-2xl border border-slate-800 bg-slate-900 p-6 transition hover:border-amber-300/60 hover:bg-slate-800"
+  >
+    <p className="text-sm font-semibold text-amber-300">
+      Home Utilities
+    </p>
+    <h2 className="mt-2 text-2xl font-bold">Browse home tools</h2>
+    <p className="mt-2 text-zinc-400">
+      Calculators and planners for common home projects and tasks.
+    </p>
+  </Link>
 </div>
         <ToolSection
           eyebrow="Office Utilities"
@@ -156,6 +168,13 @@ export default function Home() {
           title="Plan smarter before you leave home."
           description="Simple camping calculators and checklists for water, food, power, weather, packing, and trip prep."
           tools={campTools}
+        />
+
+        <ToolSection
+          eyebrow="Home Utilities"
+          title="Useful tools for around the house."
+          description="Handy calculators and planners for common home projects and tasks."
+          tools={homeTools}
         />
 
         <footer className="mt-16 border-t border-slate-800 pt-8 text-sm text-zinc-500">
