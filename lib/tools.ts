@@ -56,6 +56,12 @@ export const officeTools: Tool[] = [
     description: "Write Markdown and preview the formatted output instantly.",
     line: "office",
   },
+  {
+    name: "QR Code Generator",
+    href: "/qr-code-generator",
+    description: "Create a downloadable QR code from a URL or short text.",
+    line: "office",
+  },
 ];
 
 export const campTools: Tool[] = [
