@@ -54,7 +54,7 @@ export const categories: ToolCategory[] = [
     description:
       "Free finance tools for budgeting, savings goals, debt payoff, subscriptions, and income planning.",
     href: "/finance",
-    toolCount: 6,
+    toolCount: 7,
   },
 ];
 
@@ -339,7 +339,15 @@ export const financeTools: ToolItem[] = [
     "Estimate monthly and yearly subscription costs, including optional annual savings from canceling unused services.",
   href: "/subscription-cost-calculator",
   category: "finance",
-},
+  },
+  {
+  slug: "loan-payment-calculator",
+  title: "Loan Payment Calculator",
+  description:
+    "Estimate monthly loan payments, total interest, and total repayment based on loan amount, APR, and term.",
+  href: "/loan-payment-calculator",
+  category: "finance",
+  },
 ];
 
 export const allTools: ToolItem[] = [
