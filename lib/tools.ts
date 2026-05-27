@@ -46,7 +46,7 @@ export const categories: ToolCategory[] = [
     description:
       "Free home utilities for paint planning, room sizes, electricity costs, moving boxes, and project budgets.",
     href: "/home",
-    toolCount: 7,
+    toolCount: 8,
   },
 ];
 
@@ -257,6 +257,14 @@ export const homeTools: ToolItem[] = [
     href: "/mulch-calculator",
     category: "home",
   },
+  {
+  slug: "tile-calculator",
+  title: "Tile Calculator",
+  description:
+    "Estimate tile count, waste allowance, boxes needed, and material cost for a floor or wall.",
+  href: "/tile-calculator",
+  category: "home",
+},
 ];
 
 export const allTools: ToolItem[] = [
