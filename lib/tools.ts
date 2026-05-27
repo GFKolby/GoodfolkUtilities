@@ -158,6 +158,12 @@ export const homeTools: Tool[] = [
     description: "Estimate how many moving boxes you need based on rooms, home size, and packing style.",
     line: "home",
   },
+  {
+    name: "Home Project Budget Calculator",
+    href: "/home-project-budget-calculator",
+    description: "Estimate a home project budget with materials, labor, fees, and a contingency buffer.",
+    line: "home",
+  },
 ];
 
 export const allTools = [...officeTools, ...campTools, ...homeTools];
