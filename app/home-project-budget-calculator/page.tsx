@@ -184,7 +184,7 @@ export default function HomeProjectBudgetCalculator() {
 
       <RelatedTools
         currentHref="/home-project-budget-calculator"
-        line="home"
+        category="home"
       />
     </ToolPage>
   );

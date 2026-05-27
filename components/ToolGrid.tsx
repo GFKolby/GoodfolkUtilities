@@ -1,7 +1,7 @@
 import Link from "next/link";
-import type { Tool } from "@/lib/tools";
+import type { ToolItem } from "@/lib/tools";
 
-export default function ToolGrid({ tools }: { tools: Tool[] }) {
+export default function ToolGrid({ tools }: { tools: ToolItem[] }) {
   return (
     <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
       {tools.map((tool) => (
@@ -13,7 +13,7 @@ export default function ToolGrid({ tools }: { tools: Tool[] }) {
           <div className="flex items-start justify-between gap-4">
             <div>
               <h3 className="text-2xl font-semibold text-white">
-                {tool.name}
+                {tool.title}
               </h3>
 
               <p className="mt-2 text-zinc-400">{tool.description}</p>

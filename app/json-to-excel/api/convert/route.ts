@@ -38,7 +38,7 @@ export async function POST(req: NextRequest) {
           "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
       },
     });
-  } catch (error) {
+  } catch  {
     return NextResponse.json(
       { error: "Invalid JSON" },
       { status: 400 }

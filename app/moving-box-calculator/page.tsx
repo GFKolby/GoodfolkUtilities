@@ -185,7 +185,7 @@ export default function MovingBoxCalculator() {
         dimension.
       </p>
 
-      <RelatedTools currentHref="/moving-box-calculator" line="home" />
+      <RelatedTools currentHref="/moving-box-calculator" category="home" />
     </ToolPage>
   );
 }

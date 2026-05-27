@@ -179,7 +179,7 @@ export default function BulkRenameTool() {
         <p className="text-zinc-500 text-sm mt-6">
           Your files stay in your browser. The renamed copies are packaged into a ZIP for download.
         </p>
-        <RelatedTools currentHref="/bulk-rename-tool" line="office" />
+        <RelatedTools currentHref="/bulk-rename-tool" category="office" />
       </ToolPage>
   );
 }

@@ -138,7 +138,7 @@ export default function ElectricCostCalculator() {
         rate, device efficiency, standby power, and sneaky little electricity goblins.
       </p>
 
-      <RelatedTools currentHref="/electric-cost-calculator" line="home" />
+      <RelatedTools currentHref="/electric-cost-calculator" category="home" />
     </ToolPage>
   );
 }

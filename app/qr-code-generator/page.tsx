@@ -116,7 +116,7 @@ export default function QrCodeGenerator() {
         contact info, event pages, or quick sharing.
       </p>
 
-      <RelatedTools currentHref="/qr-code-generator" line="office" />
+      <RelatedTools currentHref="/qr-code-generator" category="office" />
     </ToolPage>
   );
 }

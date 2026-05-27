@@ -139,7 +139,7 @@ export default function TentFootprintCalculator() {
         so it does not catch rainwater and funnel it underneath your shelter.
       </p>
 
-      <RelatedTools currentHref="/tent-footprint-calculator" line="camp" />
+      <RelatedTools currentHref="/tent-footprint-calculator" category="camp" />
     </ToolPage>
   );
 }

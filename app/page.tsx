@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { officeTools, campTools, homeTools } from "@/lib/tools";
+import type { ToolItem } from "@/lib/tools";
 
 function ToolSection({
   title,
@@ -10,11 +11,7 @@ function ToolSection({
   title: string;
   eyebrow: string;
   description: string;
-  tools: {
-    name: string;
-    href: string;
-    description: string;
-  }[];
+  tools: ToolItem[];
 }) {
   return (
     <section className="mt-14">
@@ -35,7 +32,7 @@ function ToolSection({
           >
             <div className="flex items-start justify-between gap-4">
               <div>
-                <h3 className="text-2xl font-semibold">{tool.name}</h3>
+                <h3 className="text-2xl font-semibold">{tool.title}</h3>
                 <p className="mt-2 text-zinc-400">{tool.description}</p>
               </div>
 

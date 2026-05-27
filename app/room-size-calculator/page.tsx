@@ -138,7 +138,7 @@ export default function RoomSizeCalculator() {
         layout, pattern matching, thresholds, closets, and tiny renovation goblins.
       </p>
 
-      <RelatedTools currentHref="/room-size-calculator" line="home" />
+      <RelatedTools currentHref="/room-size-calculator" category="home" />
     </ToolPage>
   );
 }

@@ -169,7 +169,7 @@ export default function PasswordGenerator() {
       <p className="mt-6 text-sm text-zinc-500">
         Passwords are generated in your browser. Nothing is sent or saved.
       </p>
-      <RelatedTools currentHref="/password-generator" line="office" />
+      <RelatedTools currentHref="/password-generator" category="office" />
     </ToolPage>
   );
 }

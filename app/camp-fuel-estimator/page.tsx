@@ -141,7 +141,7 @@ export default function CampFuelEstimator() {
           Estimates assume average backpacking stove efficiency. Wind, altitude,
           and stove type can significantly affect real-world fuel usage.
         </p>
-        <RelatedTools currentHref="/camp-fuel-estimator" line="camp" />
+        <RelatedTools currentHref="/camp-fuel-estimator" category="camp" />
     </ToolPage>
   );
 }

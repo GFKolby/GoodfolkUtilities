@@ -103,7 +103,7 @@ export default function WordCharacterCounter() {
         Handy for assignments, emails, social posts, meta descriptions, form limits,
         and tiny writing goblin math.
       </p>
-      <RelatedTools currentHref="/word-character-counter" line="office" />
+      <RelatedTools currentHref="/word-character-counter" category="office" />
     </ToolPage>
   );
 }

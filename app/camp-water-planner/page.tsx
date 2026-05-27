@@ -112,7 +112,7 @@ export default function CampWaterPlanner() {
           This is a planning estimate. Bring extra water when temperatures are high,
           when hiking heavily, or when camping somewhere without reliable water access.
         </p>
-        <RelatedTools currentHref="/camp-water-planner" line="camp" />
+        <RelatedTools currentHref="/camp-water-planner" category="camp" />
       </ToolPage>
   );
 }

@@ -41,7 +41,7 @@ export default function Home() {
       a.click();
 
       window.URL.revokeObjectURL(url);
-    } catch (err) {
+    } catch {
       alert("Invalid JSON");
     } finally {
       setLoading(false);
@@ -68,7 +68,7 @@ export default function Home() {
         >
           {loading ? "Converting..." : "Convert to Excel"}
         </button>
-        <RelatedTools currentHref="/json-to-excel" line="office" />
+        <RelatedTools currentHref="/json-to-excel" category="office" />
     </ToolPage>
   );
 }

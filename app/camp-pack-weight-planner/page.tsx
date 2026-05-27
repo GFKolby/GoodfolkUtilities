@@ -160,7 +160,7 @@ export default function CampPackWeightPlanner() {
         <p className="text-amber-300 text-sm mt-6">
           Tip: For backpacking, remember to separate base weight from consumables like water, food, and fuel.
         </p>
-        <RelatedTools currentHref="/camp-pack-weight-planner" line="camp" />
+        <RelatedTools currentHref="/camp-pack-weight-planner" category="camp" />
     </ToolPage>
   );
 }

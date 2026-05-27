@@ -1,16 +1,16 @@
 import Link from "next/link";
-import { getRelatedTools, ToolLine } from "@/lib/tools";
+import { getRelatedTools, type ToolCategorySlug } from "@/lib/tools";
 
 type Props = {
   currentHref: string;
-  line: ToolLine;
+  category: ToolCategorySlug;
 };
 
 export default function RelatedTools({
   currentHref,
-  line,
+  category,
 }: Props) {
-  const tools = getRelatedTools(currentHref, line);
+  const tools = getRelatedTools(currentHref, category);
 
   return (
     <section className="mt-10">
@@ -26,7 +26,7 @@ export default function RelatedTools({
             className="rounded-2xl border border-slate-800 bg-slate-900 p-5 transition hover:border-amber-300/60 hover:bg-slate-800"
           >
             <h3 className="font-semibold text-white">
-              {tool.name}
+              {tool.title}
             </h3>
 
             <p className="mt-2 text-sm text-zinc-400">

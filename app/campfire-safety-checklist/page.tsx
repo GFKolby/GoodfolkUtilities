@@ -206,7 +206,7 @@ export default function CampfireSafetyChecklist() {
         local burn bans, posted warnings, and ranger guidance.
       </p>
 
-      <RelatedTools currentHref="/campfire-safety-checklist" line="camp" />
+      <RelatedTools currentHref="/campfire-safety-checklist" category="camp" />
     </ToolPage>
   );
 }

@@ -208,7 +208,7 @@ export default function CampBatteryEstimator() {
         <p className="text-amber-300 text-sm mt-6">
           This is an estimate. Cold weather, battery age, inverter losses, and high-power devices can reduce real-world runtime.
         </p>
-        <RelatedTools currentHref="/camp-battery-estimator" line="camp" />
+        <RelatedTools currentHref="/camp-battery-estimator" category="camp" />
     </ToolPage>
   );
 }

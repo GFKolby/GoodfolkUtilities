@@ -245,7 +245,7 @@ export default function UnitConverter() {
         and “wait, how many ounces is that?” moments.
       </p>
 
-      <RelatedTools currentHref="/unit-converter" line="office" />
+      <RelatedTools currentHref="/unit-converter" category="office" />
     </ToolPage>
   );
 }

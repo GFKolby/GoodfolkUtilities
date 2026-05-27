@@ -1,175 +1,272 @@
-export type ToolLine = "office" | "camp" | "home";
+export type ToolCategorySlug =
+  | "office"
+  | "camp"
+  | "home"
+  | "finance"
+  | "student"
+  | "developer"
+  | "travel";
 
-export type Tool = {
-  name: string;
-  href: string;
+export type ToolCategory = {
+  slug: ToolCategorySlug;
+  title: string;
   description: string;
-  line: ToolLine;
+  href: string;
+  toolCount: number;
 };
 
-export const officeTools: Tool[] = [
+export type ToolItem = {
+  slug: string;
+  title: string;
+  description: string;
+  href: string;
+  category: ToolCategorySlug;
+};
+
+export const categories: ToolCategory[] = [
   {
-    name: "JSON to Excel Converter",
+    slug: "office",
+    title: "Office Utilities",
+    description:
+      "Free tools for work, data cleanup, documents, and daily operations.",
+    href: "/office",
+    toolCount: 10,
+  },
+  {
+    slug: "camp",
+    title: "Camp Utilities",
+    description:
+      "Free camping tools for packing, water planning, gear weight, and trip prep.",
+    href: "/camp",
+    toolCount: 10,
+  },
+  {
+    slug: "home",
+    title: "Home Utilities",
+    description:
+      "Free home utilities for paint planning, room sizes, electricity costs, moving boxes, and project budgets.",
+    href: "/home",
+    toolCount: 5,
+  },
+];
+
+export const officeTools: ToolItem[] = [
+  {
+    slug: "json-to-excel",
+    title: "JSON to Excel Converter",
     href: "/json-to-excel",
     description: "Convert JSON arrays into downloadable Excel files.",
-    line: "office",
+    category: "office",
   },
   {
-    name: "CSV Cleaner",
+    slug: "csv-cleaner",
+    title: "CSV Cleaner",
     href: "/csv-cleaner",
     description: "Clean headers, trim spaces, and remove duplicate CSV rows.",
-    line: "office",
+    category: "office",
   },
   {
-    name: "Bulk Rename Tool",
+    slug: "bulk-rename-tool",
+    title: "Bulk Rename Tool",
     href: "/bulk-rename-tool",
     description: "Rename multiple files and download renamed copies in a ZIP.",
-    line: "office",
+    category: "office",
   },
   {
-    name: "PDF Splitter",
+    slug: "pdf-splitter",
+    title: "PDF Splitter",
     href: "/pdf-splitter",
-    description: "Split a PDF into individual page files and download them as a ZIP.",
-    line: "office",
+    description:
+      "Split a PDF into individual page files and download them as a ZIP.",
+    category: "office",
   },
   {
-    name: "Text Case Converter",
+    slug: "text-case-converter",
+    title: "Text Case Converter",
     href: "/text-case-converter",
-    description: "Convert text into uppercase, lowercase, title case, snake_case, and more.",
-    line: "office",
+    description:
+      "Convert text into uppercase, lowercase, title case, snake_case, and more.",
+    category: "office",
   },
   {
-    name: "Word & Character Counter",
+    slug: "word-character-counter",
+    title: "Word & Character Counter",
     href: "/word-character-counter",
-    description: "Count words, characters, sentences, paragraphs, and reading time.",
-    line: "office",
+    description:
+      "Count words, characters, sentences, paragraphs, and reading time.",
+    category: "office",
   },
   {
-    name: "Password Generator",
+    slug: "password-generator",
+    title: "Password Generator",
     href: "/password-generator",
     description: "Generate strong random passwords with custom options.",
-    line: "office",
+    category: "office",
   },
   {
-    name: "Markdown Previewer",
+    slug: "markdown-previewer",
+    title: "Markdown Previewer",
     href: "/markdown-previewer",
     description: "Write Markdown and preview the formatted output instantly.",
-    line: "office",
+    category: "office",
   },
   {
-    name: "QR Code Generator",
+    slug: "qr-code-generator",
+    title: "QR Code Generator",
     href: "/qr-code-generator",
     description: "Create a downloadable QR code from a URL or short text.",
-    line: "office",
+    category: "office",
   },
   {
-    name: "Unit Converter",
+    slug: "unit-converter",
+    title: "Unit Converter",
     href: "/unit-converter",
     description: "Convert length, weight, temperature, and volume units.",
-    line: "office",
+    category: "office",
   },
 ];
 
-export const campTools: Tool[] = [
+export const campTools: ToolItem[] = [
   {
-    name: "Camp Water Planner",
+    slug: "camp-water-planner",
+    title: "Camp Water Planner",
     href: "/camp-water-planner",
     description: "Estimate how much water to bring for a camping trip.",
-    line: "camp",
+    category: "camp",
   },
   {
-    name: "Camp Battery Estimator",
+    slug: "camp-battery-estimator",
+    title: "Camp Battery Estimator",
     href: "/camp-battery-estimator",
     description: "Estimate battery needs for phones, lights, fans, and devices.",
-    line: "camp",
+    category: "camp",
   },
   {
-    name: "Camp Pack Weight Planner",
+    slug: "camp-pack-weight-planner",
+    title: "Camp Pack Weight Planner",
     href: "/camp-pack-weight-planner",
     description: "Add gear items and estimate your total pack weight.",
-    line: "camp",
+    category: "camp",
   },
   {
-    name: "Camp Fuel Estimator",
+    slug: "camp-fuel-estimator",
+    title: "Camp Fuel Estimator",
     href: "/camp-fuel-estimator",
-    description: "Estimate stove fuel usage for meals, coffee, and boiling water.",
-    line: "camp",
+    description:
+      "Estimate stove fuel usage for meals, coffee, and boiling water.",
+    category: "camp",
   },
   {
-    name: "Camp Meal Planner",
+    slug: "camp-meal-planner",
+    title: "Camp Meal Planner",
     href: "/camp-meal-planner",
     description: "Estimate meals, snacks, and calories for a camping trip.",
-    line: "camp",
+    category: "camp",
   },
   {
-    name: "Camp Weather Comfort Calculator",
+    slug: "camp-weather-comfort",
+    title: "Camp Weather Comfort Calculator",
     href: "/camp-weather-comfort",
-    description: "Estimate camping comfort based on temperature, rain, wind, and overnight lows.",
-    line: "camp",
+    description:
+      "Estimate camping comfort based on temperature, rain, wind, and overnight lows.",
+    category: "camp",
   },
   {
-    name: "Camp Checklist Generator",
+    slug: "camp-checklist-generator",
+    title: "Camp Checklist Generator",
     href: "/camp-checklist-generator",
-    description: "Generate a camping checklist based on trip style, weather, and activities.",
-    line: "camp",
+    description:
+      "Generate a camping checklist based on trip style, weather, and activities.",
+    category: "camp",
   },
   {
-    name: "Camp Trip Cost Calculator",
+    slug: "camp-trip-cost-calculator",
+    title: "Camp Trip Cost Calculator",
     href: "/camp-trip-cost-calculator",
-    description: "Estimate campsite fees, gas, food, gear, and total trip cost.",
-    line: "camp",
+    description:
+      "Estimate campsite fees, gas, food, gear, and total trip cost.",
+    category: "camp",
   },
   {
-    name: "Campfire Safety Checklist",
+    slug: "campfire-safety-checklist",
+    title: "Campfire Safety Checklist",
     href: "/campfire-safety-checklist",
-    description: "Generate a campfire safety checklist based on conditions and trip plans.",
-    line: "camp",
+    description:
+      "Generate a campfire safety checklist based on conditions and trip plans.",
+    category: "camp",
   },
-  { 
-    name: "Tent Footprint Calculator",
+  {
+    slug: "tent-footprint-calculator",
+    title: "Tent Footprint Calculator",
     href: "/tent-footprint-calculator",
     description: "Calculate a recommended footprint size for your tent floor.",
-    line: "camp",
+    category: "camp",
   },
 ];
 
-export const homeTools: Tool[] = [
+export const homeTools: ToolItem[] = [
   {
-    name: "Paint Calculator",
-    href: "/paint-calculator",
-    description: "Estimate the amount of paint needed for your home project.",
-    line: "home",
+    slug: "paint-calculator",
+    title: "Paint Calculator",
+    description: "Estimate how much paint you need for a room or project.",
+    href: "/home/paint-calculator",
+    category: "home",
   },
   {
-    name: "Room Size Calculator",
-    href: "/room-size-calculator",
-    description: "Calculate the square footage of a room based on dimensions.",
-    line: "home",
+    slug: "room-size-calculator",
+    title: "Room Size Calculator",
+    description: "Calculate room square footage from length and width.",
+    href: "/home/room-size-calculator",
+    category: "home",
   },
   {
-    name: "Electric Cost Calculator",
-    href: "/electric-cost-calculator",
-    description: "Estimate daily, monthly, and yearly electricity costs from watts, usage, and electric rate.",
-    line: "home",
+    slug: "electricity-cost-calculator",
+    title: "Electricity Cost Calculator",
+    description: "Estimate how much an appliance or device costs to run.",
+    href: "/home/electricity-cost-calculator",
+    category: "home",
   },
   {
-    name: "Moving Box Calculator",
-    href: "/moving-box-calculator",
-    description: "Estimate how many moving boxes you need based on rooms, home size, and packing style.",
-    line: "home",
+    slug: "moving-box-estimator",
+    title: "Moving Box Estimator",
+    description: "Estimate how many boxes you may need for a move.",
+    href: "/home/moving-box-estimator",
+    category: "home",
   },
   {
-    name: "Home Project Budget Calculator",
-    href: "/home-project-budget-calculator",
-    description: "Estimate a home project budget with materials, labor, fees, and a contingency buffer.",
-    line: "home",
+    slug: "project-budget-calculator",
+    title: "Project Budget Calculator",
+    description:
+      "Plan a home project budget with materials, labor, and extra cushion.",
+    href: "/home/project-budget-calculator",
+    category: "home",
   },
 ];
 
-export const allTools = [...officeTools, ...campTools, ...homeTools];
+export const allTools: ToolItem[] = [
+  ...officeTools,
+  ...campTools,
+  ...homeTools,
+];
 
-export function getRelatedTools(currentHref: string, line: ToolLine, limit = 3) {
-  const source = line === "office" ? officeTools : line === "camp" ? campTools : homeTools;
+export function getToolsByCategory(category: ToolCategorySlug) {
+  return allTools.filter((tool) => tool.category === category);
+}
 
-  return source.filter((tool) => tool.href !== currentHref).slice(0, limit);
+export function getRelatedTools(
+  currentHref: string,
+  category: ToolCategorySlug,
+  limit = 3
+) {
+  return allTools
+    .filter((tool) => tool.category === category && tool.href !== currentHref)
+    .slice(0, limit);
+}
+
+export function getToolByHref(href: string) {
+  return allTools.find((tool) => tool.href === href);
+}
+
+export function getToolBySlug(slug: string) {
+  return allTools.find((tool) => tool.slug === slug);
 }

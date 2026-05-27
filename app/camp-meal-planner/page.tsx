@@ -164,7 +164,7 @@ export default function CampMealPlanner() {
         This is a planning estimate. Add extra food for long hikes, cold weather,
         delays, or snack goblin emergencies.
       </p>
-      <RelatedTools currentHref="/camp-meal-planner" line="camp" />
+      <RelatedTools currentHref="/camp-meal-planner" category="camp" />
     </ToolPage>
   );
 }

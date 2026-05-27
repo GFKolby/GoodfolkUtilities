@@ -187,7 +187,7 @@ export default function PaintCalculator() {
         color change, primer use, and how aggressively the wall goblins drink paint.
       </p>
 
-      <RelatedTools currentHref="/paint-calculator" line="home" />
+      <RelatedTools currentHref="/paint-calculator" category="home" />
     </ToolPage>
   );
 }

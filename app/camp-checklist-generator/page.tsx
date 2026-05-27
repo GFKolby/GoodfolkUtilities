@@ -236,7 +236,7 @@ export default function CampChecklistGenerator() {
         This is a starter checklist. Add location-specific items like permits,
         bear storage, fire restrictions, or campground reservation details.
       </p>
-      <RelatedTools currentHref="/camp-checklist-generator" line="camp" />
+      <RelatedTools currentHref="/camp-checklist-generator" category="camp" />
     </ToolPage>
   );
 }

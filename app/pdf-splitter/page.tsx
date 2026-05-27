@@ -100,7 +100,7 @@ export default function PdfSplitter() {
         <p className="text-zinc-500 text-sm mt-6">
           Your PDF stays in your browser. Split pages are packaged into a ZIP for download.
         </p>
-        <RelatedTools currentHref="/pdf-splitter" line="office" />
+        <RelatedTools currentHref="/pdf-splitter" category="office" />
      </ToolPage>
   );
 }

@@ -78,7 +78,7 @@ export default function MarkdownPreviewer() {
       <p className="mt-6 text-sm text-zinc-500">
         Supports basic headings, bold, italic, links, and simple list items.
       </p>
-      <RelatedTools currentHref="/markdown-previewer" line="office" />
+      <RelatedTools currentHref="/markdown-previewer" category="office" />
     </ToolPage>
   );
 }

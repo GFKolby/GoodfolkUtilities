@@ -248,7 +248,7 @@ export default function CampTripCostCalculator() {
         This is a planning estimate. Add a buffer for firewood, snacks, forgotten
         supplies, and the classic “I need one more camp gadget” situation.
       </p>
-      <RelatedTools currentHref="/camp-trip-cost-calculator" line="camp" />
+      <RelatedTools currentHref="/camp-trip-cost-calculator" category="camp" />
     </ToolPage>
   );
 }

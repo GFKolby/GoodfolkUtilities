@@ -147,7 +147,7 @@ export default function TextCaseConverter() {
       <p className="mt-6 text-sm text-zinc-500">
         Useful for filenames, spreadsheet headers, code variables, titles, and cleaning up pasted text.
       </p>
-      <RelatedTools currentHref="/text-case-converter" line="office" />
+      <RelatedTools currentHref="/text-case-converter" category="office" />
     </ToolPage>
   );
 }

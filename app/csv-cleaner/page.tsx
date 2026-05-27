@@ -131,7 +131,7 @@ export default function CsvCleaner() {
         <p className="text-zinc-500 text-sm mt-6">
           Preview shows the first 10 rows only. Your full cleaned CSV will be included in the download.
         </p>
-        <RelatedTools currentHref="/csv-cleaner" line="office" />
+        <RelatedTools currentHref="/csv-cleaner" category="office" />
     </ToolPage>
   );
 }
