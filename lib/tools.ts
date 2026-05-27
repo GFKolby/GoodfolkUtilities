@@ -113,6 +113,12 @@ export const campTools: Tool[] = [
     description: "Estimate campsite fees, gas, food, gear, and total trip cost.",
     line: "camp",
   },
+  {
+    name: "Campfire Safety Checklist",
+    href: "/campfire-safety-checklist",
+    description: "Generate a campfire safety checklist based on conditions and trip plans.",
+    line: "camp",
+},
 ];
 
 export const allTools = [...officeTools, ...campTools];
