@@ -125,6 +125,12 @@ export const campTools: Tool[] = [
     description: "Generate a campfire safety checklist based on conditions and trip plans.",
     line: "camp",
 },
+{
+  name: "Tent Footprint Calculator",
+  href: "/tent-footprint-calculator",
+  description: "Calculate a recommended footprint size for your tent floor.",
+  line: "camp",
+},
 ];
 
 export const allTools = [...officeTools, ...campTools];
