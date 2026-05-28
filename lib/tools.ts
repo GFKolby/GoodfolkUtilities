@@ -62,7 +62,7 @@ export const categories: ToolCategory[] = [
   description:
     "Free student tools for grades, GPA, study planning, assignments, writing, and semester workload.",
   href: "/student",
-  toolCount: 8,
+  toolCount: 9,
 },
 ];
 
@@ -445,6 +445,14 @@ export const studentTools: ToolItem[] = [
   description:
     "Estimate how long a reading assignment will take based on word count, pages, and reading speed.",
   href: "/reading-time-calculator",
+  category: "student",
+  },
+  {
+  slug: "flashcard-formatter",
+  title: "Flashcard Formatter",
+  description:
+    "Turn notes into simple question-and-answer flashcards for studying.",
+  href: "/flashcard-formatter",
   category: "student",
   },
 ];
