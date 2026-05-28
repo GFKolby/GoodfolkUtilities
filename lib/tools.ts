@@ -79,7 +79,7 @@ export const categories: ToolCategory[] = [
   description:
     "Free developer tools for JSON, URLs, Base64, timestamps, IDs, regex, JWTs, HTML entities, and API cleanup.",
   href: "/developer",
-  toolCount: 5,
+  toolCount: 6,
   },  
 ];
 
@@ -604,6 +604,14 @@ export const developerTools: ToolItem[] = [
   description:
     "Convert Unix timestamps to readable dates and convert dates back to Unix time.",
   href: "/timestamp-converter",
+  category: "developer",
+  },
+  {
+  slug: "html-entity-encoder-decoder",
+  title: "HTML Entity Encoder / Decoder",
+  description:
+    "Encode HTML special characters into entities and decode entities back to readable text.",
+  href: "/html-entity-encoder-decoder",
   category: "developer",
   },
 ];
