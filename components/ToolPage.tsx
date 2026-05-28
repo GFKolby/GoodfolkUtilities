@@ -7,6 +7,7 @@ type ToolPageProps = {
   | "Goodfolk Home Utilities"
   | "Goodfolk Finance Utilities"
   | "Goodfolk Student Utilities"
+  | "Goodfolk Design Utilities"
   | "Goodfolk Developer Utilities";
   title: string;
   description: string;

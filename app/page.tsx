@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { officeTools, campTools, homeTools, financeTools, studentTools, developerTools} from "@/lib/tools";
+import { officeTools, campTools, homeTools, financeTools, studentTools,designTools, developerTools } from "@/lib/tools";
 import type { ToolItem } from "@/lib/tools";
 
 function ToolSection({
@@ -177,6 +177,18 @@ export default function Home() {
   </p>
 </Link>
 <Link
+  href="/design"
+  className="rounded-2xl border border-slate-800 bg-slate-900 p-6 transition hover:border-amber-300/60 hover:bg-slate-800"
+>
+  <p className="text-sm font-semibold text-amber-300">
+    Design Utilities
+  </p>
+  <h2 className="mt-2 text-2xl font-bold">Browse design tools</h2>
+  <p className="mt-2 text-zinc-400">
+    Colors, contrast, gradients, shadows, spacing, typography, and layout helpers.
+  </p>
+</Link>
+<Link
   href="/developer"
   className="rounded-2xl border border-slate-800 bg-slate-900 p-6 transition hover:border-amber-300/60 hover:bg-slate-800"
 >
@@ -222,6 +234,13 @@ export default function Home() {
           title="Plan schoolwork without academic chaos goblins."
           description="Simple tools for grades, GPA, study planning, assignments, writing, and semester workload."
           tools={studentTools}
+        />
+
+        <ToolSection
+          eyebrow="Design Utilities"
+          title="Useful UI helpers for color, spacing, and visual polish."
+          description="Quick tools for colors, contrast, gradients, shadows, spacing, typography, and layout decisions."
+          tools={designTools}
         />
 
         <ToolSection

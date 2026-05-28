@@ -4,6 +4,7 @@ export type ToolCategorySlug =
   | "home"
   | "finance"
   | "student"
+  | "design"
   | "developer"
   | "travel";
 
@@ -63,6 +64,14 @@ export const categories: ToolCategory[] = [
     "Free student tools for grades, GPA, study planning, assignments, writing, and semester workload.",
   href: "/student",
   toolCount: 10,
+  },
+  {
+  slug: "design",
+  title: "Design Utilities",
+  description:
+    "Free design tools for colors, contrast, gradients, shadows, spacing, typography, and UI layout.",
+  href: "/design",
+  toolCount: 0,
   },
   {
   slug: "developer",
@@ -473,6 +482,8 @@ export const studentTools: ToolItem[] = [
 },
 ];
 
+export const designTools: ToolItem[] = [];
+
 export const developerTools: ToolItem[] = [];
 
 export const allTools: ToolItem[] = [
@@ -481,6 +492,7 @@ export const allTools: ToolItem[] = [
   ...homeTools,
   ...financeTools,
   ...studentTools,
+  ...designTools,
   ...developerTools,
 ];
 
