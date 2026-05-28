@@ -71,7 +71,7 @@ export const categories: ToolCategory[] = [
   description:
     "Free design tools for colors, contrast, gradients, shadows, spacing, typography, and UI layout.",
   href: "/design",
-  toolCount: 0,
+  toolCount: 1,
   },
   {
   slug: "developer",
@@ -482,7 +482,16 @@ export const studentTools: ToolItem[] = [
 },
 ];
 
-export const designTools: ToolItem[] = [];
+export const designTools: ToolItem[] = [
+  {
+    slug: "hex-color-converter",
+    title: "HEX Color Converter",
+    description:
+      "Convert HEX colors to RGB and HSL, preview the color, and copy CSS-friendly values.",
+    href: "/hex-color-converter",
+    category: "design",
+  },
+];
 
 export const developerTools: ToolItem[] = [];
 
