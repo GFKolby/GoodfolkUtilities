@@ -79,7 +79,7 @@ export const categories: ToolCategory[] = [
   description:
     "Free developer tools for JSON, URLs, Base64, timestamps, IDs, regex, JWTs, HTML entities, and API cleanup.",
   href: "/developer",
-  toolCount: 3,
+  toolCount: 4,
   },  
 ];
 
@@ -589,7 +589,15 @@ export const developerTools: ToolItem[] = [
     "Encode plain text to Base64 and decode Base64 back to readable text.",
   href: "/base64-encoder-decoder",
   category: "developer",
-},
+  },
+  {
+  slug: "uuid-generator",
+  title: "UUID Generator",
+  description:
+    "Generate one or more random UUIDs and copy them for testing, mock data, or development work.",
+  href: "/uuid-generator",
+  category: "developer",
+  },
 ];
 
 export const allTools: ToolItem[] = [
