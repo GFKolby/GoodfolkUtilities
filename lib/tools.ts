@@ -62,7 +62,7 @@ export const categories: ToolCategory[] = [
   description:
     "Free student tools for grades, GPA, study planning, assignments, writing, and semester workload.",
   href: "/student",
-  toolCount: 6,
+  toolCount: 7,
 },
 ];
 
@@ -423,6 +423,22 @@ export const studentTools: ToolItem[] = [
   href: "/study-timer",
   category: "student",
   },
+  {
+  slug: "essay-word-counter",
+  title: "Essay Word Counter",
+  description:
+    "Count words, characters, sentences, paragraphs, reading time, and progress toward an essay word target.",
+  href: "/essay-word-counter",
+  category: "student",
+  },
+  {
+  slug: "citation-helper",
+  title: "Citation Helper",
+  description:
+    "Format simple MLA and APA-style citations for websites, books, articles, and videos.",
+  href: "/citation-helper",
+  category: "student",
+},
 ];
 
 export const allTools: ToolItem[] = [
