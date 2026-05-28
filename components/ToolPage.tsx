@@ -8,7 +8,6 @@ type ToolPageProps = {
   | "Goodfolk Finance Utilities"
   | "Goodfolk Student Utilities"
   | "Goodfolk Design Utilities"
-  | "Goodfolk Developer Utilities";
   title: string;
   description: string;
   children: React.ReactNode;
@@ -48,10 +47,10 @@ export default function ToolPage({
   </a>
   . Built for good folks.
   <Link href="/privacy" className="text-zinc-400 hover:text-amber-300">
-  | Privacy 
+  | Privacy |  
 </Link>
 <Link href="/about" className="text-zinc-400 hover:text-amber-300">
-  | About
+  About
 </Link>
 </footer>
       </div>

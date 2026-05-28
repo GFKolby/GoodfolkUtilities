@@ -71,15 +71,7 @@ export const categories: ToolCategory[] = [
   description:
     "Free design tools for colors, contrast, gradients, shadows, spacing, typography, and UI layout.",
   href: "/design",
-  toolCount: 4,
-  },
-  {
-  slug: "developer",
-  title: "Developer Utilities",
-  description:
-    "Free developer tools for colors, JSON, encoding, timestamps, IDs, CSS, regex, and everyday coding tasks.",
-  href: "/developer",
-  toolCount: 0,
+  toolCount: 5,
   },
 ];
 
@@ -515,9 +507,15 @@ export const designTools: ToolItem[] = [
   href: "/css-gradient-generator",
   category: "design",
   },
+  {
+  slug: "box-shadow-generator",
+  title: "Box Shadow Generator",
+  description:
+    "Create CSS box shadows, preview them, and copy ready-to-use shadow styles.",
+  href: "/box-shadow-generator",
+  category: "design",
+  },
 ];
-
-export const developerTools: ToolItem[] = [];
 
 export const allTools: ToolItem[] = [
   ...officeTools,
@@ -526,7 +524,6 @@ export const allTools: ToolItem[] = [
   ...financeTools,
   ...studentTools,
   ...designTools,
-  ...developerTools,
 ];
 
 export function getToolsByCategory(category: ToolCategorySlug) {
