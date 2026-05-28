@@ -71,7 +71,7 @@ export const categories: ToolCategory[] = [
   description:
     "Free design tools for colors, contrast, gradients, shadows, spacing, typography, and UI layout.",
   href: "/design",
-  toolCount: 5,
+  toolCount: 6,
   },
 ];
 
@@ -513,6 +513,14 @@ export const designTools: ToolItem[] = [
   description:
     "Create CSS box shadows, preview them, and copy ready-to-use shadow styles.",
   href: "/box-shadow-generator",
+  category: "design",
+  },
+  {
+  slug: "border-radius-previewer",
+  title: "Border Radius Previewer",
+  description:
+    "Preview CSS border radius values on cards and buttons, then copy ready-to-use CSS.",
+  href: "/border-radius-previewer",
   category: "design",
   },
 ];
