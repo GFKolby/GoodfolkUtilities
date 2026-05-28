@@ -5,7 +5,8 @@ type ToolPageProps = {
   "Goodfolk Office Utilities"
   | "Goodfolk Camp Utilities"
   | "Goodfolk Home Utilities"
-  | "Goodfolk Finance Utilities";
+  | "Goodfolk Finance Utilities"
+  | "Goodfolk Student Utilities";
   title: string;
   description: string;
   children: React.ReactNode;

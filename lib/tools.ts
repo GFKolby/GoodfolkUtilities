@@ -56,6 +56,14 @@ export const categories: ToolCategory[] = [
     href: "/finance",
     toolCount: 10,
   },
+  {
+  slug: "student",
+  title: "Student Utilities",
+  description:
+    "Free student tools for grades, GPA, study planning, assignments, writing, and semester workload.",
+  href: "/student",
+  toolCount: 0,
+},
 ];
 
 export const officeTools: ToolItem[] = [
@@ -289,7 +297,6 @@ export const homeTools: ToolItem[] = [
   href: "/home-project-timeline-estimator",
   category: "home",
 },
-
 ];
 
 export const financeTools: ToolItem[] = [
@@ -342,44 +349,47 @@ export const financeTools: ToolItem[] = [
   category: "finance",
   },
   {
-  slug: "hourly-to-salary-calculator",
-  title: "Hourly to Salary Calculator",
-  description:
-    "Convert hourly pay to weekly, monthly, and yearly income estimates.",
-  href: "/hourly-to-salary-calculator",
-  category: "finance",
-},
-{
-  slug: "emergency-fund-calculator",
-  title: "Emergency Fund Calculator",
-  description:
-    "Estimate how much emergency savings you may need based on monthly expenses and target months of coverage.",
-  href: "/emergency-fund-calculator",
-  category: "finance",
-},
-{
-  slug: "net-worth-calculator",
-  title: "Net Worth Calculator",
-  description:
-    "Estimate your net worth by comparing total assets against total debts and liabilities.",
-  href: "/net-worth-calculator",
-  category: "finance",
-},
-{
-  slug: "paycheck-estimator",
-  title: "Paycheck Estimator",
-  description:
-    "Estimate take-home pay after taxes, retirement contributions, benefits, and other deductions.",
-  href: "/paycheck-estimator",
-  category: "finance",
-},
+    slug: "hourly-to-salary-calculator",
+    title: "Hourly to Salary Calculator",
+    description:
+      "Convert hourly pay to weekly, monthly, and yearly income estimates.",
+    href: "/hourly-to-salary-calculator",
+    category: "finance",
+  },
+  {
+    slug: "emergency-fund-calculator",
+    title: "Emergency Fund Calculator",
+    description:
+      "Estimate how much emergency savings you may need based on monthly expenses and target months of coverage.",
+    href: "/emergency-fund-calculator",
+    category: "finance",
+  },
+  {
+    slug: "net-worth-calculator",
+    title: "Net Worth Calculator",
+    description:
+      "Estimate your net worth by comparing total assets against total debts and liabilities.",
+    href: "/net-worth-calculator",
+    category: "finance",
+  },
+  {
+    slug: "paycheck-estimator",
+    title: "Paycheck Estimator",
+    description:
+      "Estimate take-home pay after taxes, retirement contributions, benefits, and other deductions.",
+    href: "/paycheck-estimator",
+    category: "finance",
+  },
 ];
+
+export const studentTools: ToolItem[] = [];
 
 export const allTools: ToolItem[] = [
   ...officeTools,
   ...campTools,
   ...homeTools,
-  ...financeTools
+  ...financeTools,
+  ...studentTools,
 ];
 
 export function getToolsByCategory(category: ToolCategorySlug) {

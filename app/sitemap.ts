@@ -4,7 +4,7 @@ import { allTools } from "@/lib/tools";
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://tools.goodfolkdigital.com";
 
-  const staticRoutes = ["", "/office", "/camp", "/home", "/finance", "/support", "/privacy", "/about"];
+  const staticRoutes = ["", "/office", "/camp", "/home", "/finance", "/student", "/support", "/privacy", "/about"];
 
   return [
     ...staticRoutes.map((route) => ({
