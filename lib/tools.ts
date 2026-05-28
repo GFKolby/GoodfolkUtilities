@@ -71,7 +71,7 @@ export const categories: ToolCategory[] = [
   description:
     "Free design tools for colors, contrast, gradients, shadows, spacing, typography, and UI layout.",
   href: "/design",
-  toolCount: 3,
+  toolCount: 4,
   },
   {
   slug: "developer",
@@ -505,6 +505,14 @@ export const designTools: ToolItem[] = [
   description:
     "Generate color palettes from a base color, lock favorite colors, and copy HEX values or CSS variables.",
   href: "/color-palette-generator",
+  category: "design",
+  },
+  {
+  slug: "css-gradient-generator",
+  title: "CSS Gradient Generator",
+  description:
+    "Create linear CSS gradients, preview them, and copy ready-to-use CSS.",
+  href: "/css-gradient-generator",
   category: "design",
   },
 ];
