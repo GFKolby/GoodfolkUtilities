@@ -87,7 +87,7 @@ export const categories: ToolCategory[] = [
   description:
     "Free travel tools for trip budgets, packing, hotels, gas, layovers, attractions, and travel planning.",
   href: "/travel",
-  toolCount: 2,
+  toolCount: 3,
   },
 ];
 
@@ -671,6 +671,14 @@ export const travelTools: ToolItem[] = [
   description:
     "Estimate road trip fuel cost from distance, MPG, gas price, and one-way or round-trip travel.",
   href: "/road-trip-gas-calculator",
+  category: "travel",
+  },
+  {
+  slug: "hotel-cost-splitter",
+  title: "Hotel Cost Splitter",
+  description:
+    "Split hotel or Airbnb costs across people and nights, including taxes, fees, and uneven shares.",
+  href: "/hotel-cost-splitter",
   category: "travel",
   },
 ];
