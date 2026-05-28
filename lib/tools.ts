@@ -81,6 +81,14 @@ export const categories: ToolCategory[] = [
   href: "/developer",
   toolCount: 10,
   },  
+  {
+  slug: "travel",
+  title: "Travel Utilities",
+  description:
+    "Free travel tools for trip budgets, packing, hotels, gas, layovers, attractions, and travel planning.",
+  href: "/travel",
+  toolCount: 0,
+  },
 ];
 
 export const officeTools: ToolItem[] = [
@@ -648,6 +656,8 @@ export const developerTools: ToolItem[] = [
   },
 ];
 
+export const travelTools: ToolItem[] = [];
+
 export const allTools: ToolItem[] = [
   ...officeTools,
   ...campTools,
@@ -656,6 +666,7 @@ export const allTools: ToolItem[] = [
   ...studentTools,
   ...designTools,
   ...developerTools,
+  ...travelTools,
 ];
 
 export function getToolsByCategory(category: ToolCategorySlug) {
