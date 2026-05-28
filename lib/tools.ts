@@ -71,7 +71,7 @@ export const categories: ToolCategory[] = [
   description:
     "Free design tools for colors, contrast, gradients, shadows, spacing, typography, and UI layout.",
   href: "/design",
-  toolCount: 9,
+  toolCount: 10,
   },
 ];
 
@@ -545,6 +545,14 @@ export const designTools: ToolItem[] = [
   description:
     "Generate a type scale from a base font size and ratio, with pixel and rem values.",
   href: "/typography-scale-calculator",
+  category: "design",
+  },
+  {
+  slug: "image-aspect-ratio-calculator",
+  title: "Image Aspect Ratio Calculator",
+  description:
+    "Calculate missing image dimensions, aspect ratios, and scaled sizes for UI layouts and media.",
+  href: "/image-aspect-ratio-calculator",
   category: "design",
   },
 ];
