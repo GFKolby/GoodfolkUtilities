@@ -62,7 +62,7 @@ export const categories: ToolCategory[] = [
   description:
     "Free student tools for grades, GPA, study planning, assignments, writing, and semester workload.",
   href: "/student",
-  toolCount: 4,
+  toolCount: 5,
 },
 ];
 
@@ -406,15 +406,23 @@ export const studentTools: ToolItem[] = [
     "Break an assignment into daily work sessions based on due date, estimated hours, and available study days.",
   href: "/assignment-planner",
   category: "student",
-},
-{
+  },
+  {
   slug: "semester-workload-calculator",
   title: "Semester Workload Calculator",
   description:
     "Estimate weekly school workload based on credit hours, study time, assignments, and outside commitments.",
   href: "/semester-workload-calculator",
   category: "student",
-},
+  },
+  {
+  slug: "study-timer",
+  title: "Study Timer",
+  description:
+    "Plan focused study sessions with breaks using a simple Pomodoro-style timer setup.",
+  href: "/study-timer",
+  category: "student",
+  },
 ];
 
 export const allTools: ToolItem[] = [
