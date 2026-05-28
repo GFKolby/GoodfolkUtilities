@@ -62,7 +62,7 @@ export const categories: ToolCategory[] = [
   description:
     "Free student tools for grades, GPA, study planning, assignments, writing, and semester workload.",
   href: "/student",
-  toolCount: 7,
+  toolCount: 8,
 },
 ];
 
@@ -438,7 +438,15 @@ export const studentTools: ToolItem[] = [
     "Format simple MLA and APA-style citations for websites, books, articles, and videos.",
   href: "/citation-helper",
   category: "student",
-},
+  },
+  {
+  slug: "reading-time-calculator",
+  title: "Reading Time Calculator",
+  description:
+    "Estimate how long a reading assignment will take based on word count, pages, and reading speed.",
+  href: "/reading-time-calculator",
+  category: "student",
+  },
 ];
 
 export const allTools: ToolItem[] = [
