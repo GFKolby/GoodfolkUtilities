@@ -87,7 +87,7 @@ export const categories: ToolCategory[] = [
   description:
     "Free travel tools for trip budgets, packing, hotels, gas, layovers, attractions, and travel planning.",
   href: "/travel",
-  toolCount: 0,
+  toolCount: 1,
   },
 ];
 
@@ -656,7 +656,16 @@ export const developerTools: ToolItem[] = [
   },
 ];
 
-export const travelTools: ToolItem[] = [];
+export const travelTools: ToolItem[] = [
+  {
+    slug: "trip-budget-calculator",
+    title: "Trip Budget Calculator",
+    description:
+      "Estimate total trip cost from transportation, lodging, food, activities, shopping, and buffer.",
+    href: "/trip-budget-calculator",
+    category: "travel",
+  },
+];
 
 export const allTools: ToolItem[] = [
   ...officeTools,
