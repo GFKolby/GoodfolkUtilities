@@ -87,7 +87,7 @@ export const categories: ToolCategory[] = [
   description:
     "Free travel tools for trip budgets, packing, hotels, gas, layovers, attractions, and travel planning.",
   href: "/travel",
-  toolCount: 5,
+  toolCount: 6,
   },
 ];
 
@@ -695,6 +695,14 @@ export const travelTools: ToolItem[] = [
   description:
     "Estimate whether a flight layover gives enough time for customs, bags, terminal changes, and airport size.",
   href: "/flight-layover-calculator",
+  category: "travel",
+  },
+  {
+  slug: "attraction-time-planner",
+  title: "Attraction Time Planner",
+  description:
+    "Estimate how many attractions fit into a travel day using visit time, transit time, meals, and buffer.",
+  href: "/attraction-time-planner",
   category: "travel",
   },
 ];
