@@ -71,7 +71,7 @@ export const categories: ToolCategory[] = [
   description:
     "Free design tools for colors, contrast, gradients, shadows, spacing, typography, and UI layout.",
   href: "/design",
-  toolCount: 6,
+  toolCount: 7,
   },
 ];
 
@@ -521,6 +521,14 @@ export const designTools: ToolItem[] = [
   description:
     "Preview CSS border radius values on cards and buttons, then copy ready-to-use CSS.",
   href: "/border-radius-previewer",
+  category: "design",
+  },
+  {
+  slug: "spacing-scale-generator",
+  title: "Spacing Scale Generator",
+  description:
+    "Generate consistent spacing scales in pixels and rems for UI layouts and design systems.",
+  href: "/spacing-scale-generator",
   category: "design",
   },
 ];
