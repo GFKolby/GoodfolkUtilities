@@ -79,7 +79,7 @@ export const categories: ToolCategory[] = [
   description:
     "Free developer tools for JSON, URLs, Base64, timestamps, IDs, regex, JWTs, HTML entities, and API cleanup.",
   href: "/developer",
-  toolCount: 6,
+  toolCount: 7,
   },  
 ];
 
@@ -614,6 +614,14 @@ export const developerTools: ToolItem[] = [
   href: "/html-entity-encoder-decoder",
   category: "developer",
   },
+  {
+  slug: "regex-tester",
+  title: "Regex Tester",
+  description:
+    "Test regular expressions against sample text and review matches, groups, and flags.",
+  href: "/regex-tester",
+  category: "developer",
+},
 ];
 
 export const allTools: ToolItem[] = [
