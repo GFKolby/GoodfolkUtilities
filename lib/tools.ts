@@ -87,7 +87,7 @@ export const categories: ToolCategory[] = [
   description:
     "Free travel tools for trip budgets, packing, hotels, gas, layovers, attractions, and travel planning.",
   href: "/travel",
-  toolCount: 9,
+  toolCount: 10,
   },
 ];
 
@@ -729,6 +729,14 @@ export const travelTools: ToolItem[] = [
   href: "/travel-time-zone-planner",
   category: "travel",
   },
+  {
+  slug: "travel-insurance-checklist",
+  title: "Travel Insurance Checklist",
+  description:
+    "Create a travel insurance comparison checklist based on trip type, destination, transportation, and coverage concerns.",
+  href: "/travel-insurance-checklist",
+  category: "travel",
+},
 ];
 
 export const allTools: ToolItem[] = [
