@@ -79,7 +79,7 @@ export const categories: ToolCategory[] = [
   description:
     "Free developer tools for JSON, URLs, Base64, timestamps, IDs, regex, JWTs, HTML entities, and API cleanup.",
   href: "/developer",
-  toolCount: 9,
+  toolCount: 10,
   },  
 ];
 
@@ -636,6 +636,14 @@ export const developerTools: ToolItem[] = [
   description:
     "Format API response JSON, inspect status details, and copy clean output for debugging.",
   href: "/api-response-formatter",
+  category: "developer",
+  },
+  {
+  slug: "css-unit-converter",
+  title: "CSS Unit Converter",
+  description:
+    "Convert common CSS units like px, rem, em, vw, and vh for front-end development.",
+  href: "/css-unit-converter",
   category: "developer",
   },
 ];
