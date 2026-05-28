@@ -63,7 +63,15 @@ export const categories: ToolCategory[] = [
     "Free student tools for grades, GPA, study planning, assignments, writing, and semester workload.",
   href: "/student",
   toolCount: 10,
-},
+  },
+  {
+  slug: "developer",
+  title: "Developer Utilities",
+  description:
+    "Free developer tools for colors, JSON, encoding, timestamps, IDs, CSS, regex, and everyday coding tasks.",
+  href: "/developer",
+  toolCount: 0,
+  },
 ];
 
 export const officeTools: ToolItem[] = [
@@ -465,12 +473,15 @@ export const studentTools: ToolItem[] = [
 },
 ];
 
+export const developerTools: ToolItem[] = [];
+
 export const allTools: ToolItem[] = [
   ...officeTools,
   ...campTools,
   ...homeTools,
   ...financeTools,
   ...studentTools,
+  ...developerTools,
 ];
 
 export function getToolsByCategory(category: ToolCategorySlug) {

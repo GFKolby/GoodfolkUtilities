@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { officeTools, campTools, homeTools, financeTools, studentTools } from "@/lib/tools";
+import { officeTools, campTools, homeTools, financeTools, studentTools, developerTools} from "@/lib/tools";
 import type { ToolItem } from "@/lib/tools";
 
 function ToolSection({
@@ -176,6 +176,18 @@ export default function Home() {
     Grades, GPA, study planning, assignments, writing, and semester workload.
   </p>
 </Link>
+<Link
+  href="/developer"
+  className="rounded-2xl border border-slate-800 bg-slate-900 p-6 transition hover:border-amber-300/60 hover:bg-slate-800"
+>
+  <p className="text-sm font-semibold text-amber-300">
+    Developer Utilities
+  </p>
+  <h2 className="mt-2 text-2xl font-bold">Browse developer tools</h2>
+  <p className="mt-2 text-zinc-400">
+    Colors, JSON, encoding, timestamps, IDs, CSS, regex, and coding helpers.
+  </p>
+</Link>
 </div>
         <ToolSection
           eyebrow="Office Utilities"
@@ -210,6 +222,13 @@ export default function Home() {
           title="Plan schoolwork without academic chaos goblins."
           description="Simple tools for grades, GPA, study planning, assignments, writing, and semester workload."
           tools={studentTools}
+        />
+
+        <ToolSection
+          eyebrow="Developer Utilities"
+          title="Tiny tools for everyday coding tasks."
+          description="Quick browser-based utilities for colors, JSON, encoders, timestamps, IDs, CSS, regex, and developer cleanup work."
+          tools={developerTools}
         />
 
         <footer className="mt-16 border-t border-slate-800 pt-8 text-sm text-zinc-500">
