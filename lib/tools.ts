@@ -73,6 +73,14 @@ export const categories: ToolCategory[] = [
   href: "/design",
   toolCount: 10,
   },
+  {
+  slug: "developer",
+  title: "Developer Utilities",
+  description:
+    "Free developer tools for JSON, URLs, Base64, timestamps, IDs, regex, JWTs, HTML entities, and API cleanup.",
+  href: "/developer",
+  toolCount: 0,
+  },  
 ];
 
 export const officeTools: ToolItem[] = [
@@ -557,6 +565,8 @@ export const designTools: ToolItem[] = [
   },
 ];
 
+export const developerTools: ToolItem[] = [];
+
 export const allTools: ToolItem[] = [
   ...officeTools,
   ...campTools,
@@ -564,6 +574,7 @@ export const allTools: ToolItem[] = [
   ...financeTools,
   ...studentTools,
   ...designTools,
+  ...developerTools,
 ];
 
 export function getToolsByCategory(category: ToolCategorySlug) {

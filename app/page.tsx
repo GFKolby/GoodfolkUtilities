@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { officeTools, campTools, homeTools, financeTools, studentTools,designTools } from "@/lib/tools";
+import { officeTools, campTools, homeTools, financeTools, studentTools,designTools, developerTools } from "@/lib/tools";
 import type { ToolItem } from "@/lib/tools";
 
 function ToolSection({
@@ -188,7 +188,7 @@ export default function Home() {
     Colors, contrast, gradients, shadows, spacing, typography, and layout helpers.
   </p>
 </Link>
-{/* <Link
+<Link
   href="/developer"
   className="rounded-2xl border border-slate-800 bg-slate-900 p-6 transition hover:border-amber-300/60 hover:bg-slate-800"
 >
@@ -199,7 +199,7 @@ export default function Home() {
   <p className="mt-2 text-zinc-400">
     Colors, JSON, encoding, timestamps, IDs, CSS, regex, and coding helpers.
   </p>
-</Link>*/}
+</Link>
 </div>
         <ToolSection
           eyebrow="Office Utilities"
@@ -243,12 +243,12 @@ export default function Home() {
           tools={designTools}
         />
 
-       {/*  <ToolSection
+       <ToolSection
           eyebrow="Developer Utilities"
           title="Tiny tools for everyday coding tasks."
           description="Quick browser-based utilities for colors, JSON, encoders, timestamps, IDs, CSS, regex, and developer cleanup work."
           tools={developerTools}
-        /> */}
+        />
 
         <footer className="mt-16 border-t border-slate-800 pt-8 text-sm text-zinc-500">
           © {new Date().getFullYear()}{" "}
