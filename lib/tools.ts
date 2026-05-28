@@ -62,7 +62,7 @@ export const categories: ToolCategory[] = [
   description:
     "Free student tools for grades, GPA, study planning, assignments, writing, and semester workload.",
   href: "/student",
-  toolCount: 0,
+  toolCount: 1,
 },
 ];
 
@@ -382,7 +382,16 @@ export const financeTools: ToolItem[] = [
   },
 ];
 
-export const studentTools: ToolItem[] = [];
+export const studentTools: ToolItem[] = [
+  {
+    slug: "gpa-calculator",
+    title: "GPA Calculator",
+    description:
+      "Calculate GPA from course grades and credit hours.",
+    href: "/gpa-calculator",
+    category: "student",
+  },
+];
 
 export const allTools: ToolItem[] = [
   ...officeTools,
