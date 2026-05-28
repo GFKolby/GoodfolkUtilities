@@ -87,7 +87,7 @@ export const categories: ToolCategory[] = [
   description:
     "Free travel tools for trip budgets, packing, hotels, gas, layovers, attractions, and travel planning.",
   href: "/travel",
-  toolCount: 1,
+  toolCount: 2,
   },
 ];
 
@@ -664,6 +664,14 @@ export const travelTools: ToolItem[] = [
       "Estimate total trip cost from transportation, lodging, food, activities, shopping, and buffer.",
     href: "/trip-budget-calculator",
     category: "travel",
+  },
+  {
+  slug: "road-trip-gas-calculator",
+  title: "Road Trip Gas Calculator",
+  description:
+    "Estimate road trip fuel cost from distance, MPG, gas price, and one-way or round-trip travel.",
+  href: "/road-trip-gas-calculator",
+  category: "travel",
   },
 ];
 
