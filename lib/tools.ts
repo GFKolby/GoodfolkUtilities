@@ -79,7 +79,7 @@ export const categories: ToolCategory[] = [
   description:
     "Free developer tools for JSON, URLs, Base64, timestamps, IDs, regex, JWTs, HTML entities, and API cleanup.",
   href: "/developer",
-  toolCount: 4,
+  toolCount: 5,
   },  
 ];
 
@@ -596,6 +596,14 @@ export const developerTools: ToolItem[] = [
   description:
     "Generate one or more random UUIDs and copy them for testing, mock data, or development work.",
   href: "/uuid-generator",
+  category: "developer",
+  },
+  {
+  slug: "timestamp-converter",
+  title: "Timestamp Converter",
+  description:
+    "Convert Unix timestamps to readable dates and convert dates back to Unix time.",
+  href: "/timestamp-converter",
   category: "developer",
   },
 ];
