@@ -62,7 +62,7 @@ export const categories: ToolCategory[] = [
   description:
     "Free student tools for grades, GPA, study planning, assignments, writing, and semester workload.",
   href: "/student",
-  toolCount: 5,
+  toolCount: 6,
 },
 ];
 
