@@ -62,7 +62,7 @@ export const categories: ToolCategory[] = [
   description:
     "Free student tools for grades, GPA, study planning, assignments, writing, and semester workload.",
   href: "/student",
-  toolCount: 2,
+  toolCount: 3,
 },
 ];
 
@@ -399,6 +399,14 @@ export const studentTools: ToolItem[] = [
   href: "/grade-needed-calculator",
   category: "student",
   },
+  {
+  slug: "assignment-planner",
+  title: "Assignment Planner",
+  description:
+    "Break an assignment into daily work sessions based on due date, estimated hours, and available study days.",
+  href: "/assignment-planner",
+  category: "student",
+},
 ];
 
 export const allTools: ToolItem[] = [
