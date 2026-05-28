@@ -71,7 +71,7 @@ export const categories: ToolCategory[] = [
   description:
     "Free design tools for colors, contrast, gradients, shadows, spacing, typography, and UI layout.",
   href: "/design",
-  toolCount: 2,
+  toolCount: 3,
   },
   {
   slug: "developer",
@@ -497,6 +497,14 @@ export const designTools: ToolItem[] = [
   description:
     "Check contrast between text and background colors and see basic WCAG-style pass/fail guidance.",
   href: "/color-contrast-checker",
+  category: "design",
+  },
+  {
+  slug: "color-palette-generator",
+  title: "Color Palette Generator",
+  description:
+    "Generate color palettes from a base color, lock favorite colors, and copy HEX values or CSS variables.",
+  href: "/color-palette-generator",
   category: "design",
   },
 ];
