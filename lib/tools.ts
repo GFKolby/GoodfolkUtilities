@@ -79,7 +79,7 @@ export const categories: ToolCategory[] = [
   description:
     "Free developer tools for JSON, URLs, Base64, timestamps, IDs, regex, JWTs, HTML entities, and API cleanup.",
   href: "/developer",
-  toolCount: 8,
+  toolCount: 9,
   },  
 ];
 
@@ -628,6 +628,14 @@ export const developerTools: ToolItem[] = [
   description:
     "Decode JWT headers and payloads locally in your browser for quick inspection.",
   href: "/jwt-decoder",
+  category: "developer",
+  },
+  {
+  slug: "api-response-formatter",
+  title: "API Response Formatter",
+  description:
+    "Format API response JSON, inspect status details, and copy clean output for debugging.",
+  href: "/api-response-formatter",
   category: "developer",
   },
 ];
