@@ -71,7 +71,7 @@ export const categories: ToolCategory[] = [
   description:
     "Free design tools for colors, contrast, gradients, shadows, spacing, typography, and UI layout.",
   href: "/design",
-  toolCount: 7,
+  toolCount: 9,
   },
 ];
 
@@ -529,6 +529,22 @@ export const designTools: ToolItem[] = [
   description:
     "Generate consistent spacing scales in pixels and rems for UI layouts and design systems.",
   href: "/spacing-scale-generator",
+  category: "design",
+  },
+  {
+  slug: "rem-px-converter",
+  title: "REM/PX Converter",
+  description:
+    "Convert pixels to rems and rems to pixels using a custom base font size.",
+  href: "/rem-px-converter",
+  category: "design",
+  },
+  {
+  slug: "typography-scale-calculator",
+  title: "Typography Scale Calculator",
+  description:
+    "Generate a type scale from a base font size and ratio, with pixel and rem values.",
+  href: "/typography-scale-calculator",
   category: "design",
   },
 ];
