@@ -87,7 +87,7 @@ export const categories: ToolCategory[] = [
   description:
     "Free travel tools for trip budgets, packing, hotels, gas, layovers, attractions, and travel planning.",
   href: "/travel",
-  toolCount: 6,
+  toolCount: 7,
   },
 ];
 
@@ -703,6 +703,14 @@ export const travelTools: ToolItem[] = [
   description:
     "Estimate how many attractions fit into a travel day using visit time, transit time, meals, and buffer.",
   href: "/attraction-time-planner",
+  category: "travel",
+  },
+  {
+  slug: "travel-day-cost-calculator",
+  title: "Travel Day Cost Calculator",
+  description:
+    "Estimate the cost of a single travel day from meals, transit, activities, snacks, and buffer.",
+  href: "/travel-day-cost-calculator",
   category: "travel",
   },
 ];
