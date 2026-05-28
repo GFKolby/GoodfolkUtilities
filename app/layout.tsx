@@ -16,8 +16,8 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://tools.goodfolkdigital.com"),
   title: {
-    default: "Goodfolk Tools",
-    template: "%s | Goodfolk Tools",
+    default: "Goodfolk Toolbox",
+    template: "%s | Goodfolk Toolbox",
   },
   description:
     "Free browser-based tools for office work, file cleanup, text formatting, camping planning, and everyday digital tasks.",
@@ -27,11 +27,11 @@ export const metadata: Metadata = {
     apple: [{ url: "/icon.svg", type: "image/svg+xml" }],
   },
   openGraph: {
-    title: "Goodfolk Tools",
+    title: "Goodfolk Toolbox",
     description:
       "Free browser-based tools for office work, file cleanup, text formatting, camping planning, and everyday digital tasks.",
     url: "https://tools.goodfolkdigital.com",
-    siteName: "Goodfolk Tools",
+    siteName: "Goodfolk Toolbox",
     type: "website",
   },
 };
