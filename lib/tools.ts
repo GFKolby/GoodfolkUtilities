@@ -87,7 +87,7 @@ export const categories: ToolCategory[] = [
   description:
     "Free travel tools for trip budgets, packing, hotels, gas, layovers, attractions, and travel planning.",
   href: "/travel",
-  toolCount: 4,
+  toolCount: 5,
   },
 ];
 
@@ -688,7 +688,15 @@ export const travelTools: ToolItem[] = [
     "Generate a simple packing list based on trip length, weather, destination type, and travel style.",
   href: "/packing-list-generator",
   category: "travel",
-},
+  },
+  {
+  slug: "flight-layover-calculator",
+  title: "Flight Layover Calculator",
+  description:
+    "Estimate whether a flight layover gives enough time for customs, bags, terminal changes, and airport size.",
+  href: "/flight-layover-calculator",
+  category: "travel",
+  },
 ];
 
 export const allTools: ToolItem[] = [
