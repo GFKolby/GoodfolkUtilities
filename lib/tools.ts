@@ -87,7 +87,7 @@ export const categories: ToolCategory[] = [
   description:
     "Free travel tools for trip budgets, packing, hotels, gas, layovers, attractions, and travel planning.",
   href: "/travel",
-  toolCount: 7,
+  toolCount: 8,
   },
 ];
 
@@ -711,6 +711,14 @@ export const travelTools: ToolItem[] = [
   description:
     "Estimate the cost of a single travel day from meals, transit, activities, snacks, and buffer.",
   href: "/travel-day-cost-calculator",
+  category: "travel",
+  },
+  {
+  slug: "currency-conversion-notes",
+  title: "Currency Conversion Notes",
+  description:
+    "Convert common travel amounts using a manual exchange rate for quick budgeting abroad.",
+  href: "/currency-conversion-notes",
   category: "travel",
   },
 ];
