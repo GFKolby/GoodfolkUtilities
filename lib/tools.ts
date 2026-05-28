@@ -87,7 +87,7 @@ export const categories: ToolCategory[] = [
   description:
     "Free travel tools for trip budgets, packing, hotels, gas, layovers, attractions, and travel planning.",
   href: "/travel",
-  toolCount: 8,
+  toolCount: 9,
   },
 ];
 
@@ -719,6 +719,14 @@ export const travelTools: ToolItem[] = [
   description:
     "Convert common travel amounts using a manual exchange rate for quick budgeting abroad.",
   href: "/currency-conversion-notes",
+  category: "travel",
+  },
+  {
+  slug: "travel-time-zone-planner",
+  title: "Travel Time Zone Planner",
+  description:
+    "Compare home and destination time zones, estimate jet lag direction, and plan arrival adjustment.",
+  href: "/travel-time-zone-planner",
   category: "travel",
   },
 ];
