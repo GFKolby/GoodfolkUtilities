@@ -87,7 +87,7 @@ export const categories: ToolCategory[] = [
   description:
     "Free travel tools for trip budgets, packing, hotels, gas, layovers, attractions, and travel planning.",
   href: "/travel",
-  toolCount: 3,
+  toolCount: 4,
   },
 ];
 
@@ -681,6 +681,14 @@ export const travelTools: ToolItem[] = [
   href: "/hotel-cost-splitter",
   category: "travel",
   },
+  {
+  slug: "packing-list-generator",
+  title: "Packing List Generator",
+  description:
+    "Generate a simple packing list based on trip length, weather, destination type, and travel style.",
+  href: "/packing-list-generator",
+  category: "travel",
+},
 ];
 
 export const allTools: ToolItem[] = [
