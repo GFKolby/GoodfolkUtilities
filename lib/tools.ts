@@ -62,7 +62,7 @@ export const categories: ToolCategory[] = [
   description:
     "Free student tools for grades, GPA, study planning, assignments, writing, and semester workload.",
   href: "/student",
-  toolCount: 9,
+  toolCount: 10,
 },
 ];
 
@@ -455,6 +455,14 @@ export const studentTools: ToolItem[] = [
   href: "/flashcard-formatter",
   category: "student",
   },
+  {
+  slug: "final-exam-study-plan-generator",
+  title: "Final Exam Study Plan Generator",
+  description:
+    "Create a simple final exam study plan based on exam date, topics, available days, and study time.",
+  href: "/final-exam-study-plan-generator",
+  category: "student",
+},
 ];
 
 export const allTools: ToolItem[] = [
