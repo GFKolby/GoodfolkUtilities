@@ -79,7 +79,7 @@ export const categories: ToolCategory[] = [
   description:
     "Free developer tools for JSON, URLs, Base64, timestamps, IDs, regex, JWTs, HTML entities, and API cleanup.",
   href: "/developer",
-  toolCount: 2,
+  toolCount: 3,
   },  
 ];
 
@@ -582,6 +582,14 @@ export const developerTools: ToolItem[] = [
   href: "/url-encoder-decoder",
   category: "developer",
   },
+  {
+  slug: "base64-encoder-decoder",
+  title: "Base64 Encoder / Decoder",
+  description:
+    "Encode plain text to Base64 and decode Base64 back to readable text.",
+  href: "/base64-encoder-decoder",
+  category: "developer",
+},
 ];
 
 export const allTools: ToolItem[] = [
