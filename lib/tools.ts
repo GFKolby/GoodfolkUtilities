@@ -105,7 +105,7 @@ export const categories: ToolCategory[] = [
   description:
     "Free health tools for BMI, calories, water intake, protein, walking, macros, sleep, heart rate zones, and weight planning.",
   href: "/health",
-  toolCount: 9,
+  toolCount: 10,
   },
 ];
 
@@ -911,6 +911,14 @@ export const healthTools: ToolItem[] = [
   description:
     "Estimate training heart rate zones from age and resting heart rate.",
   href: "/heart-rate-zone-calculator",
+  category: "health",
+  },
+  {
+  slug: "body-fat-estimate-calculator",
+  title: "Body Fat Estimate Calculator",
+  description:
+    "Estimate body fat percentage using simple body measurements and standard formula inputs.",
+  href: "/body-fat-estimate-calculator",
   category: "health",
   },
 ];
