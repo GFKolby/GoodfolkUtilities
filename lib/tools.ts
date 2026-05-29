@@ -105,7 +105,7 @@ export const categories: ToolCategory[] = [
   description:
     "Free health tools for BMI, calories, water intake, protein, walking, macros, sleep, heart rate zones, and weight planning.",
   href: "/health",
-  toolCount: 8,
+  toolCount: 9,
   },
 ];
 
@@ -903,6 +903,14 @@ export const healthTools: ToolItem[] = [
   description:
     "Estimate bedtime or wake-up time using sleep cycles, time to fall asleep, and desired rest.",
   href: "/sleep-calculator",
+  category: "health",
+  },
+  {
+  slug: "heart-rate-zone-calculator",
+  title: "Heart Rate Zone Calculator",
+  description:
+    "Estimate training heart rate zones from age and resting heart rate.",
+  href: "/heart-rate-zone-calculator",
   category: "health",
   },
 ];
