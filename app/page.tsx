@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { officeTools, campTools, homeTools, financeTools, studentTools,designTools, developerTools, travelTools } from "@/lib/tools";
 import type { ToolItem } from "@/lib/tools";
+import SearchBar from "@/components/SearchBar";
 
 function ToolSection({
   title,
@@ -89,6 +90,7 @@ export default function Home() {
   Support Goodfolk
 </Link>
 </div>
+<SearchBar />
  
         </header>
         <section className="mt-10 grid gap-5 md:grid-cols-3">
