@@ -96,7 +96,7 @@ export const categories: ToolCategory[] = [
   description:
     "Free business tools for profit margins, pricing, invoices, break-even planning, meetings, and startup costs.",
   href: "/business",
-  toolCount: 0,
+  toolCount: 1,
   },
 ];
 
@@ -748,7 +748,16 @@ export const travelTools: ToolItem[] = [
 },
 ];
 
-export const businessTools: ToolItem[] = [];
+export const businessTools: ToolItem[] = [
+  {
+    slug: "profit-margin-calculator",
+    title: "Profit Margin Calculator",
+    description:
+      "Calculate profit, profit margin, markup, and cost breakdown from revenue and expenses.",
+    href: "/profit-margin-calculator",
+    category: "business",
+  },
+];
 
 export const allTools: ToolItem[] = [
   ...officeTools,

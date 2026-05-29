@@ -96,23 +96,23 @@ export default function Home() {
         <SearchBar />
         <section className="mt-10 grid gap-5 md:grid-cols-3">
   <div className="rounded-2xl border border-slate-800 bg-slate-900 p-5">
-    <p className="font-semibold text-white">Browser-based</p>
+    <p className="font-semibold text-white">80 Free Tools</p>
     <p className="mt-2 text-sm text-zinc-400">
-      Most tools run directly in your browser without accounts or uploads.
+      Calculators and helpers for office, camp, home, finance, student, design, developer, travel, and business needs.
     </p>
   </div>
 
   <div className="rounded-2xl border border-slate-800 bg-slate-900 p-5">
-    <p className="font-semibold text-white">No signups</p>
+    <p className="font-semibold text-white">9 Categories</p>
     <p className="mt-2 text-sm text-zinc-400">
-      Open a tool, use it, and get back to your day.
+      Office, camp, home, finance, student, design, developer, travel, and business.
     </p>
   </div>
 
   <div className="rounded-2xl border border-slate-800 bg-slate-900 p-5">
-    <p className="font-semibold text-white">Free to use</p>
+    <p className="font-semibold text-white">No Signup Required</p>
     <p className="mt-2 text-sm text-zinc-400">
-      Support is optional and helps keep the toolbox growing.
+      All tools are free to use with no account or email required. Just click and use.
     </p>
   </div>
 </section>
