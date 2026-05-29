@@ -105,7 +105,7 @@ export const categories: ToolCategory[] = [
   description:
     "Free health tools for BMI, calories, water intake, protein, walking, macros, sleep, heart rate zones, and weight planning.",
   href: "/health",
-  toolCount: 7,
+  toolCount: 8,
   },
 ];
 
@@ -895,6 +895,14 @@ export const healthTools: ToolItem[] = [
   description:
     "Estimate a target weight timeline based on current weight, goal weight, and weekly change.",
   href: "/target-weight-planner",
+  category: "health",
+  },
+  {
+  slug: "sleep-calculator",
+  title: "Sleep Calculator",
+  description:
+    "Estimate bedtime or wake-up time using sleep cycles, time to fall asleep, and desired rest.",
+  href: "/sleep-calculator",
   category: "health",
   },
 ];
