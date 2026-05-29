@@ -96,7 +96,7 @@ export const categories: ToolCategory[] = [
   description:
     "Free business tools for profit margins, pricing, invoices, break-even planning, meetings, and startup costs.",
   href: "/business",
-  toolCount: 5,
+  toolCount: 6,
   },
 ];
 
@@ -787,6 +787,14 @@ export const businessTools: ToolItem[] = [
   description:
     "Calculate invoice subtotal, discount, tax, fees, and final total for a small business invoice.",
   href: "/invoice-total-calculator",
+  category: "business",
+  },
+  {
+  slug: "hourly-rate-calculator",
+  title: "Hourly Rate Calculator",
+  description:
+    "Calculate an hourly rate from salary goals, billable hours, expenses, taxes, and desired profit.",
+  href: "/hourly-rate-calculator",
   category: "business",
   },
 ];
