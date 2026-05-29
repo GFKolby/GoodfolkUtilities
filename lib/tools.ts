@@ -7,7 +7,8 @@ export type ToolCategorySlug =
   | "design"
   | "developer"
   | "travel"
-  | "business";
+  | "business"
+  | "health";
 
 export type ToolCategory = {
   slug: ToolCategorySlug;
@@ -97,6 +98,14 @@ export const categories: ToolCategory[] = [
     "Free business tools for profit margins, pricing, invoices, break-even planning, meetings, and startup costs.",
   href: "/business",
   toolCount: 10,
+  },
+  {
+  slug: "health",
+  title: "Health Utilities",
+  description:
+    "Free health tools for BMI, calories, water intake, protein, walking, macros, sleep, heart rate zones, and weight planning.",
+  href: "/health",
+  toolCount: 0,
   },
 ];
 
@@ -831,6 +840,8 @@ export const businessTools: ToolItem[] = [
   }, 
 ];
 
+export const healthTools: ToolItem[] = [];
+
 export const allTools: ToolItem[] = [
   ...officeTools,
   ...campTools,
@@ -841,6 +852,7 @@ export const allTools: ToolItem[] = [
   ...developerTools,
   ...travelTools,
   ...businessTools,
+  ...healthTools,
 ];
 
 export function getToolsByCategory(category: ToolCategorySlug) {

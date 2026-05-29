@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { officeTools, campTools, homeTools, financeTools, studentTools,designTools, developerTools, travelTools, businessTools } from "@/lib/tools";
+import { officeTools, campTools, homeTools, financeTools, studentTools,designTools, developerTools, travelTools, businessTools, healthTools } from "@/lib/tools";
 import type { ToolItem } from "@/lib/tools";
 import SearchBar from "@/components/SearchBar";
 
@@ -96,16 +96,16 @@ export default function Home() {
         <SearchBar />
         <section className="mt-10 grid gap-5 md:grid-cols-3">
   <div className="rounded-2xl border border-slate-800 bg-slate-900 p-5">
-    <p className="font-semibold text-white">80+ Free Tools</p>
+    <p className="font-semibold text-white">90+ Free Tools</p>
     <p className="mt-2 text-sm text-zinc-400">
       Calculators and helpers for office, camp, home, finance, student, design, developer, travel, and business needs.
     </p>
   </div>
 
   <div className="rounded-2xl border border-slate-800 bg-slate-900 p-5">
-    <p className="font-semibold text-white">9 Categories</p>
+    <p className="font-semibold text-white">10 Categories</p>
     <p className="mt-2 text-sm text-zinc-400">
-      Office, camp, home, finance, student, design, developer, travel, and business.
+      Office, camp, home, finance, student, design, developer, travel, business and health.
     </p>
   </div>
 
@@ -227,6 +227,18 @@ export default function Home() {
     Pricing, profit margins, invoices, break-even points, meetings, startup costs, and small business planning.
   </p>
 </Link>
+<Link 
+  href="/health"
+  className="rounded-2xl border border-slate-800 bg-slate-900 p-6 transition hover:border-amber-300/60 hover:bg-slate-800"
+>
+  <p className="text-sm font-semibold text-amber-300">
+    Health Utilities
+  </p>
+  <h2 className="mt-2 text-2xl font-bold">Browse health tools</h2>
+  <p className="mt-2 text-zinc-400">
+    BMI, calories, water intake, protein, walking, macros, sleep, heart rate zones, and weight planning.
+  </p>
+</Link>
 </div>
         <ToolSection
           eyebrow="Office Utilities"
@@ -289,6 +301,13 @@ export default function Home() {
           title="Simple tools for pricing, profit, and planning."
           description="Free calculators for margins, invoices, break-even points, meetings, startup costs, and small business decisions."
           tools={businessTools}
+        />
+
+        <ToolSection
+          eyebrow="Health Utilities"
+          title="Plan health goals without spreadsheet chaos."
+          description="Simple calculators for BMI, calories, water intake, protein, walking, macros, sleep, heart rate zones, and weight planning."
+          tools={healthTools}
         />
 
         <footer className="mt-16 border-t border-slate-800 pt-8 text-sm text-zinc-500">
