@@ -96,7 +96,7 @@ export const categories: ToolCategory[] = [
   description:
     "Free business tools for profit margins, pricing, invoices, break-even planning, meetings, and startup costs.",
   href: "/business",
-  toolCount: 3,
+  toolCount: 4,
   },
 ];
 
@@ -771,6 +771,14 @@ export const businessTools: ToolItem[] = [
   description:
     "Calculate how many units or sales you need to cover fixed and variable costs.",
   href: "/break-even-calculator",
+  category: "business",
+  },
+  {
+  slug: "sales-tax-calculator",
+  title: "Sales Tax Calculator",
+  description:
+    "Calculate sales tax, pre-tax price, final total, and tax amount from a tax rate.",
+  href: "/sales-tax-calculator",
   category: "business",
   },
 ];
