@@ -96,7 +96,7 @@ export const categories: ToolCategory[] = [
   description:
     "Free business tools for profit margins, pricing, invoices, break-even planning, meetings, and startup costs.",
   href: "/business",
-  toolCount: 1,
+  toolCount: 2,
   },
 ];
 
@@ -756,6 +756,14 @@ export const businessTools: ToolItem[] = [
       "Calculate profit, profit margin, markup, and cost breakdown from revenue and expenses.",
     href: "/profit-margin-calculator",
     category: "business",
+  },
+  {
+  slug: "markup-calculator",
+  title: "Markup Calculator",
+  description:
+    "Calculate selling price, markup amount, margin, and profit from cost and markup percentage.",
+  href: "/markup-calculator",
+  category: "business",
   },
 ];
 
