@@ -105,7 +105,7 @@ export const categories: ToolCategory[] = [
   description:
     "Free health tools for BMI, calories, water intake, protein, walking, macros, sleep, heart rate zones, and weight planning.",
   href: "/health",
-  toolCount: 2,
+  toolCount: 3,
   },
 ];
 
@@ -855,6 +855,14 @@ export const healthTools: ToolItem[] = [
   description:
     "Estimate daily calories for maintenance, weight loss, or weight gain based on body stats and activity level.",
   href: "/calorie-calculator",
+  category: "health",
+  },
+  {
+  slug: "water-intake-calculator",
+  title: "Water Intake Calculator",
+  description:
+    "Estimate daily water intake based on weight, activity, weather, and caffeine or alcohol intake.",
+  href: "/water-intake-calculator",
   category: "health",
   },
 ];
