@@ -105,7 +105,7 @@ export const categories: ToolCategory[] = [
   description:
     "Free health tools for BMI, calories, water intake, protein, walking, macros, sleep, heart rate zones, and weight planning.",
   href: "/health",
-  toolCount: 6,
+  toolCount: 7,
   },
 ];
 
@@ -887,6 +887,14 @@ export const healthTools: ToolItem[] = [
   description:
     "Estimate daily protein, carbs, and fat targets from calories and macro percentages.",
   href: "/macro-calculator",
+  category: "health",
+  },
+  {
+  slug: "target-weight-planner",
+  title: "Target Weight Planner",
+  description:
+    "Estimate a target weight timeline based on current weight, goal weight, and weekly change.",
+  href: "/target-weight-planner",
   category: "health",
   },
 ];
