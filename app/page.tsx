@@ -96,9 +96,9 @@ export default function Home() {
         <SearchBar />
         <section className="mt-10 grid gap-5 md:grid-cols-3">
   <div className="rounded-2xl border border-slate-800 bg-slate-900 p-5">
-    <p className="font-semibold text-white">90+ Free Tools</p>
+    <p className="font-semibold text-white">100 Free Tools</p>
     <p className="mt-2 text-sm text-zinc-400">
-      Calculators and helpers for office, camp, home, finance, student, design, developer, travel, and business needs.
+      Calculators and helpers for office, camp, home, finance, student, design, developer, travel, business and health needs.
     </p>
   </div>
 
