@@ -96,7 +96,7 @@ export const categories: ToolCategory[] = [
   description:
     "Free business tools for profit margins, pricing, invoices, break-even planning, meetings, and startup costs.",
   href: "/business",
-  toolCount: 4,
+  toolCount: 5,
   },
 ];
 
@@ -779,6 +779,14 @@ export const businessTools: ToolItem[] = [
   description:
     "Calculate sales tax, pre-tax price, final total, and tax amount from a tax rate.",
   href: "/sales-tax-calculator",
+  category: "business",
+  },
+  {
+  slug: "invoice-total-calculator",
+  title: "Invoice Total Calculator",
+  description:
+    "Calculate invoice subtotal, discount, tax, fees, and final total for a small business invoice.",
+  href: "/invoice-total-calculator",
   category: "business",
   },
 ];
