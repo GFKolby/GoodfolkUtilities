@@ -96,7 +96,7 @@ export const categories: ToolCategory[] = [
   description:
     "Free business tools for profit margins, pricing, invoices, break-even planning, meetings, and startup costs.",
   href: "/business",
-  toolCount: 9,
+  toolCount: 10,
   },
 ];
 
@@ -819,6 +819,14 @@ export const businessTools: ToolItem[] = [
   description:
     "Estimate the total cost of an employee including salary, payroll taxes, benefits, equipment, and overhead.",
   href: "/employee-cost-calculator",
+  category: "business",
+  },
+  {
+  slug: "startup-cost-calculator",
+  title: "Startup Cost Calculator",
+  description:
+    "Estimate startup costs from legal setup, equipment, software, inventory, marketing, and operating runway.",
+  href: "/startup-cost-calculator",
   category: "business",
   }, 
 ];
