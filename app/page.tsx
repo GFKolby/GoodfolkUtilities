@@ -90,9 +90,10 @@ export default function Home() {
   Support Goodfolk
 </Link>
 </div>
-<SearchBar />
+
  
         </header>
+        <SearchBar />
         <section className="mt-10 grid gap-5 md:grid-cols-3">
   <div className="rounded-2xl border border-slate-800 bg-slate-900 p-5">
     <p className="font-semibold text-white">Browser-based</p>
