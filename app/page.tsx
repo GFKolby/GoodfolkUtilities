@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { officeTools, campTools, homeTools, financeTools, studentTools,designTools, developerTools, travelTools } from "@/lib/tools";
+import { officeTools, campTools, homeTools, financeTools, studentTools,designTools, developerTools, travelTools, businessTools } from "@/lib/tools";
 import type { ToolItem } from "@/lib/tools";
 import SearchBar from "@/components/SearchBar";
 
@@ -215,6 +215,18 @@ export default function Home() {
     Trip budgets, packing, hotels, gas, layovers, attractions, and travel planning.
   </p>
 </Link>
+<Link
+  href="/business"
+  className="rounded-2xl border border-slate-800 bg-slate-900 p-6 transition hover:border-amber-300/60 hover:bg-slate-800"
+>
+  <p className="text-sm font-semibold text-amber-300">
+    Business Utilities
+  </p>
+  <h2 className="mt-2 text-2xl font-bold">Browse business tools</h2>
+  <p className="mt-2 text-zinc-400">
+    Pricing, profit margins, invoices, break-even points, meetings, startup costs, and small business planning.
+  </p>
+</Link>
 </div>
         <ToolSection
           eyebrow="Office Utilities"
@@ -270,6 +282,13 @@ export default function Home() {
           title="Plan trips without spreadsheet turbulence."
           description="Simple tools for trip budgets, hotels, gas, packing, layovers, attractions, and travel planning."
           tools={travelTools}
+        />
+
+        <ToolSection
+          eyebrow="Business Utilities"
+          title="Simple tools for pricing, profit, and planning."
+          description="Free calculators for margins, invoices, break-even points, meetings, startup costs, and small business decisions."
+          tools={businessTools}
         />
 
         <footer className="mt-16 border-t border-slate-800 pt-8 text-sm text-zinc-500">

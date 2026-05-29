@@ -6,7 +6,8 @@ export type ToolCategorySlug =
   | "student"
   | "design"
   | "developer"
-  | "travel";
+  | "travel"
+  | "business";
 
 export type ToolCategory = {
   slug: ToolCategorySlug;
@@ -88,6 +89,14 @@ export const categories: ToolCategory[] = [
     "Free travel tools for trip budgets, packing, hotels, gas, layovers, attractions, and travel planning.",
   href: "/travel",
   toolCount: 10,
+  },
+  {
+  slug: "business",
+  title: "Business Utilities",
+  description:
+    "Free business tools for profit margins, pricing, invoices, break-even planning, meetings, and startup costs.",
+  href: "/business",
+  toolCount: 0,
   },
 ];
 
@@ -739,6 +748,8 @@ export const travelTools: ToolItem[] = [
 },
 ];
 
+export const businessTools: ToolItem[] = [];
+
 export const allTools: ToolItem[] = [
   ...officeTools,
   ...campTools,
@@ -748,6 +759,7 @@ export const allTools: ToolItem[] = [
   ...designTools,
   ...developerTools,
   ...travelTools,
+  ...businessTools,
 ];
 
 export function getToolsByCategory(category: ToolCategorySlug) {
