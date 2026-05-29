@@ -96,7 +96,7 @@ export const categories: ToolCategory[] = [
   description:
     "Free business tools for profit margins, pricing, invoices, break-even planning, meetings, and startup costs.",
   href: "/business",
-  toolCount: 7,
+  toolCount: 8,
   },
 ];
 
@@ -805,6 +805,14 @@ export const businessTools: ToolItem[] = [
   href: "/freelancer-rate-calculator",
   category: "business",
   },
+  {
+  slug: "meeting-cost-calculator",
+  title: "Meeting Cost Calculator",
+  description:
+    "Estimate the cost of a meeting based on attendees, hourly rates, duration, and prep time.",
+  href: "/meeting-cost-calculator",
+  category: "business",
+  },  
 ];
 
 export const allTools: ToolItem[] = [
