@@ -105,7 +105,7 @@ export const categories: ToolCategory[] = [
   description:
     "Free health tools for BMI, calories, water intake, protein, walking, macros, sleep, heart rate zones, and weight planning.",
   href: "/health",
-  toolCount: 0,
+  toolCount: 1,
   },
 ];
 
@@ -840,7 +840,16 @@ export const businessTools: ToolItem[] = [
   }, 
 ];
 
-export const healthTools: ToolItem[] = [];
+export const healthTools: ToolItem[] = [
+  {
+    slug: "bmi-calculator",
+    title: "BMI Calculator",
+    description:
+      "Calculate body mass index from height and weight and see the standard BMI category.",
+    href: "/bmi-calculator",
+    category: "health",
+  },
+];
 
 export const allTools: ToolItem[] = [
   ...officeTools,
