@@ -94,7 +94,25 @@ export default function Home() {
  
         </header>
         <SearchBar />
-        <section className="mt-10 grid gap-5 md:grid-cols-3">
+
+<section className="mx-auto mt-10 max-w-4xl rounded-3xl border border-slate-800 bg-slate-900/70 p-6 shadow-lg shadow-slate-950/30 sm:p-8">
+  <p className="text-sm font-semibold uppercase tracking-[0.3em] text-amber-300">
+    Goodfolk Toolbox
+  </p>
+
+  <h2 className="mt-3 text-3xl font-bold tracking-tight text-white sm:text-4xl">
+    Free Online Tools & Calculators
+  </h2>
+
+  <p className="mt-4 text-base leading-8 text-zinc-300 sm:text-lg">
+    Goodfolk Toolbox offers{" "}
+    <span className="font-semibold text-white">100 free online tools</span>{" "}
+    for business, finance, travel, health, development, design, camping,
+    students, and everyday life. No signup required.
+  </p>
+</section>
+
+<section className="mt-10 grid gap-5 md:grid-cols-3">
   <div className="rounded-2xl border border-slate-800 bg-slate-900 p-5">
     <p className="font-semibold text-white">100 Free Tools</p>
     <p className="mt-2 text-sm text-zinc-400">
@@ -115,21 +133,6 @@ export default function Home() {
       All tools are free to use with no account or email required. Just click and use.
     </p>
   </div>
-  <section className="max-w-4xl mx-auto">
-  <h2>
-    Free Online Tools & Calculators
-  </h2>
-
-  <p>
-    Goodfolk Toolbox offers 100 free
-    online tools for business,
-    finance, travel, health,
-    development, design, camping,
-    students, and everyday life.
-
-    No signup required.
-  </p>
-</section>
 </section>
 
 <div className="mt-10 grid gap-5 md:grid-cols-2">
@@ -285,7 +288,7 @@ export default function Home() {
 
         <ToolSection
           eyebrow="Student Utilities"
-          title="Plan schoolwork without academic chaos goblins."
+          title="Plan schoolwork without academic chaos."
           description="Simple tools for grades, GPA, study planning, assignments, writing, and semester workload."
           tools={studentTools}
         />
