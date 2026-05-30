@@ -4,6 +4,15 @@ import { useMemo, useState } from "react";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
 
+import type { Metadata } from "next";
+import { createToolMetadata } from "@/lib/seo";
+
+export const metadata: Metadata =
+  createToolMetadata(
+    "Macro Calculator",
+    "Estimate daily protein, carbohydrate, and fat targets from calories and macro percentages."
+  );
+
 export default function MacroCalculatorPage() {
   const [calories, setCalories] = useState("2200");
   const [proteinPercent, setProteinPercent] = useState("30");

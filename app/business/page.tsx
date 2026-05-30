@@ -11,6 +11,7 @@ export default function BusinessUtilitiesPage() {
         category?.description ??
         "Free business tools for profit margins, pricing, invoices, break-even planning, meetings, and startup costs."
       }
+      intro={category?.intro}
       tools={businessTools}
     />
   );

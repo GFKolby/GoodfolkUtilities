@@ -4,6 +4,15 @@ import { useMemo, useState } from "react";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
 
+import type { Metadata } from "next";
+import { createToolMetadata } from "@/lib/seo";
+
+export const metadata: Metadata =
+  createToolMetadata(
+    "Protein Calculator",
+    "Estimate daily protein needs based on body weight, goal, and meals per day."
+  );
+
 type Goal = "general" | "weightLoss" | "muscleGain" | "active";
 
 const goalMultipliers: Record<Goal, { label: string; low: number; high: number }> = {

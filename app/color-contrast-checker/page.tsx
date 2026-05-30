@@ -4,6 +4,15 @@ import { useMemo, useState } from "react";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
 
+import type { Metadata } from "next";
+import { createToolMetadata } from "@/lib/seo";
+
+export const metadata: Metadata =
+  createToolMetadata(
+    "Color Contrast Checker",
+    "Check text and background color contrast, preview the combination, and copy CSS-ready values."
+  );
+
 function normalizeHex(input: string) {
   const cleaned = input.trim().replace("#", "");
 

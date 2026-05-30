@@ -5,6 +5,15 @@ import { useMemo, useState } from "react";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
 
+import type { Metadata } from "next";
+import { createToolMetadata } from "@/lib/seo";
+
+export const metadata: Metadata =
+  createToolMetadata(
+    "Text Case Converter",
+    "Convert text into uppercase, lowercase, title case, sentence case, kebab-case, snake_case, or camelCase."
+  );
+
 type CaseMode =
   | "upper"
   | "lower"

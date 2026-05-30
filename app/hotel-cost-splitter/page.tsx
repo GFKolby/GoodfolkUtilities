@@ -4,6 +4,15 @@ import { useMemo, useState } from "react";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
 
+import type { Metadata } from "next";
+import { createToolMetadata } from "@/lib/seo";
+
+export const metadata: Metadata =
+  createToolMetadata(
+    "Hotel Cost Splitter",
+    "Split hotel or Airbnb costs across people and nights, including taxes, fees, parking, cleaning, and buffer."
+  );
+
 export default function HotelCostSplitterPage() {
   const [nightlyRate, setNightlyRate] = useState("150");
   const [nights, setNights] = useState("4");

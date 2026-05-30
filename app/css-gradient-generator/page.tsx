@@ -4,6 +4,15 @@ import { useMemo, useState } from "react";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
 
+import type { Metadata } from "next";
+import { createToolMetadata } from "@/lib/seo";
+
+export const metadata: Metadata =
+  createToolMetadata(
+    "CSS Gradient Generator",
+    "Create a linear CSS gradient, preview it, and copy ready-to-use CSS."
+  );
+
 function normalizeHex(input: string) {
   const cleaned = input.trim().replace("#", "");
 

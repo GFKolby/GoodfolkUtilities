@@ -4,6 +4,15 @@ import { useMemo, useState } from "react";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
 
+import type { Metadata } from "next";
+import { createToolMetadata } from "@/lib/seo";
+
+export const metadata: Metadata =
+  createToolMetadata(
+    "Loan Payment Calculator",
+    "Estimate a loan payment based on amount, APR, term length, and optional extra monthly payment."
+  );
+
 export default function LoanPaymentCalculatorPage() {
   const [loanAmount, setLoanAmount] = useState("15000");
   const [apr, setApr] = useState("8");

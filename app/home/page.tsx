@@ -11,6 +11,7 @@ export default function HomeUtilitiesPage() {
         category?.description ??
         "Free home utilities for planning projects, costs, and everyday home tasks."
       }
+      intro={category?.intro}
       tools={homeTools}
     />
   );

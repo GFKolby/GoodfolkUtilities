@@ -11,6 +11,7 @@ export default function CampUtilitiesPage() {
         category?.description ??
         "Free camping tools for packing, water planning, gear weight, and trip prep."
       }
+      intro={category?.intro}
       tools={campTools}
     />
   );

@@ -4,6 +4,15 @@ import { useMemo, useState } from "react";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
 
+import type { Metadata } from "next";
+import { createToolMetadata } from "@/lib/seo";
+
+export const metadata: Metadata =
+  createToolMetadata(
+    "Profit Margin Calculator",
+    "Calculate profit, profit margin, markup, and total cost from revenue and expenses."
+  );
+
 export default function ProfitMarginCalculatorPage() {
   const [revenue, setRevenue] = useState("1000");
   const [costOfGoods, setCostOfGoods] = useState("400");

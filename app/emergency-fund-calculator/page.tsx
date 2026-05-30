@@ -4,6 +4,15 @@ import { useMemo, useState } from "react";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
 
+import type { Metadata } from "next";
+import { createToolMetadata } from "@/lib/seo";
+
+export const metadata: Metadata =
+  createToolMetadata(
+    "Emergency Fund Calculator",
+    "Estimate your emergency savings target based on essential monthly expenses and the number of months you want covered."
+  );
+
 export default function EmergencyFundCalculatorPage() {
   const [housing, setHousing] = useState("1200");
   const [utilities, setUtilities] = useState("250");

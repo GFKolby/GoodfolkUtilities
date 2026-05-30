@@ -4,6 +4,15 @@ import { useMemo, useState } from "react";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
 
+import type { Metadata } from "next";
+import { createToolMetadata } from "@/lib/seo";
+
+export const metadata: Metadata =
+  createToolMetadata(
+    "Net Worth Calculator",
+    "Estimate your net worth by adding up assets and subtracting debts."
+  );
+
 export default function NetWorthCalculatorPage() {
   const [cashSavings, setCashSavings] = useState("5000");
   const [investments, setInvestments] = useState("10000");

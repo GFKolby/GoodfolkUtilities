@@ -4,6 +4,15 @@ import { useMemo, useState } from "react";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
 
+import type { Metadata } from "next";
+import { createToolMetadata } from "@/lib/seo";
+
+export const metadata: Metadata =
+  createToolMetadata(
+    "Hourly to Salary Calculator",
+    "Convert hourly pay into weekly, monthly, and yearly income estimates, including optional overtime."
+  );
+
 export default function HourlyToSalaryCalculatorPage() {
   const [hourlyRate, setHourlyRate] = useState("25");
   const [hoursPerWeek, setHoursPerWeek] = useState("40");

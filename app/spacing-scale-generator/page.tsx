@@ -4,6 +4,15 @@ import { useMemo, useState } from "react";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
 
+import type { Metadata } from "next";
+import { createToolMetadata } from "@/lib/seo";
+
+export const metadata: Metadata =
+  createToolMetadata(
+    "Spacing Scale Generator",
+    "Generate consistent spacing values in pixels and rems for UI layouts, CSS variables, and design systems."
+  );
+
 export default function SpacingScaleGeneratorPage() {
   const [baseStep, setBaseStep] = useState("4");
   const [baseFontSize, setBaseFontSize] = useState("16");

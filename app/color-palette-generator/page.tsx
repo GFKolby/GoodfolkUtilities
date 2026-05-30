@@ -4,6 +4,15 @@ import { useMemo, useState } from "react";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
 
+import type { Metadata } from "next";
+import { createToolMetadata } from "@/lib/seo";
+
+export const metadata: Metadata =
+  createToolMetadata(
+    "Color Palette Generator",
+    "Create harmonious color palettes based on a base color."
+  );
+
 type PaletteStyle = "tints" | "complementary" | "analogous" | "random";
 
 type PaletteColor = {

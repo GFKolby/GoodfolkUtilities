@@ -4,6 +4,15 @@ import { useMemo, useState } from "react";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
 
+import type { Metadata } from "next";
+import { createToolMetadata } from "@/lib/seo";
+
+export const metadata: Metadata =
+  createToolMetadata(
+    "API Response Formatter",
+    "Format API response JSON, inspect status details, and copy clean output for debugging."
+  );
+
 const sampleResponse = `{
   "status": 200,
   "message": "OK",

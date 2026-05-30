@@ -4,6 +4,15 @@ import { useMemo, useState } from "react";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
 
+import type { Metadata } from "next";
+import { createToolMetadata } from "@/lib/seo";
+
+export const metadata: Metadata =
+  createToolMetadata(
+    "Startup Cost Calculator",
+    "Estimate startup costs from setup, equipment, software, inventory, marketing, and operating runway."
+  );
+
 export default function StartupCostCalculatorPage() {
   const [legalSetup, setLegalSetup] = useState("500");
   const [equipment, setEquipment] = useState("2500");

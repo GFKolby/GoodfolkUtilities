@@ -11,6 +11,7 @@ export default function FinanceUtilitiesPage() {
         category?.description ??
         "Free finance tools for budgeting, savings goals, debt payoff, subscriptions, and income planning."
       }
+      intro={category?.intro}
       tools={financeTools}
     />
   );

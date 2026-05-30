@@ -4,6 +4,15 @@ import { useMemo, useState } from "react";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
 
+import type { Metadata } from "next";
+import { createToolMetadata } from "@/lib/seo";
+
+export const metadata: Metadata =
+  createToolMetadata(
+    "Room Size Calculator",
+    "Calculate room square footage, square yards, perimeter, flooring needs, and estimated flooring cost."
+  );
+
 export default function RoomSizeCalculator() {
   const [length, setLength] = useState(12);
   const [width, setWidth] = useState(10);

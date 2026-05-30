@@ -11,6 +11,7 @@ export default function DeveloperUtilitiesPage() {
         category?.description ??
         "Free developer tools for JSON, URLs, Base64, timestamps, IDs, regex, JWTs, HTML entities, and API cleanup."
       }
+      intro={category?.intro}
       tools={developerTools}
     />
   );

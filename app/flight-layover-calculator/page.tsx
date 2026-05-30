@@ -4,6 +4,15 @@ import { useMemo, useState } from "react";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
 
+import type { Metadata } from "next";
+import { createToolMetadata } from "@/lib/seo";
+
+export const metadata: Metadata =
+  createToolMetadata(
+    "Flight Layover Calculator",
+    "Estimate whether your flight layover gives enough time for customs, bags, terminal changes, and airport size."
+  );
+
 type FlightType = "domestic" | "international";
 type AirportSize = "small" | "medium" | "large";
 type YesNo = "yes" | "no";

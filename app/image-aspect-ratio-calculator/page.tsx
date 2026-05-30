@@ -4,6 +4,15 @@ import { useMemo, useState } from "react";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
 
+import type { Metadata } from "next";
+import { createToolMetadata } from "@/lib/seo";
+
+export const metadata: Metadata =
+  createToolMetadata(
+    "Image Aspect Ratio Calculator",
+    "Calculate aspect ratios, missing dimensions, scaled image sizes, and CSS aspect-ratio values."
+  );
+
 export default function ImageAspectRatioCalculatorPage() {
   const [width, setWidth] = useState("1920");
   const [height, setHeight] = useState("1080");

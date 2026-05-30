@@ -4,6 +4,15 @@ import { useMemo, useState } from "react";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
 
+import type { Metadata } from "next";
+import { createToolMetadata } from "@/lib/seo";
+
+export const metadata: Metadata =
+  createToolMetadata(
+    "BMI Calculator",
+    "Calculate body mass index from height and weight."
+  );
+
 export default function BmiCalculatorPage() {
   const [heightFeet, setHeightFeet] = useState("5");
   const [heightInches, setHeightInches] = useState("10");

@@ -4,6 +4,15 @@ import { useMemo, useState } from "react";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
 
+import type { Metadata } from "next";
+import { createToolMetadata } from "@/lib/seo";
+
+export const metadata: Metadata =
+  createToolMetadata(
+    "JSON Formatter",
+    "Format, validate, and minify JSON with copy-ready output."
+  );
+
 const sampleJson = `{
   "name": "Goodfolk Toolbox",
   "category": "Developer Utilities",

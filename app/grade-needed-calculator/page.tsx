@@ -4,6 +4,15 @@ import { useMemo, useState } from "react";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
 
+import type { Metadata } from "next";
+import { createToolMetadata } from "@/lib/seo";
+
+export const metadata: Metadata =
+  createToolMetadata(
+    "Grade Needed Calculator",
+    "Calculate what grade you need on a final exam or remaining assignment to hit your target course grade."
+  );
+
 export default function GradeNeededCalculatorPage() {
   const [currentGrade, setCurrentGrade] = useState("85");
   const [targetGrade, setTargetGrade] = useState("90");

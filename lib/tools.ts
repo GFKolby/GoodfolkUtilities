@@ -14,6 +14,7 @@ export type ToolCategory = {
   slug: ToolCategorySlug;
   title: string;
   description: string;
+  intro?: string;
   href: string;
   toolCount: number;
 };
@@ -22,6 +23,7 @@ export type ToolItem = {
   slug: string;
   title: string;
   description: string;
+  intro?: string;
   href: string;
   category: ToolCategorySlug;
 };
@@ -32,6 +34,7 @@ export const categories: ToolCategory[] = [
     title: "Office Utilities",
     description:
       "Free tools for work, data cleanup, documents, and daily operations.",
+    intro: "Explore free office utility tools designed to enhance your workday. From data cleanup and document management to daily operations, these resources are perfect for streamlining your workflow without the need for signup.",
     href: "/office",
     toolCount: 10,
   },
@@ -40,6 +43,7 @@ export const categories: ToolCategory[] = [
     title: "Camp Utilities",
     description:
       "Free camping tools for packing, water planning, gear weight, and trip prep.",
+    intro: "Explore free camping utility tools for packing lists, water planning, gear weight estimation, and trip preparation. These resources are designed to help you plan your camping trips efficiently without the need for signup.",
     href: "/camp",
     toolCount: 10,
   },
@@ -48,6 +52,7 @@ export const categories: ToolCategory[] = [
     title: "Home Utilities",
     description:
       "Free home utilities for paint planning, room sizes, electricity costs, moving boxes, and project budgets.",
+    intro: "Discover free home utility tools for project planning, cost estimation, and everyday home tasks. These resources are designed to help you manage and plan your home projects efficiently without the need for signup.",
     href: "/home",
     toolCount: 10,
   },
@@ -56,6 +61,7 @@ export const categories: ToolCategory[] = [
     title: "Finance Utilities",
     description:
       "Free finance tools for budgeting, savings goals, debt payoff, subscriptions, and income planning.",
+    intro: "Discover free finance utility tools for budgeting, savings goal tracking, debt payoff planning, subscription management, and income planning. These resources are designed to help you manage your finances efficiently without the need for signup.",
     href: "/finance",
     toolCount: 10,
   },
@@ -64,6 +70,7 @@ export const categories: ToolCategory[] = [
   title: "Student Utilities",
   description:
     "Free student tools for grades, GPA, study planning, assignments, writing, and semester workload.",
+  intro: "Discover free student utility tools for grade calculation, GPA estimation, study planning, assignment management, writing assistance, and semester workload planning. These resources are designed to help students manage their academic responsibilities efficiently without the need for signup.",
   href: "/student",
   toolCount: 10,
   },
@@ -72,6 +79,7 @@ export const categories: ToolCategory[] = [
   title: "Design Utilities",
   description:
     "Free design tools for colors, contrast, gradients, shadows, spacing, typography, and UI layout.",
+  intro: "Discover free design utility tools for color palette generation, contrast checking, gradient creation, shadow design, spacing calculation, typography pairing, and UI layout planning. These resources are perfect for designers looking to enhance their projects without the need for signup.",
   href: "/design",
   toolCount: 10,
   },
@@ -80,6 +88,7 @@ export const categories: ToolCategory[] = [
   title: "Developer Utilities",
   description:
     "Free developer tools for JSON, URLs, Base64, timestamps, IDs, regex, JWTs, HTML entities, and API cleanup.",
+  intro: "Explore free developer utility tools for JSON formatting, URL encoding/decoding, Base64 encoding/decoding, timestamp conversion, ID generation, regex testing, JWT decoding, HTML entity encoding/decoding, and API response cleanup. These resources are designed to assist developers in their everyday tasks without the need for signup.",
   href: "/developer",
   toolCount: 10,
   },  
@@ -88,6 +97,7 @@ export const categories: ToolCategory[] = [
   title: "Travel Utilities",
   description:
     "Free travel tools for trip budgets, packing, hotels, gas, layovers, attractions, and travel planning.",
+  intro: "Discover free travel utility tools for trip budgeting, packing lists, hotel booking, gas cost estimation, layover management, attraction planning, and overall travel organization. These resources are designed to help you plan and execute your travels efficiently without the need for signup.",
   href: "/travel",
   toolCount: 10,
   },
@@ -96,6 +106,7 @@ export const categories: ToolCategory[] = [
   title: "Business Utilities",
   description:
     "Free business tools for profit margins, pricing, invoices, break-even planning, meetings, and startup costs.",
+  intro: "Discover free business utility tools for profit margin calculation, pricing strategies, invoice generation, break-even analysis, meeting scheduling, and startup cost estimation. These resources are designed to help entrepreneurs and business owners manage their operations efficiently without the need for signup.",
   href: "/business",
   toolCount: 10,
   },
@@ -104,6 +115,7 @@ export const categories: ToolCategory[] = [
   title: "Health Utilities",
   description:
     "Free health tools for BMI, calories, water intake, protein, walking, macros, sleep, heart rate zones, and weight planning.",
+  intro: "Discover free health utility tools for BMI calculation, calorie tracking, water intake monitoring, protein calculation, walking distance estimation, macro tracking, sleep analysis, heart rate zone determination, and weight planning. These resources are designed to help you manage your health and fitness efficiently without the need for signup.",
   href: "/health",
   toolCount: 10,
   },

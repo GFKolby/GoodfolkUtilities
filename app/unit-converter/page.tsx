@@ -4,6 +4,15 @@ import { useMemo, useState } from "react";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
 
+import type { Metadata } from "next";
+import { createToolMetadata } from "@/lib/seo";
+
+export const metadata: Metadata =
+  createToolMetadata(
+    "Unit Converter",
+    "Convert between different units of measurement."
+  );
+
 type Category = "length" | "weight" | "temperature" | "volume";
 
 const units = {

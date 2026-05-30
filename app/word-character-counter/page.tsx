@@ -5,6 +5,15 @@ import { useMemo, useState } from "react";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
 
+import type { Metadata } from "next";
+import { createToolMetadata } from "@/lib/seo";
+
+export const metadata: Metadata =
+  createToolMetadata(
+    "Word & Character Counter",
+    "Count words, characters, sentences, paragraphs, and estimated reading time."
+  );
+
 export default function WordCharacterCounter() {
   const [text, setText] = useState("");
 

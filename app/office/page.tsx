@@ -11,6 +11,7 @@ export default function OfficeUtilitiesPage() {
         category?.description ??
         "Free tools for work, data cleanup, documents, and daily operations."
       }
+      intro={category?.intro}
       tools={officeTools}
     />
   );

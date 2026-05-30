@@ -4,6 +4,15 @@ import { useMemo, useState } from "react";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
 
+import type { Metadata } from "next";
+import { createToolMetadata } from "@/lib/seo";
+
+export const metadata: Metadata =
+  createToolMetadata(
+    "Home Project Budget Calculator",
+    "Estimate a home project budget with materials, labor, tools, permits, delivery, and a contingency buffer."
+  );
+
 export default function HomeProjectBudgetCalculator() {
   const [materials, setMaterials] = useState(500);
   const [labor, setLabor] = useState(800);

@@ -4,6 +4,15 @@ import { useMemo, useState } from "react";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
 
+import type { Metadata } from "next";
+import { createToolMetadata } from "@/lib/seo";
+
+export const metadata: Metadata =
+  createToolMetadata(
+    "Employee Cost Calculator",
+    "Estimate the real annual cost of an employee including salary, payroll taxes, benefits, equipment, software, and overhead."
+  );
+
 export default function EmployeeCostCalculatorPage() {
   const [salary, setSalary] = useState("65000");
   const [payrollTaxPercent, setPayrollTaxPercent] = useState("7.65");

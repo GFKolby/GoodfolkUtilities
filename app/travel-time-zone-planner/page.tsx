@@ -4,6 +4,15 @@ import { useMemo, useState } from "react";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
 
+import type { Metadata } from "next";
+import { createToolMetadata } from "@/lib/seo";
+
+export const metadata: Metadata =
+  createToolMetadata(
+    "Travel Time Zone Planner",
+    "Plan your travel schedule across different time zones."
+  );
+
 export default function TravelTimeZonePlannerPage() {
   const [homeOffset, setHomeOffset] = useState("-5");
   const [destinationOffset, setDestinationOffset] = useState("1");

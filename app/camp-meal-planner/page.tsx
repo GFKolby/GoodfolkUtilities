@@ -5,6 +5,15 @@ import { useMemo, useState } from "react";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
 
+import type { Metadata } from "next";
+import { createToolMetadata } from "@/lib/seo";
+
+export const metadata: Metadata =
+  createToolMetadata(
+    "Camp Meal Planner",
+    "Estimate meals, snacks, and calories needed for a camping trip."
+  );
+
 export default function CampMealPlanner() {
   const [people, setPeople] = useState(1);
   const [days, setDays] = useState(2);

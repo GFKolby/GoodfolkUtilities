@@ -11,6 +11,7 @@ export default function StudentUtilitiesPage() {
         category?.description ??
         "Free student tools for grades, GPA, study planning, assignments, writing, and semester workload."
       }
+      intro={category?.intro}
       tools={studentTools}
     />
   );

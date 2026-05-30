@@ -4,6 +4,15 @@ import { useMemo, useState } from "react";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
 
+import type { Metadata } from "next";
+import { createToolMetadata } from "@/lib/seo";
+
+export const metadata: Metadata =
+  createToolMetadata(
+    "Packing List Generator",
+    "Generate a customized packing list for your trip based on destination, weather, and travel style."
+  );
+
 type WeatherType = "warm" | "cold" | "mixed" | "rainy";
 type DestinationType = "city" | "beach" | "outdoors" | "business";
 type TravelStyle = "light" | "standard" | "prepared";

@@ -4,6 +4,15 @@ import { useMemo, useState } from "react";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
 
+import type { Metadata } from "next";
+import { createToolMetadata } from "@/lib/seo";
+
+export const metadata: Metadata =
+  createToolMetadata(
+    "Sleep Calculator",
+    "Estimate bedtime or wake-up time using sleep cycles, time to fall asleep, and desired rest."
+  );
+
 function addMinutesToTime(time: string, minutesToAdd: number) {
   const [hours, minutes] = time.split(":").map(Number);
 

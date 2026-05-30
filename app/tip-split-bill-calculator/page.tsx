@@ -4,6 +4,15 @@ import { useMemo, useState } from "react";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
 
+import type { Metadata } from "next";
+import { createToolMetadata } from "@/lib/seo";
+
+export const metadata: Metadata =
+  createToolMetadata(
+    "Tip & Split Bill Calculator",
+    "Calculate the tip, final bill total, and per-person amount when splitting a check."
+  );
+
 export default function TipSplitBillCalculatorPage() {
   const [billAmount, setBillAmount] = useState("80");
   const [tipPercent, setTipPercent] = useState("20");

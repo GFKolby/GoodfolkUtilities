@@ -115,6 +115,21 @@ export default function Home() {
       All tools are free to use with no account or email required. Just click and use.
     </p>
   </div>
+  <section className="max-w-4xl mx-auto">
+  <h2>
+    Free Online Tools & Calculators
+  </h2>
+
+  <p>
+    Goodfolk Toolbox offers 100 free
+    online tools for business,
+    finance, travel, health,
+    development, design, camping,
+    students, and everyday life.
+
+    No signup required.
+  </p>
+</section>
 </section>
 
 <div className="mt-10 grid gap-5 md:grid-cols-2">

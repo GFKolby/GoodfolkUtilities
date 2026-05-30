@@ -4,6 +4,15 @@ import { useMemo, useState } from "react";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
 
+import type { Metadata } from "next";
+import { createToolMetadata } from "@/lib/seo";
+
+export const metadata: Metadata =
+  createToolMetadata(
+    "Road Trip Gas Calculator",
+    "Estimate road trip fuel cost from distance, MPG, gas price, and one-way or round-trip travel."
+  );
+
 export default function RoadTripGasCalculatorPage() {
   const [distance, setDistance] = useState("500");
   const [mpg, setMpg] = useState("25");

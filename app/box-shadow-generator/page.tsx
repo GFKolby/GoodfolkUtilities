@@ -3,6 +3,14 @@
 import { useMemo, useState } from "react";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
+import type { Metadata } from "next";
+import { createToolMetadata } from "@/lib/seo";
+
+export const metadata: Metadata =
+  createToolMetadata(
+    "Box Shadow Generator",
+    "Create CSS box shadows, preview them, and copy ready-to-use shadow styles."
+  );
 
 function normalizeHex(input: string) {
   const cleaned = input.trim().replace("#", "");

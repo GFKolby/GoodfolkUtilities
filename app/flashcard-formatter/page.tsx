@@ -4,6 +4,15 @@ import { useMemo, useState } from "react";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
 
+import type { Metadata } from "next";
+import { createToolMetadata } from "@/lib/seo";
+
+export const metadata: Metadata =
+  createToolMetadata(
+    "Flashcard Formatter",
+    "Turn simple notes into question-and-answer flashcards you can copy into a study app or spreadsheet."
+  );
+
 type Flashcard = {
   front: string;
   back: string;

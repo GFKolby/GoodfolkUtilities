@@ -5,6 +5,7 @@ import ToolCard from "@/components/ToolCard";
 type CategoryPageProps = {
   title: string;
   description: string;
+  intro?: string;
   tools: ToolItem[];
 };
 
@@ -12,6 +13,7 @@ export default function CategoryPage({
   title,
   description,
   tools,
+  intro,
 }: CategoryPageProps) {
   return (
     <main className="min-h-screen bg-slate-950 text-white">
@@ -35,6 +37,11 @@ export default function CategoryPage({
           <p className="mt-4 max-w-2xl text-base leading-7 text-zinc-300">
             {description}
           </p>
+          {intro && (
+            <div className="mt-6 max-w-4xl rounded-2xl border border-slate-800 bg-slate-900 p-6 text-sm leading-7 text-zinc-300">
+              {intro}
+            </div>
+          )}
         </section>
 
         <section className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">

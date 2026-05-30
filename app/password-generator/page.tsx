@@ -5,6 +5,15 @@ import { useMemo, useState } from "react";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
 
+import type { Metadata } from "next";
+import { createToolMetadata } from "@/lib/seo";
+
+export const metadata: Metadata =
+  createToolMetadata(
+    "Password Generator",
+    "Generate a strong random password with custom length, numbers, symbols, and letter options."
+  );
+
 export default function PasswordGenerator() {
   const [length, setLength] = useState(18);
   const [includeUppercase, setIncludeUppercase] = useState(true);

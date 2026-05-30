@@ -14,26 +14,32 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  metadataBase: new URL("https://tools.goodfolkdigital.com"),
+export const metadata = {
+  metadataBase: new URL(
+    "https://tools.goodfolkdigital.com"
+  ),
+
   title: {
     default: "Goodfolk Toolbox",
     template: "%s | Goodfolk Toolbox",
   },
+
   description:
-    "Free browser-based tools for office work, file cleanup, text formatting, camping planning, and everyday digital tasks.",
-  icons: {
-    icon: [{ url: "/icon.svg", type: "image/svg+xml" }],
-    shortcut: [{ url: "/icon.svg", type: "image/svg+xml" }],
-    apple: [{ url: "/icon.svg", type: "image/svg+xml" }],
-  },
+    "100 free online tools and calculators.",
+
   openGraph: {
     title: "Goodfolk Toolbox",
     description:
-      "Free browser-based tools for office work, file cleanup, text formatting, camping planning, and everyday digital tasks.",
-    url: "https://tools.goodfolkdigital.com",
+      "100 free online tools and calculators.",
     siteName: "Goodfolk Toolbox",
     type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Goodfolk Toolbox",
+    description:
+      "100 free online tools and calculators.",
   },
 };
 

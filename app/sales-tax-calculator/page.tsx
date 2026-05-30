@@ -4,6 +4,15 @@ import { useMemo, useState } from "react";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
 
+import type { Metadata } from "next";
+import { createToolMetadata } from "@/lib/seo";
+
+export const metadata: Metadata =
+  createToolMetadata(
+    "Sales Tax Calculator",
+    "Calculate sales tax, pre-tax price, final total, and tax amount from a tax rate."
+  );
+
 export default function SalesTaxCalculatorPage() {
   const [price, setPrice] = useState("100");
   const [taxRate, setTaxRate] = useState("8");

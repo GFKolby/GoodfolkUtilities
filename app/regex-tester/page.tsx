@@ -4,6 +4,15 @@ import { useMemo, useState } from "react";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
 
+import type { Metadata } from "next";
+import { createToolMetadata } from "@/lib/seo";
+
+export const metadata: Metadata =
+  createToolMetadata(
+    "Regex Tester",
+    "Test regular expressions against sample text and inspect matches, indexes, groups, and flags."
+  );
+
 type RegexMatch = {
   match: string;
   index: number;

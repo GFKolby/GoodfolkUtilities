@@ -4,6 +4,15 @@ import { useMemo, useState } from "react";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
 
+import type { Metadata } from "next";
+import { createToolMetadata } from "@/lib/seo";
+
+export const metadata: Metadata =
+  createToolMetadata(
+    "URL Encoder / Decoder",
+    "Encode and decode URLs, query strings, and text for safe use in web addresses."
+  );
+
 export default function UrlEncoderDecoderPage() {
   const [input, setInput] = useState(
     "https://goodfolkdigital.com/search?q=small sharp tools&category=developer utilities"

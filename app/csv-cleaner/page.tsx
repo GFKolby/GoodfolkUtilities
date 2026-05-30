@@ -7,6 +7,15 @@ import ToolPage from "@/components/ToolPage";
 import FilePicker from "@/components/FilePicker";
 import RelatedTools from "@/components/RelatedTools";
 
+import type { Metadata } from "next";
+import { createToolMetadata } from "@/lib/seo";
+
+export const metadata: Metadata =
+  createToolMetadata(
+    "CSV Cleaner",
+    "Upload a CSV, clean headers, trim spaces, remove duplicate rows, and download a fresh file."
+  );
+
 type Row = Record<string, string>;
 
 export default function CsvCleaner() {

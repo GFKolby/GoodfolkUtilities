@@ -5,6 +5,15 @@ import { useMemo, useState } from "react";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
 
+import type { Metadata } from "next";
+import { createToolMetadata } from "@/lib/seo";
+
+export const metadata: Metadata =
+  createToolMetadata(
+    "Markdown Previewer",
+    "Write Markdown and preview the formatted output instantly in your browser."
+  );
+
 export default function MarkdownPreviewer() {
   const [markdown, setMarkdown] = useState(`# Goodfolk Notes
 

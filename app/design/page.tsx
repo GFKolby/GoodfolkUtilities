@@ -11,6 +11,7 @@ export default function DesignUtilitiesPage() {
         category?.description ??
         "Free design tools for colors, contrast, gradients, shadows, spacing, typography, and UI layout."
       }
+      intro={category?.intro}
       tools={designTools}
     />
   );

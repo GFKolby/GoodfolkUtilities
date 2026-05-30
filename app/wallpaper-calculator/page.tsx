@@ -4,6 +4,15 @@ import { useMemo, useState } from "react";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
 
+import type { Metadata } from "next";
+import { createToolMetadata } from "@/lib/seo";
+
+export const metadata: Metadata =
+  createToolMetadata(
+    "Wallpaper Calculator",
+    "Estimate wallpaper rolls and material cost for an accent wall, room, or small home project."
+  );
+
 export default function WallpaperCalculatorPage() {
   const [wallWidth, setWallWidth] = useState("12");
   const [wallHeight, setWallHeight] = useState("8");

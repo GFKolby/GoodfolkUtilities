@@ -4,6 +4,15 @@ import { useMemo, useState } from "react";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
 
+import type { Metadata } from "next";
+import { createToolMetadata } from "@/lib/seo";
+
+export const metadata: Metadata =
+  createToolMetadata(
+    "REM/PX Converter",
+    "Convert pixels to rems and rems to pixels using a custom base font size."
+  );
+
 export default function RemPxConverterPage() {
   const [pixels, setPixels] = useState("16");
   const [rems, setRems] = useState("1");

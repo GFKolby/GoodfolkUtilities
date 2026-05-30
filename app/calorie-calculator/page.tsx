@@ -4,6 +4,15 @@ import { useMemo, useState } from "react";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
 
+import type { Metadata } from "next";
+import { createToolMetadata } from "@/lib/seo";
+
+export const metadata: Metadata =
+  createToolMetadata(
+    "Calorie Calculator",
+    "Estimate daily calories for maintenance, weight loss, or weight gain based on body stats and activity level."
+  );
+
 type Sex = "male" | "female";
 type ActivityLevel = "sedentary" | "light" | "moderate" | "active" | "veryActive";
 

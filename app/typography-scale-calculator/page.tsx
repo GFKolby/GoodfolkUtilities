@@ -4,6 +4,15 @@ import { useMemo, useState } from "react";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
 
+import type { Metadata } from "next";
+import { createToolMetadata } from "@/lib/seo";
+
+export const metadata: Metadata =
+  createToolMetadata(
+    "Typography Scale Calculator",
+    "Generate a consistent typography scale from a base font size and ratio."
+  );
+
 const ratioOptions = {
   minorSecond: { label: "Minor second — 1.067", value: 1.067 },
   majorSecond: { label: "Major second — 1.125", value: 1.125 },

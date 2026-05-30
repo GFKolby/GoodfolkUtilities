@@ -4,6 +4,15 @@ import { useMemo, useState } from "react";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
 
+import type { Metadata } from "next";
+import { createToolMetadata } from "@/lib/seo";
+
+export const metadata: Metadata =
+  createToolMetadata(
+    "Invoice Total Calculator",
+    "Calculate invoice subtotal, discount, tax, fees, deposit, and final balance due."
+  );
+
 export default function InvoiceTotalCalculatorPage() {
   const [lineItems, setLineItems] = useState("750");
   const [discountPercent, setDiscountPercent] = useState("10");

@@ -4,6 +4,15 @@ import { useMemo, useState } from "react";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
 
+import type { Metadata } from "next";
+import { createToolMetadata } from "@/lib/seo";
+
+export const metadata: Metadata =
+  createToolMetadata(
+    "HTML Entity Encoder / Decoder",
+    "Encode HTML special characters into entities or decode entities back into readable text."
+  );
+
 function encodeHtmlEntities(value: string) {
   return value
     .replace(/&/g, "&amp;")

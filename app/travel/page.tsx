@@ -11,6 +11,7 @@ export default function TravelUtilitiesPage() {
         category?.description ??
         "Free travel tools for trip budgets, packing, hotels, gas, layovers, attractions, and travel planning."
       }
+      intro={category?.intro}
       tools={travelTools}
     />
   );
