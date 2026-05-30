@@ -143,24 +143,24 @@ export default function WaterIntakeCalculatorPage() {
 
       <RelatedTools currentHref="/water-intake-calculator" category="health" />
       <FAQ
-        items={[
-          {
-            question: "How much water should I drink daily?",
-            answer:
-              "A common general recommendation is about 8 cups (64 oz) per day, but individual needs vary widely based on weight, activity, climate, and health conditions.",
-          },
-          {
-            question: "Can I drink too much water?",
-            answer:
-              "Yes, excessive water intake can lead to a dangerous condition called hyponatremia. It's important to listen to your body's thirst signals and adjust intake based on your circumstances.",
-          },
-          {
-            question: "Does coffee or alcohol count towards hydration?",
-            answer:
-              "Caffeinated and alcoholic beverages can have a mild diuretic effect, which is why this calculator adds extra water needs for each serving. However, they still contribute to overall fluid intake.",
-          },
-        ]}
-      />  
+  items={[
+    {
+      question: "How much water should I drink per day?",
+      answer:
+        "A common starting estimate is about half your body weight in ounces per day, then adjusting for activity, weather, caffeine, alcohol, and personal needs.",
+    },
+    {
+      question: "Does exercise change how much water I need?",
+      answer:
+        "Yes. More activity usually increases fluid needs because you lose more water through sweat and breathing, especially during long or intense workouts.",
+    },
+    {
+      question: "Is this water intake calculator medical advice?",
+      answer:
+        "No. This calculator is for general planning only. People with fluid restrictions, kidney disease, heart conditions, pregnancy, or medication concerns should follow professional medical guidance.",
+    },
+  ]}
+/>
     </ToolPage>
   );
 }
