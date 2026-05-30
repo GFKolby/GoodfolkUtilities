@@ -4,15 +4,6 @@ import { useMemo, useState } from "react";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
 
-import type { Metadata } from "next";
-import { createToolMetadata } from "@/lib/seo";
-
-export const metadata: Metadata =
-  createToolMetadata(
-    "Citation Helper",
-    "Generate properly formatted citations for various source types."
-  );
-
 type SourceType = "website" | "book" | "article" | "video";
 type CitationStyle = "mla" | "apa";
 

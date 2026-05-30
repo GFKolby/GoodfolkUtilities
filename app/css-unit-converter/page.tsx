@@ -3,15 +3,6 @@
 import { useMemo, useState } from "react";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
-import type { Metadata } from "next";
-import { createToolMetadata } from "@/lib/seo";
-
-export const metadata: Metadata =
-  createToolMetadata(
-    "CSS Unit Converter",
-    "Convert common CSS units like px, rem, em, vw, and vh for front-end development."
-  );
-
 type CssUnit = "px" | "rem" | "em" | "vw" | "vh";
 
 const unitLabels: Record<CssUnit, string> = {

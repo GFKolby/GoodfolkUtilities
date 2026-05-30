@@ -5,15 +5,6 @@ import { useMemo, useState } from "react";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
 
-import type { Metadata } from "next";
-import { createToolMetadata } from "@/lib/seo";
-
-export const metadata: Metadata =
-  createToolMetadata(
-    "Camp Pack Weight Planner",
-    "Add your camping gear and estimate your total pack weight."
-  );
-
 type Item = {
   id: number;
   name: string;

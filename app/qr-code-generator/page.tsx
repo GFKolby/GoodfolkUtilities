@@ -5,15 +5,6 @@ import QRCode from "qrcode";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
 
-import type { Metadata } from "next";
-import { createToolMetadata } from "@/lib/seo";
-
-export const metadata: Metadata =
-  createToolMetadata(
-    "QR Code Generator",
-    "Create a downloadable QR code from a link, email address, phone number, or any short text."
-  );
-
 export default function QrCodeGenerator() {
   const [text, setText] = useState("https://goodfolkdigital.com");
   const [qrDataUrl, setQrDataUrl] = useState("");

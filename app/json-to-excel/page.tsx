@@ -5,15 +5,6 @@ import { useState } from "react";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
 
-import type { Metadata } from "next";
-import { createToolMetadata } from "@/lib/seo";
-
-export const metadata: Metadata =
-  createToolMetadata(
-    "JSON to Excel Converter",
-    "Convert JSON data to an Excel spreadsheet."
-  );
-
 export default function Home() {
   const [jsonText, setJsonText] = useState("");
   const [loading, setLoading] = useState(false);

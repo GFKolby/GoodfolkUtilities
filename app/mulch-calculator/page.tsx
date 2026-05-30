@@ -4,15 +4,6 @@ import { useMemo, useState } from "react";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
 
-import type { Metadata } from "next";
-import { createToolMetadata } from "@/lib/seo";
-
-export const metadata: Metadata =
-  createToolMetadata(
-    "Mulch Calculator",
-    "Estimate how much mulch you need for a garden bed, walkway, or landscaping project."
-  );
-
 export default function MulchCalculatorPage() {
   const [length, setLength] = useState("10");
   const [width, setWidth] = useState("6");

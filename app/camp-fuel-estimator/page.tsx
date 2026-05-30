@@ -5,15 +5,6 @@ import { useMemo, useState } from "react";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
 
-import type { Metadata } from "next";
-import { createToolMetadata } from "@/lib/seo";
-
-export const metadata: Metadata =
-  createToolMetadata(
-    "Camp Fuel Estimator",
-    "Estimate how much camping fuel you need for a trip."
-  );
-
 export default function CampFuelEstimator() {
   const [people, setPeople] = useState(1);
   const [days, setDays] = useState(2);

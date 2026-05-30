@@ -4,15 +4,6 @@ import { useMemo, useState } from "react";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
 
-import type { Metadata } from "next";
-import { createToolMetadata } from "@/lib/seo";
-
-export const metadata: Metadata =
-  createToolMetadata(
-    "Savings Goal Calculator",
-    "Estimate how long it may take to reach a savings goal based on your current savings, monthly contribution, and interest rate."
-  );
-
 export default function SavingsGoalCalculatorPage() {
   const [goalAmount, setGoalAmount] = useState("5000");
   const [currentSavings, setCurrentSavings] = useState("500");

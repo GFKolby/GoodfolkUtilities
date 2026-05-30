@@ -4,15 +4,6 @@ import { useMemo, useState } from "react";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
 
-import type { Metadata } from "next";
-import { createToolMetadata } from "@/lib/seo";
-
-export const metadata: Metadata =
-  createToolMetadata(
-    "Final Exam Study Plan Generator",
-    "Create a simple day-by-day final exam study plan based on exam date, topics, available study time, and review days."
-  );
-
 export default function FinalExamStudyPlanGeneratorPage() {
   const today = new Date().toISOString().split("T")[0];
 

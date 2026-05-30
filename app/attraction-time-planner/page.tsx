@@ -4,15 +4,6 @@ import { useMemo, useState } from "react";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
 
-import type { Metadata } from "next";
-import { createToolMetadata } from "@/lib/seo";
-
-export const metadata: Metadata =
-  createToolMetadata(
-    "Attraction Time Planner",
-    "Estimate how many attractions fit into a travel day using visit time, transit time, meals, and buffer."
-  );
-
 export default function AttractionTimePlannerPage() {
   const [dayStart, setDayStart] = useState("09:00");
   const [dayEnd, setDayEnd] = useState("18:00");

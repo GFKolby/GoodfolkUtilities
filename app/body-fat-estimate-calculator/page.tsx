@@ -3,15 +3,6 @@
 import { useMemo, useState } from "react";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
-import type { Metadata } from "next";
-import { createToolMetadata } from "@/lib/seo";
-
-export const metadata: Metadata =
-  createToolMetadata(
-    "Body Fat Estimate Calculator",
-    "Estimate body fat percentage using simple body measurements and standard formula inputs."
-  );
-
 type Sex = "male" | "female";
 
 export default function BodyFatEstimateCalculatorPage() {

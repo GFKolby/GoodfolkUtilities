@@ -4,15 +4,6 @@ import { useMemo, useState } from "react";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
 
-import type { Metadata } from "next";
-import { createToolMetadata } from "@/lib/seo";
-
-export const metadata: Metadata =
-  createToolMetadata(
-    "Currency Conversion Notes",
-    "Convert common travel amounts using a manual exchange rate for quick budgeting abroad."
-  );
-
 export default function CurrencyConversionNotesPage() {
   const [homeCurrency, setHomeCurrency] = useState("USD");
   const [localCurrency, setLocalCurrency] = useState("EUR");

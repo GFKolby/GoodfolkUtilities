@@ -6,15 +6,6 @@ import JSZip from "jszip";
 import ToolPage from "@/components/ToolPage";
 import FilePicker from "@/components/FilePicker";
 import RelatedTools from "@/components/RelatedTools";
-import type { Metadata } from "next";
-import { createToolMetadata } from "@/lib/seo";
-
-export const metadata: Metadata =
-  createToolMetadata(
-    "Bulk Rename Tool",
-    "Rename multiple files with prefixes, suffixes, replacement text, or numbered names."
-  );
-
 type RenameMode = "prefix" | "suffix" | "replace" | "numbered";
 
 export default function BulkRenameTool() {

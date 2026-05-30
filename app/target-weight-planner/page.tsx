@@ -4,15 +4,6 @@ import { useMemo, useState } from "react";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
 
-import type { Metadata } from "next";
-import { createToolMetadata } from "@/lib/seo";
-
-export const metadata: Metadata =
-  createToolMetadata(
-    "Target Weight Planner",
-    "Estimate a target weight timeline based on current weight, goal weight, and weekly change."
-  );
-
 export default function TargetWeightPlannerPage() {
   const [currentWeight, setCurrentWeight] = useState("250");
   const [targetWeight, setTargetWeight] = useState("220");

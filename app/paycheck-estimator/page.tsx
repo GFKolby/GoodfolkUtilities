@@ -4,15 +4,6 @@ import { useMemo, useState } from "react";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
 
-import type { Metadata } from "next";
-import { createToolMetadata } from "@/lib/seo";
-
-export const metadata: Metadata =
-  createToolMetadata(
-    "Paycheck Estimator",
-    "Estimate take-home pay after taxes, retirement contributions, benefits, and other paycheck deductions."
-  );
-
 const payPeriodsPerYear = {
   weekly: 52,
   biweekly: 26,

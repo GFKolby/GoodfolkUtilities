@@ -4,15 +4,6 @@ import { useMemo, useState } from "react";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
 
-import type { Metadata } from "next";
-import { createToolMetadata } from "@/lib/seo";
-
-export const metadata: Metadata =
-  createToolMetadata(
-    "Break-Even Calculator",
-    "Calculate how many units or sales you need to cover fixed and variable costs."
-  );
-
 export default function BreakEvenCalculatorPage() {
   const [fixedCosts, setFixedCosts] = useState("2000");
   const [pricePerUnit, setPricePerUnit] = useState("50");

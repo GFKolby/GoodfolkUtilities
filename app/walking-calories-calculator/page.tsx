@@ -4,15 +4,6 @@ import { useMemo, useState } from "react";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
 
-import type { Metadata } from "next";
-import { createToolMetadata } from "@/lib/seo";
-
-export const metadata: Metadata =
-  createToolMetadata(
-    "Walking Calories Calculator",
-    "Estimate calories burned while walking based on weight, distance, pace, and incline."
-  );
-
 export default function WalkingCaloriesCalculatorPage() {
   const [weightPounds, setWeightPounds] = useState("200");
   const [distanceMiles, setDistanceMiles] = useState("2");

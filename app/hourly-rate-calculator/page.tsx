@@ -4,15 +4,6 @@ import { useMemo, useState } from "react";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
 
-import type { Metadata } from "next";
-import { createToolMetadata } from "@/lib/seo";
-
-export const metadata: Metadata =
-  createToolMetadata(
-    "Hourly Rate Calculator",
-    "Calculate an hourly rate from salary goals, business expenses, taxes, profit, and billable hours."
-  );
-
 export default function HourlyRateCalculatorPage() {
   const [targetIncome, setTargetIncome] = useState("75000");
   const [businessExpenses, setBusinessExpenses] = useState("12000");

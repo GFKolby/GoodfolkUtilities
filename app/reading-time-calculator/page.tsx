@@ -4,15 +4,6 @@ import { useMemo, useState } from "react";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
 
-import type { Metadata } from "next";
-import { createToolMetadata } from "@/lib/seo";
-
-export const metadata: Metadata =
-  createToolMetadata(
-    "Reading Time Calculator",
-    "Estimate how long a reading assignment may take based on word count, pages, reading speed, and note-taking time."
-  );
-
 export default function ReadingTimeCalculatorPage() {
   const [wordCount, setWordCount] = useState("3000");
   const [pages, setPages] = useState("10");

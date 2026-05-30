@@ -4,15 +4,6 @@ import { useMemo, useState } from "react";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
 
-import type { Metadata } from "next";
-import { createToolMetadata } from "@/lib/seo";
-
-export const metadata: Metadata =
-  createToolMetadata(
-    "Travel Insurance Checklist",
-    "Ensure you have the right coverage for your trip."
-  );
-
 type TripType = "domestic" | "international" | "cruise" | "roadTrip";
 type TripCost = "low" | "medium" | "high";
 type YesNo = "yes" | "no";

@@ -4,15 +4,6 @@ import { useMemo, useState } from "react";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
 
-import type { Metadata } from "next";
-import { createToolMetadata } from "@/lib/seo";
-
-export const metadata: Metadata =
-  createToolMetadata(
-    "Markup Calculator",
-    "Calculate selling price, markup amount, profit margin, and total profit from cost and markup percentage."
-  );
-
 export default function MarkupCalculatorPage() {
   const [cost, setCost] = useState("50");
   const [markupPercent, setMarkupPercent] = useState("40");

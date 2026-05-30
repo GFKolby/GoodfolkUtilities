@@ -4,15 +4,6 @@ import { useMemo, useState } from "react";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
 
-import type { Metadata } from "next";
-import { createToolMetadata } from "@/lib/seo";
-
-export const metadata: Metadata =
-  createToolMetadata(
-    "Tile Calculator",
-    "Estimate how many tiles and boxes you need for a floor, wall, backsplash, or small home project."
-  );
-
 export default function TileCalculatorPage() {
   const [areaLength, setAreaLength] = useState("10");
   const [areaWidth, setAreaWidth] = useState("8");

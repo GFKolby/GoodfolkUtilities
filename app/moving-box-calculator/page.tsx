@@ -4,15 +4,6 @@ import { useMemo, useState } from "react";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
 
-import type { Metadata } from "next";
-import { createToolMetadata } from "@/lib/seo";
-
-export const metadata: Metadata =
-  createToolMetadata(
-    "Moving Box Calculator",
-    "Estimate how many moving boxes you may need based on bedrooms, bathrooms, common rooms, storage, and packing style."
-  );
-
 type PackingStyle = "light" | "average" | "heavy";
 
 export default function MovingBoxCalculator() {

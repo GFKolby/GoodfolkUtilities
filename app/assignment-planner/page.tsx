@@ -4,15 +4,6 @@ import { useMemo, useState } from "react";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
 
-import type { Metadata } from "next";
-import { createToolMetadata } from "@/lib/seo";
-
-export const metadata: Metadata =
-  createToolMetadata(
-    "Assignment Planner",
-    "Break an assignment into daily work sessions based on due date, estimated effort, and available study days."
-  );
-
 export default function AssignmentPlannerPage() {
   const today = new Date().toISOString().split("T")[0];
 

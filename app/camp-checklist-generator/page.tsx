@@ -5,15 +5,6 @@ import { useMemo, useState } from "react";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
 
-import type { Metadata } from "next";
-import { createToolMetadata } from "@/lib/seo";
-
-export const metadata: Metadata =
-  createToolMetadata(
-    "Camp Checklist Generator",
-    "Generate a simple camping checklist based on your trip style, weather, cooking plans, and activities."
-  );
-
 export default function CampChecklistGenerator() {
   const [nights, setNights] = useState(2);
   const [campingStyle, setCampingStyle] = useState("car");

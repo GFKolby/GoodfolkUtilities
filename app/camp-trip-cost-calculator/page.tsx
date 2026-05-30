@@ -5,15 +5,6 @@ import { useMemo, useState } from "react";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
 
-import type { Metadata } from "next";
-import { createToolMetadata } from "@/lib/seo";
-
-export const metadata: Metadata =
-  createToolMetadata(
-    "Camp Trip Cost Calculator",
-    "Estimate the total cost of a camping trip, including campsite fees, gas, food, gear, and extra fees."
-  );
-
 export default function CampTripCostCalculator() {
   const [nights, setNights] = useState(2);
   const [campsiteCostPerNight, setCampsiteCostPerNight] = useState(35);

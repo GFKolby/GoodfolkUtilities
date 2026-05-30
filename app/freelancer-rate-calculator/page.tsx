@@ -4,15 +4,6 @@ import { useMemo, useState } from "react";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
 
-import type { Metadata } from "next";
-import { createToolMetadata } from "@/lib/seo";
-
-export const metadata: Metadata =
-  createToolMetadata(
-    "Freelancer Rate Calculator",
-    "Estimate freelance hourly, daily, weekly, and project rates from income goals, expenses, taxes, and billable time."
-  );
-
 export default function FreelancerRateCalculatorPage() {
   const [targetIncome, setTargetIncome] = useState("80000");
   const [expenses, setExpenses] = useState("12000");

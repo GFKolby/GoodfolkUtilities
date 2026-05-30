@@ -5,15 +5,6 @@ import { useMemo, useState } from "react";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
 
-import type { Metadata } from "next";
-import { createToolMetadata } from "@/lib/seo";
-
-export const metadata: Metadata =
-  createToolMetadata(
-    "Camp Battery Estimator",
-    "Estimate how much battery capacity you need for a camping trip."
-  );
-
 export default function CampBatteryEstimator() {
   const [batteryWh, setBatteryWh] = useState(200);
   const [nights, setNights] = useState(2);

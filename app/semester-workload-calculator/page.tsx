@@ -4,15 +4,6 @@ import { useMemo, useState } from "react";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
 
-import type { Metadata } from "next";
-import { createToolMetadata } from "@/lib/seo";
-
-export const metadata: Metadata =
-  createToolMetadata(
-    "Semester Workload Calculator",
-    "Estimate your weekly workload for a semester using credit hours, study time, assignments, work, and life commitments."
-  );
-
 export default function SemesterWorkloadCalculatorPage() {
   const [creditHours, setCreditHours] = useState("12");
   const [studyHoursPerCredit, setStudyHoursPerCredit] = useState("2");

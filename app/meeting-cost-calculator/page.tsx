@@ -4,15 +4,6 @@ import { useMemo, useState } from "react";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
 
-import type { Metadata } from "next";
-import { createToolMetadata } from "@/lib/seo";
-
-export const metadata: Metadata =
-  createToolMetadata(
-    "Meeting Cost Calculator",
-    "Estimate the real cost of a meeting based on attendee count, hourly rate, duration, prep time, and follow-up time."
-  );
-
 export default function MeetingCostCalculatorPage() {
   const [attendees, setAttendees] = useState("6");
   const [averageHourlyRate, setAverageHourlyRate] = useState("45");

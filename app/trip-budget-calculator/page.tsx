@@ -4,15 +4,6 @@ import { useMemo, useState } from "react";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
 
-import type { Metadata } from "next";
-import { createToolMetadata } from "@/lib/seo";
-
-export const metadata: Metadata =
-  createToolMetadata(
-    "Trip Budget Calculator",
-    "Estimate total trip cost from transportation, lodging, food, activities, shopping, and buffer."
-  );
-
 export default function TripBudgetCalculatorPage() {
   const [travelers, setTravelers] = useState("1");
   const [days, setDays] = useState("7");

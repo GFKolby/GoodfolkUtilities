@@ -4,15 +4,6 @@ import { useMemo, useState } from "react";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
 
-import type { Metadata } from "next";
-import { createToolMetadata } from "@/lib/seo";
-
-export const metadata: Metadata =
-  createToolMetadata(
-    "Essay Word Counter",
-    "Count words, characters, sentences, paragraphs, reading time, and progress toward an essay word target."
-  );
-
 export default function EssayWordCounterPage() {
   const [text, setText] = useState(
     "Paste or type your essay draft here. The counter will estimate words, characters, sentences, paragraphs, and progress toward your target."

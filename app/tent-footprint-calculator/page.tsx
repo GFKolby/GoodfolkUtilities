@@ -4,15 +4,6 @@ import { useMemo, useState } from "react";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
 
-import type { Metadata } from "next";
-import { createToolMetadata } from "@/lib/seo";
-
-export const metadata: Metadata =
-  createToolMetadata(
-    "Tent Footprint Calculator",
-    "Calculate a recommended tent footprint size so your groundsheet stays slightly smaller than your tent floor."
-  );
-
 export default function TentFootprintCalculator() {
   const [tentLength, setTentLength] = useState(84);
   const [tentWidth, setTentWidth] = useState(50);

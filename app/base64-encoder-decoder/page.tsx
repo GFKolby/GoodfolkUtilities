@@ -3,15 +3,6 @@
 import { useMemo, useState } from "react";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
-import type { Metadata } from "next";
-import { createToolMetadata } from "@/lib/seo";
-
-export const metadata: Metadata =
-  createToolMetadata(
-    "Base64 Encoder / Decoder",
-    "Encode text to Base64 or decode Base64 back into readable text."
-  );
-
 function encodeBase64(value: string) {
   return btoa(unescape(encodeURIComponent(value)));
 }

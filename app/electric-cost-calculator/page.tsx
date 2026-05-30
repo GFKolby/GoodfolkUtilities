@@ -4,15 +4,6 @@ import { useMemo, useState } from "react";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
 
-import type { Metadata } from "next";
-import { createToolMetadata } from "@/lib/seo";
-
-export const metadata: Metadata =
-  createToolMetadata(
-    "Electric Cost Calculator",
-    "Estimate how much it costs to run a device based on watts, hours used, days per month, and your electric rate."
-  );
-
 export default function ElectricCostCalculator() {
   const [watts, setWatts] = useState(100);
   const [hoursPerDay, setHoursPerDay] = useState(8);

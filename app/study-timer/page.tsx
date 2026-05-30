@@ -4,15 +4,6 @@ import { useMemo, useState } from "react";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
 
-import type { Metadata } from "next";
-import { createToolMetadata } from "@/lib/seo";
-
-export const metadata: Metadata =
-  createToolMetadata(
-    "Study Timer",
-    "Plan focused study sessions with short breaks and a longer reset break."
-  );
-
 export default function StudyTimerPage() {
   const [sessionMinutes, setSessionMinutes] = useState("25");
   const [breakMinutes, setBreakMinutes] = useState("5");

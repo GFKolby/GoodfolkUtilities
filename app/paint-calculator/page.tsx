@@ -4,15 +4,6 @@ import { useMemo, useState } from "react";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
 
-import type { Metadata } from "next";
-import { createToolMetadata } from "@/lib/seo";
-
-export const metadata: Metadata =
-  createToolMetadata(
-    "Paint Calculator",
-    "Estimate how much paint you need based on room size, wall height, coats, doors, and windows."
-  );
-
 export default function PaintCalculator() {
   const [roomLength, setRoomLength] = useState(12);
   const [roomWidth, setRoomWidth] = useState(10);

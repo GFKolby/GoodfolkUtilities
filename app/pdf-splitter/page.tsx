@@ -8,15 +8,6 @@ import ToolPage from "@/components/ToolPage";
 import FilePicker from "@/components/FilePicker";
 import RelatedTools from "@/components/RelatedTools";
 
-import type { Metadata } from "next";
-import { createToolMetadata } from "@/lib/seo";
-
-export const metadata: Metadata =
-  createToolMetadata(
-    "PDF Splitter",
-    "Upload a PDF and split each page into its own PDF file."
-  );
-
 export default function PdfSplitter() {
   const [file, setFile] = useState<File | null>(null);
   const [pageCount, setPageCount] = useState<number | null>(null);

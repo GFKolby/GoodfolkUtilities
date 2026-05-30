@@ -4,15 +4,6 @@ import { useMemo, useState } from "react";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
 
-import type { Metadata } from "next";
-import { createToolMetadata } from "@/lib/seo";
-
-export const metadata: Metadata =
-  createToolMetadata(
-    "Flooring Calculator",
-    "Estimate how much flooring you need, including waste allowance, box count, and material cost."
-  );
-
 export default function FlooringCalculatorPage() {
   const [length, setLength] = useState("12");
   const [width, setWidth] = useState("10");

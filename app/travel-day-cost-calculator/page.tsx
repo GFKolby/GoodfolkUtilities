@@ -4,15 +4,6 @@ import { useMemo, useState } from "react";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
 
-import type { Metadata } from "next";
-import { createToolMetadata } from "@/lib/seo";
-
-export const metadata: Metadata =
-  createToolMetadata(
-    "Travel Day Cost Calculator",
-    "Estimate the cost of a single travel day from meals, transit, rideshares, activities, shopping, and buffer."
-  );
-
 export default function TravelDayCostCalculatorPage() {
   const [travelers, setTravelers] = useState("1");
   const [breakfast, setBreakfast] = useState("10");

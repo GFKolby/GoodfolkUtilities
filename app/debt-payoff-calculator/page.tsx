@@ -4,15 +4,6 @@ import { useMemo, useState } from "react";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
 
-import type { Metadata } from "next";
-import { createToolMetadata } from "@/lib/seo";
-
-export const metadata: Metadata =
-  createToolMetadata(
-    "Debt Payoff Calculator",
-    "Estimate how long it may take to pay off a debt based on balance, APR, regular payment, and extra monthly payment."
-  );
-
 export default function DebtPayoffCalculatorPage() {
   const [balance, setBalance] = useState("5000");
   const [apr, setApr] = useState("18");

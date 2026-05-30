@@ -5,15 +5,6 @@ import { useMemo, useState } from "react";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
 
-import type { Metadata } from "next";
-import { createToolMetadata } from "@/lib/seo";
-
-export const metadata: Metadata =
-  createToolMetadata(
-    "Camp Weather Comfort Calculator",
-    "Estimate how comfortable your camping weather may feel based on temperature, rain, wind, humidity, and overnight lows."
-  );
-
 export default function CampWeatherComfort() {
   const [temperature, setTemperature] = useState(65);
   const [rainChance, setRainChance] = useState(20);

@@ -4,15 +4,6 @@ import { useMemo, useState } from "react";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
 
-import type { Metadata } from "next";
-import { createToolMetadata } from "@/lib/seo";
-
-export const metadata: Metadata =
-  createToolMetadata(
-    "Campfire Safety Checklist",
-    "A comprehensive checklist to ensure safe campfire practices."
-  );
-
 export default function CampfireSafetyChecklist() {
   const [fireRing, setFireRing] = useState(true);
   const [windy, setWindy] = useState(false);

@@ -4,15 +4,6 @@ import { useMemo, useState } from "react";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
 
-import type { Metadata } from "next";
-import { createToolMetadata } from "@/lib/seo";
-
-export const metadata: Metadata =
-  createToolMetadata(
-    "Home Project Timeline Estimator",
-    "Estimate a rough timeline for small home projects based on project type, complexity, DIY level, and schedule cushion."
-  );
-
 const projectBaseDays = {
   painting: 2,
   flooring: 3,

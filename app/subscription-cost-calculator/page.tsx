@@ -4,15 +4,6 @@ import { useMemo, useState } from "react";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
 
-import type { Metadata } from "next";
-import { createToolMetadata } from "@/lib/seo";
-
-export const metadata: Metadata =
-  createToolMetadata(
-    "Subscription Cost Calculator",
-    "Estimate how much your subscriptions cost per month and year, plus how much you could save by canceling unused services."
-  );
-
 export default function SubscriptionCostCalculatorPage() {
   const [streaming, setStreaming] = useState("45");
   const [music, setMusic] = useState("12");

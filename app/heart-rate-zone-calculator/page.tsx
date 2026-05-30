@@ -4,15 +4,6 @@ import { useMemo, useState } from "react";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
 
-import type { Metadata } from "next";
-import { createToolMetadata } from "@/lib/seo";
-
-export const metadata: Metadata =
-  createToolMetadata(
-    "Heart Rate Zone Calculator",
-    "Estimate training heart rate zones from age and resting heart rate."
-  );
-
 const zones = [
   { name: "Zone 1", label: "Very light", low: 50, high: 60 },
   { name: "Zone 2", label: "Light / endurance", low: 60, high: 70 },

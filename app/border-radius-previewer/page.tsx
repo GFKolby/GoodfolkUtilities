@@ -4,15 +4,6 @@ import { useMemo, useState } from "react";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
 
-import type { Metadata } from "next";
-import { createToolMetadata } from "@/lib/seo";
-
-export const metadata: Metadata =
-  createToolMetadata(
-    "Border Radius Previewer",
-    "Preview border radius values on cards and buttons, then copy CSS-ready corner styles."
-  );
-
 export default function BorderRadiusPreviewerPage() {
   const [topLeft, setTopLeft] = useState("16");
   const [topRight, setTopRight] = useState("16");
