@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
+import { createToolMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Home Project Budget Calculator",
-  description:
-    "Estimate a home project budget with materials, labor, tools, permits, delivery, and a contingency buffer.",
-};
+export const metadata: Metadata = createToolMetadata(
+  "Project Budget Calculator",
+  "Plan a home project budget with materials, labor, and extra cushion."
+);
 
-export default function HomeProjectBudgetCalculatorLayout({
+export default function ToolLayout({
   children,
 }: {
   children: React.ReactNode;

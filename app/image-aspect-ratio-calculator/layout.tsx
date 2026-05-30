@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { createToolMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = createToolMetadata(
-  "Electricity Cost Calculator",
-  "Estimate how much an appliance or device costs to run."
+  "Image Aspect Ratio Calculator",
+  "Calculate missing image dimensions, aspect ratios, and scaled sizes for UI layouts and media."
 );
 
 export default function ToolLayout({

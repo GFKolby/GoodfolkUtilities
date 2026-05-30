@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { createToolMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = createToolMetadata(
-  "Electricity Cost Calculator",
-  "Estimate how much an appliance or device costs to run."
+  "Box Shadow Generator",
+  "Create CSS box shadows, preview them, and copy ready-to-use shadow styles."
 );
 
 export default function ToolLayout({

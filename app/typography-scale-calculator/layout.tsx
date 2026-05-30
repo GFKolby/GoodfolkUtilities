@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { createToolMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = createToolMetadata(
-  "Electricity Cost Calculator",
-  "Estimate how much an appliance or device costs to run."
+  "Typography Scale Calculator",
+  "Generate a type scale from a base font size and ratio, with pixel and rem values."
 );
 
 export default function ToolLayout({

@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { createToolMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = createToolMetadata(
-  "Electricity Cost Calculator",
-  "Estimate how much an appliance or device costs to run."
+  "UUID Generator",
+  "Generate one or more random UUIDs and copy them for testing, mock data, or development work."
 );
 
 export default function ToolLayout({

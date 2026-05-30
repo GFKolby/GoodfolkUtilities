@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { createToolMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = createToolMetadata(
-  "Electricity Cost Calculator",
-  "Estimate how much an appliance or device costs to run."
+  "Travel Insurance Checklist",
+  "Create a travel insurance comparison checklist based on trip type, destination, transportation, and coverage concerns."
 );
 
 export default function ToolLayout({

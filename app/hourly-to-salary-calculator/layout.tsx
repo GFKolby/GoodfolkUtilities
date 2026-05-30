@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { createToolMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = createToolMetadata(
-  "Electricity Cost Calculator",
-  "Estimate how much an appliance or device costs to run."
+  "Hourly to Salary Calculator",
+  "Convert hourly pay to weekly, monthly, and yearly income estimates."
 );
 
 export default function ToolLayout({

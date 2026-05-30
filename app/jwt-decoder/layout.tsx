@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { createToolMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = createToolMetadata(
-  "Electricity Cost Calculator",
-  "Estimate how much an appliance or device costs to run."
+  "JWT Decoder",
+  "Decode JWT headers and payloads locally in your browser for quick inspection."
 );
 
 export default function ToolLayout({

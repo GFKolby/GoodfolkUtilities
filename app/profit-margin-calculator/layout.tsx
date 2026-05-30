@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { createToolMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = createToolMetadata(
-  "Electricity Cost Calculator",
-  "Estimate how much an appliance or device costs to run."
+  "Profit Margin Calculator",
+  "Calculate profit, profit margin, markup, and cost breakdown from revenue and expenses."
 );
 
 export default function ToolLayout({

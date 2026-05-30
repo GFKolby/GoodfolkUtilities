@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
+import { createToolMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Paint Calculator",
-  description:
-    "Estimate how much paint you need based on room dimensions, wall height, coats, doors, windows, and paint coverage.",
-};
+export const metadata: Metadata = createToolMetadata(
+  "Paint Calculator",
+  "Estimate how much paint you need for a room or project."
+);
 
-export default function PaintCalculatorLayout({
+export default function ToolLayout({
   children,
 }: {
   children: React.ReactNode;

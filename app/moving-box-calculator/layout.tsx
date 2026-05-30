@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
+import { createToolMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Moving Box Calculator",
-  description:
-    "Estimate how many moving boxes you need based on rooms, home areas, and packing style.",
-};
+export const metadata: Metadata = createToolMetadata(
+  "Moving Box Calculator",
+  "Estimate how many boxes you may need for a move."
+);
 
-export default function MovingBoxCalculatorLayout({
+export default function ToolLayout({
   children,
 }: {
   children: React.ReactNode;

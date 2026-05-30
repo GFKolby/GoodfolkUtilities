@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { createToolMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = createToolMetadata(
-  "Electricity Cost Calculator",
-  "Estimate how much an appliance or device costs to run."
+  "Regex Tester",
+  "Test regular expressions against sample text and review matches, groups, and flags."
 );
 
 export default function ToolLayout({

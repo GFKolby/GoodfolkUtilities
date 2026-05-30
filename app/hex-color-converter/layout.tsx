@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { createToolMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = createToolMetadata(
-  "Electricity Cost Calculator",
-  "Estimate how much an appliance or device costs to run."
+  "HEX Color Converter",
+  "Convert HEX colors to RGB and HSL, preview the color, and copy CSS-friendly values."
 );
 
 export default function ToolLayout({

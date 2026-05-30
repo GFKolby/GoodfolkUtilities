@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { createToolMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = createToolMetadata(
-  "Electricity Cost Calculator",
-  "Estimate how much an appliance or device costs to run."
+  "CSS Unit Converter",
+  "Convert common CSS units like px, rem, em, vw, and vh for front-end development."
 );
 
 export default function ToolLayout({

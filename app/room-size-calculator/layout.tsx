@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
+import { createToolMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Room Size Calculator",
-  description:
-    "Calculate room square footage, square yards, perimeter, flooring needs, and estimated flooring cost.",
-};
+export const metadata: Metadata = createToolMetadata(
+  "Room Size Calculator",
+  "Calculate room square footage from length and width."
+);
 
-export default function RoomSizeCalculatorLayout({
+export default function ToolLayout({
   children,
 }: {
   children: React.ReactNode;

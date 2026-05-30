@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { createToolMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = createToolMetadata(
-  "Electricity Cost Calculator",
-  "Estimate how much an appliance or device costs to run."
+  "Border Radius Previewer",
+  "Preview CSS border radius values on cards and buttons, then copy ready-to-use CSS."
 );
 
 export default function ToolLayout({
