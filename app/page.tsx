@@ -194,7 +194,7 @@ export default function Home() {
     ))}
   </div>
 </section>
- <div className="mb-6">
+ <div className="mb-6" gap-5>
     <p className="mb-2 text-sm font-semibold text-amber-300">
       Tool Categories
     </p>
