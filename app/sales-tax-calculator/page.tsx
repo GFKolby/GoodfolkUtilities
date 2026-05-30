@@ -4,6 +4,8 @@ import { useMemo, useState } from "react";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
 
+import FAQ from "@/components/FAQ";
+
 export default function SalesTaxCalculatorPage() {
   const [price, setPrice] = useState("100");
   const [taxRate, setTaxRate] = useState("8");
@@ -119,6 +121,22 @@ export default function SalesTaxCalculatorPage() {
       </div>
 
       <RelatedTools currentHref="/sales-tax-calculator" category="business" />
+      <FAQ
+        items={[
+          {
+            question: "What is sales tax?",
+            answer:
+              "Sales tax is a percentage-based tax applied to the sale of goods and services. It is typically collected by the seller and passed on to the government.",
+          },
+          {
+            question: "How do I calculate sales tax?",
+            answer:
+              "To calculate sales tax, multiply the pre-tax price by the tax rate (as a decimal). For example, $100 with an 8% tax rate would be $100 x 0.08 = $8 in sales tax.",
+          },
+          {
+            question: "What does it mean to back out sales tax?",
+            answer:
+              "Backing out sales tax means calculating the pre-tax price from a total that already includes tax. This is done by dividing the total by (1 + tax rate as a decimal). For example, $108 with an 8% tax rate would be $108 / 1.08 ≈ $100
     </ToolPage>
   );
 }

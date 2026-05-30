@@ -4,6 +4,8 @@ import { useMemo, useState } from "react";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
 
+import FAQ from "@/components/FAQ";
+
 export default function ProfitMarginCalculatorPage() {
   const [revenue, setRevenue] = useState("1000");
   const [costOfGoods, setCostOfGoods] = useState("400");
@@ -103,6 +105,25 @@ export default function ProfitMarginCalculatorPage() {
       </div>
 
       <RelatedTools currentHref="/profit-margin-calculator" category="business" />
+      <FAQ
+        items={[
+          {
+            question: "What is profit margin?",
+            answer:
+              "Profit margin is the percentage of revenue that remains as profit after all costs are subtracted. It shows how much of each dollar earned is actual profit.",
+          },
+          {
+            question: "What is markup?",
+            answer:
+              "Markup is the percentage added to the cost price to determine the selling price. It shows how much more than the cost you are charging.",
+          },
+          {
+            question: "What is a good profit margin?",
+            answer:
+              "A good profit margin varies by industry, but generally, a margin above 20% is considered healthy. Margins below 10% may indicate a thin margin business.",
+          },
+        ]}
+      />
     </ToolPage>
   );
 }

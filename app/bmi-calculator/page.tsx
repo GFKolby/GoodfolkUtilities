@@ -4,6 +4,8 @@ import { useMemo, useState } from "react";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
 
+import FAQ from "@/components/FAQ";
+
 export default function BmiCalculatorPage() {
   const [heightFeet, setHeightFeet] = useState("5");
   const [heightInches, setHeightInches] = useState("10");
@@ -115,6 +117,25 @@ export default function BmiCalculatorPage() {
       </div>
 
       <RelatedTools currentHref="/bmi-calculator" category="health" />
+      <FAQ
+  items={[
+    {
+      question: "What is BMI?",
+      answer:
+        "BMI stands for body mass index. It is a simple estimate based on height and weight that is commonly used as a general screening tool.",
+    },
+    {
+      question: "How is BMI calculated?",
+      answer:
+        "BMI is calculated by comparing body weight to height. This calculator uses the standard U.S. formula for pounds and inches.",
+    },
+    {
+      question: "Is BMI always accurate?",
+      answer:
+        "BMI does not directly measure body fat, muscle, fitness level, or medical risk. It is useful as a general estimate, but it should not replace professional health guidance.",
+    },
+  ]}
+  />
     </ToolPage>
   );
 }

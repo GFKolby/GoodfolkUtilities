@@ -4,6 +4,8 @@ import { useMemo, useState } from "react";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
 
+import FAQ from "@/components/FAQ";
+
 type Sex = "male" | "female";
 type ActivityLevel = "sedentary" | "light" | "moderate" | "active" | "veryActive";
 
@@ -173,6 +175,25 @@ export default function CalorieCalculatorPage() {
       </div>
 
       <RelatedTools currentHref="/calorie-calculator" category="health" />
+      <FAQ
+        items={[
+          {
+            question: "How accurate is this calorie estimate?",
+            answer:
+              "This estimate uses a common BMR formula and activity multiplier, but real calorie needs can vary based on metabolism, medical conditions, medication, training, sleep, and body composition. Use it as a general starting point and adjust based on your experience and goals.",
+          },
+          {
+            question: "Can I use this to plan for weight loss or gain?",
+            answer:
+              "Yes, the tool provides estimates for maintenance calories as well as mild and more aggressive weight loss or gain. For sustainable changes, aim for gradual adjustments and consider working with a health professional for personalized guidance.",
+          },
+          {
+            question: "Does this account for muscle mass or body composition?",
+            answer:
+              "No, this tool does not directly account for muscle mass or body composition. Two people with the same height and weight but different muscle mass may have different calorie needs. For a more personalized assessment, consider consulting with a health professional.",
+          },
+        ]}
+      /> 
     </ToolPage>
   );
 }

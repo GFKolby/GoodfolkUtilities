@@ -4,6 +4,8 @@ import { useMemo, useState } from "react";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
 
+import FAQ from "@/components/FAQ";
+
 type Weather = "cool" | "mild" | "hot";
 
 export default function WaterIntakeCalculatorPage() {
@@ -140,6 +142,25 @@ export default function WaterIntakeCalculatorPage() {
       </div>
 
       <RelatedTools currentHref="/water-intake-calculator" category="health" />
+      <FAQ
+        items={[
+          {
+            question: "How much water should I drink daily?",
+            answer:
+              "A common general recommendation is about 8 cups (64 oz) per day, but individual needs vary widely based on weight, activity, climate, and health conditions.",
+          },
+          {
+            question: "Can I drink too much water?",
+            answer:
+              "Yes, excessive water intake can lead to a dangerous condition called hyponatremia. It's important to listen to your body's thirst signals and adjust intake based on your circumstances.",
+          },
+          {
+            question: "Does coffee or alcohol count towards hydration?",
+            answer:
+              "Caffeinated and alcoholic beverages can have a mild diuretic effect, which is why this calculator adds extra water needs for each serving. However, they still contribute to overall fluid intake.",
+          },
+        ]}
+      />  
     </ToolPage>
   );
 }
