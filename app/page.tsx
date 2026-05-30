@@ -3,6 +3,28 @@ import { officeTools, campTools, homeTools, financeTools, studentTools,designToo
 import type { ToolItem } from "@/lib/tools";
 import SearchBar from "@/components/SearchBar";
 
+const popularTools = [
+  ...healthTools.filter((tool) =>
+    ["bmi-calculator", "calorie-calculator", "water-intake-calculator"].includes(
+      tool.slug
+    )
+  ),
+  ...businessTools.filter((tool) =>
+    ["profit-margin-calculator", "sales-tax-calculator", "invoice-total-calculator"].includes(
+      tool.slug
+    )
+  ),
+  ...travelTools.filter((tool) =>
+    ["trip-budget-calculator", "road-trip-gas-calculator"].includes(tool.slug)
+  ),
+  ...designTools.filter((tool) =>
+    ["color-palette-generator"].includes(tool.slug)
+  ),
+  ...developerTools.filter((tool) =>
+    ["json-formatter"].includes(tool.slug)
+  ),
+];
+
 function ToolSection({
   title,
   eyebrow,
@@ -132,6 +154,44 @@ export default function Home() {
     <p className="mt-2 text-sm text-zinc-400">
       All tools are free to use with no account or email required. Just click and use.
     </p>
+  </div>
+</section>
+
+<section className="mt-12">
+  <div className="mb-6">
+    <p className="mb-2 text-sm font-semibold text-amber-300">
+      Popular Tools
+    </p>
+
+    <h2 className="text-3xl font-bold">
+      Start with the tools people are most likely to need.
+    </h2>
+
+    <p className="mt-2 max-w-2xl text-zinc-400">
+      A quick shortcut to useful calculators for health, business, travel,
+      design, and development.
+    </p>
+  </div>
+
+  <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
+    {popularTools.map((tool) => (
+      <Link
+        key={tool.href}
+        href={tool.href}
+        className="group block rounded-2xl border border-slate-800 bg-slate-900 p-6 transition hover:border-amber-300/60 hover:bg-slate-800"
+      >
+        <div className="flex items-start justify-between gap-4">
+          <div>
+            <h3 className="text-2xl font-semibold">{tool.title}</h3>
+            <p className="mt-2 text-zinc-400">{tool.description}</p>
+          </div>
+
+          <span className="shrink-0 text-amber-300 transition group-hover:translate-x-1">
+            →
+          </span>
+        </div>
+      </Link>
+    ))}
   </div>
 </section>
 
