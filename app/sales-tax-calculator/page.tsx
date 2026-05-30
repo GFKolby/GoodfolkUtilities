@@ -136,7 +136,10 @@ export default function SalesTaxCalculatorPage() {
           {
             question: "What does it mean to back out sales tax?",
             answer:
-              "Backing out sales tax means calculating the pre-tax price from a total that already includes tax. This is done by dividing the total by (1 + tax rate as a decimal). For example, $108 with an 8% tax rate would be $108 / 1.08 ≈ $100
+              "Backing out sales tax means calculating the pre-tax price from a total that already includes tax. This is done by dividing the total by (1 + tax rate as a decimal). For example, $108 with an 8% tax rate would be $108 / 1.08 ≈ $100 pre-tax price.",
+          },
+        ]}
+      />  
     </ToolPage>
   );
 }
