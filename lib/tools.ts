@@ -23,7 +23,6 @@ export type ToolItem = {
   slug: string;
   title: string;
   description: string;
-  intro?: string;
   href: string;
   category: ToolCategorySlug;
 };
@@ -32,90 +31,80 @@ export const categories: ToolCategory[] = [
   {
     slug: "office",
     title: "Office Utilities",
-    description:
-      "Free tools for work, data cleanup, documents, and daily operations.",
-    intro: "Explore free office utility tools designed to enhance your workday. From data cleanup and document management to daily operations, these resources are perfect for streamlining your workflow without the need for signup.",
+    description: "Free tools for work, data cleanup, documents, and daily operations.",
+    intro: "Explore free office utilities for everyday digital work, file cleanup, text formatting, QR codes, passwords, Markdown, and practical productivity tasks. These tools are designed for quick browser-based use when you need to clean data, format content, organize files, or solve small office problems without opening a heavy app. Goodfolk Office Utilities are free to use, require no signup, and are built for simple repeatable tasks that save time during work, school, admin, and support workflows.",
     href: "/office",
     toolCount: 10,
   },
   {
     slug: "camp",
     title: "Camp Utilities",
-    description:
-      "Free camping tools for packing, water planning, gear weight, and trip prep.",
-    intro: "Explore free camping utility tools for packing lists, water planning, gear weight estimation, and trip preparation. These resources are designed to help you plan your camping trips efficiently without the need for signup.",
+    description: "Free camping tools for packing, water planning, gear weight, and trip prep.",
+    intro: "Use free camp utilities to plan water, food, power, packing, weather, trip costs, and outdoor comfort before leaving home. These camping tools are built for quick estimates and practical planning, whether you are preparing for car camping, a weekend campsite, a backpacking test, or a simple outdoor trip. Goodfolk Camp Utilities help you think through supplies, timing, gear, and basic needs so your trip feels easier, safer, and less chaotic. No signup required.",
     href: "/camp",
     toolCount: 10,
   },
   {
     slug: "home",
     title: "Home Utilities",
-    description:
-      "Free home utilities for paint planning, room sizes, electricity costs, moving boxes, and project budgets.",
-    intro: "Discover free home utility tools for project planning, cost estimation, and everyday home tasks. These resources are designed to help you manage and plan your home projects efficiently without the need for signup.",
+    description: "Free home utilities for paint planning, room sizes, electricity costs, moving boxes, and project budgets.",
+    intro: "Explore free home utilities for common household projects, room planning, paint estimates, flooring, moving boxes, electricity costs, project budgets, and everyday home calculations. These tools are made for quick planning before you buy supplies, start a project, compare options, or estimate how much material you may need. Goodfolk Home Utilities are simple browser-based helpers for renters, homeowners, DIY projects, and small household decisions. All tools are free to use with no signup required.",
     href: "/home",
     toolCount: 10,
   },
   {
     slug: "finance",
     title: "Finance Utilities",
-    description:
-      "Free finance tools for budgeting, savings goals, debt payoff, subscriptions, and income planning.",
-    intro: "Discover free finance utility tools for budgeting, savings goal tracking, debt payoff planning, subscription management, and income planning. These resources are designed to help you manage your finances efficiently without the need for signup.",
+    description: "Free finance tools for budgeting, savings goals, debt payoff, subscriptions, and income planning.",
+    intro: "Use free finance utilities to estimate budgets, savings goals, debt payoff timelines, subscriptions, loan payments, hourly income, emergency funds, and everyday money decisions. These calculators are built for quick planning and personal organization, not complicated spreadsheets. Goodfolk Finance Utilities help you compare scenarios, understand tradeoffs, and make clearer financial plans for daily life, travel, bills, debt, and savings. These tools are free to use and require no account or signup.",
     href: "/finance",
     toolCount: 10,
   },
   {
   slug: "student",
   title: "Student Utilities",
-  description:
-    "Free student tools for grades, GPA, study planning, assignments, writing, and semester workload.",
-  intro: "Discover free student utility tools for grade calculation, GPA estimation, study planning, assignment management, writing assistance, and semester workload planning. These resources are designed to help students manage their academic responsibilities efficiently without the need for signup.",
+  description: "Free student tools for grades, GPA, study planning, assignments, writing, and semester workload.",
+  intro: "Explore free student utilities for GPA calculations, grade planning, assignments, study schedules, essay word counts, citations, reading time, flashcards, and semester workload planning. These tools are designed to help students organize schoolwork, estimate outcomes, and reduce last-minute academic stress. Goodfolk Student Utilities are useful for college, online classes, technical programs, and self-study. Each tool is simple, browser-based, free to use, and available without creating an account.",
   href: "/student",
   toolCount: 10,
   },
   {
   slug: "design",
   title: "Design Utilities",
-  description:
-    "Free design tools for colors, contrast, gradients, shadows, spacing, typography, and UI layout.",
-  intro: "Discover free design utility tools for color palette generation, contrast checking, gradient creation, shadow design, spacing calculation, typography pairing, and UI layout planning. These resources are perfect for designers looking to enhance their projects without the need for signup.",
+  description: "Free design tools for colors, contrast, gradients, shadows, spacing, typography, and UI layout.",
+  intro: "Use free design utilities for colors, contrast, palettes, gradients, shadows, border radius, spacing, typography, rem conversions, and image aspect ratios. These tools are built for UI design, front-end development, branding, and quick visual decisions. Goodfolk Design Utilities help you preview values, copy CSS-friendly output, and make cleaner design choices without opening a full design app. All tools are free, fast, browser-based, and require no signup.",
   href: "/design",
   toolCount: 10,
   },
   {
   slug: "developer",
   title: "Developer Utilities",
-  description:
-    "Free developer tools for JSON, URLs, Base64, timestamps, IDs, regex, JWTs, HTML entities, and API cleanup.",
-  intro: "Explore free developer utility tools for JSON formatting, URL encoding/decoding, Base64 encoding/decoding, timestamp conversion, ID generation, regex testing, JWT decoding, HTML entity encoding/decoding, and API response cleanup. These resources are designed to assist developers in their everyday tasks without the need for signup.",
+  description: "Free developer tools for JSON, URLs, Base64, timestamps, IDs, regex, JWTs, HTML entities, and API cleanup.",
+  intro: "Explore free developer utilities for JSON formatting, URL encoding, Base64 conversion, UUID generation, timestamps, HTML entities, regex testing, JWT decoding, API responses, and CSS units. These tools are made for quick coding, debugging, formatting, and everyday development tasks. Goodfolk Developer Utilities are lightweight browser-based helpers for developers, students, support analysts, and anyone working with web data or code snippets. No signup required.",
   href: "/developer",
   toolCount: 10,
   },  
   {
   slug: "travel",
   title: "Travel Utilities",
-  description:
-    "Free travel tools for trip budgets, packing, hotels, gas, layovers, attractions, and travel planning.",
-  intro: "Discover free travel utility tools for trip budgeting, packing lists, hotel booking, gas cost estimation, layover management, attraction planning, and overall travel organization. These resources are designed to help you plan and execute your travels efficiently without the need for signup.",
+  description: "Free travel tools for trip budgets, packing, hotels, gas, layovers, attractions, and travel planning.",
+  intro: "Use free travel utilities to estimate trip budgets, gas costs, hotel splits, packing lists, layovers, attraction timing, daily travel costs, currency notes, time zones, and travel insurance checklists. These tools are designed for practical trip planning before and during travel. Goodfolk Travel Utilities help you compare costs, organize plans, reduce surprises, and make trips feel easier to manage. All tools are free to use, browser-based, and require no signup.",
   href: "/travel",
   toolCount: 10,
   },
   {
   slug: "business",
   title: "Business Utilities",
-  description:
-    "Free business tools for profit margins, pricing, invoices, break-even planning, meetings, and startup costs.",
-  intro: "Discover free business utility tools for profit margin calculation, pricing strategies, invoice generation, break-even analysis, meeting scheduling, and startup cost estimation. These resources are designed to help entrepreneurs and business owners manage their operations efficiently without the need for signup.",
+  description: "Free business tools for profit margins, pricing, invoices, break-even planning, meetings, and startup costs.",
+  intro: "Explore free business utilities for profit margins, markup, break-even points, sales tax, invoices, hourly rates, freelance pricing, meeting costs, employee costs, and startup planning. These tools are built for small business owners, freelancers, side hustlers, students, and anyone making pricing or planning decisions. Goodfolk Business Utilities provide quick estimates that help you understand costs, revenue, profit, and tradeoffs. No signup required.",
   href: "/business",
   toolCount: 10,
   },
   {
   slug: "health",
   title: "Health Utilities",
-  description:
-    "Free health tools for BMI, calories, water intake, protein, walking, macros, sleep, heart rate zones, and weight planning.",
-  intro: "Discover free health utility tools for BMI calculation, calorie tracking, water intake monitoring, protein calculation, walking distance estimation, macro tracking, sleep analysis, heart rate zone determination, and weight planning. These resources are designed to help you manage your health and fitness efficiently without the need for signup.",
+  description: "Free health tools for BMI, calories, water intake, protein, walking, macros, sleep, heart rate zones, and weight planning.",
+  intro: "Use free health utilities for BMI, calories, water intake, protein, walking calories, macros, target weight planning, sleep timing, heart rate zones, and body fat estimates. These tools are designed for general wellness planning and everyday estimates, not medical diagnosis or personalized medical advice. Goodfolk Health Utilities can help you think through goals, habits, activity, and basic health-related numbers. All tools are free and require no signup.",
   href: "/health",
   toolCount: 10,
   },
