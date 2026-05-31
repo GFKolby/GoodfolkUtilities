@@ -51,11 +51,14 @@ export default function ToolPage({
   </a>
   . Built for good folks.
   <Link href="/privacy" className="text-zinc-400 hover:text-amber-300">
-  | Privacy |  
-</Link>
-<Link href="/about" className="text-zinc-400 hover:text-amber-300">
-  About
-</Link>
+    | Privacy
+  </Link>
+  <Link href="/about" className="text-zinc-400 hover:text-amber-300">
+    {" "} | About
+  </Link>
+  <Link href="/blog" className="text-zinc-400 hover:text-amber-300">
+    {" "} | Blog
+  </Link>
 </footer>
       </div>
     </main>

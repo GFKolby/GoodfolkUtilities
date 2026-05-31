@@ -208,7 +208,7 @@ export default function Home() {
       Explore tools for office, camp, home, finance, student, design, developer, travel, business and health needs.
     </p>
   </div>
-  
+
 <div className="mt-10 grid gap-5 md:grid-cols-2">
   <Link
     href="/office"
@@ -412,10 +412,13 @@ export default function Home() {
           </a>
           . Built for good folks.
           <Link href="/privacy" className="text-zinc-400 hover:text-amber-300">
-            | Privacy |
+            | Privacy
           </Link>
           <Link href="/about" className="text-zinc-400 hover:text-amber-300">
-             About
+            {" "} | About
+          </Link>
+          <Link href="/blog" className="text-zinc-400 hover:text-amber-300">
+            {" "} | Blog
           </Link>
         </footer>
       </div>
