@@ -25,6 +25,34 @@ const popularTools = [
   ),
 ];
 
+const latestGuides = [
+  {
+    href: "/blog/how-much-water-should-you-drink",
+    category: "Health",
+    title: "How Much Water Should You Drink Per Day?",
+  },
+  {
+    href: "/blog/how-to-plan-a-trip-budget-without-a-spreadsheet",
+    category: "Travel",
+    title: "How to Plan a Trip Budget Without a Spreadsheet",
+  },
+  {
+    href: "/blog/how-to-calculate-profit-margin-and-markup",
+    category: "Business",
+    title: "How to Calculate Profit Margin and Markup",
+  },
+  {
+    href: "/blog/how-to-build-a-simple-packing-list-before-travel",
+    category: "Travel",
+    title: "How to Build a Simple Packing List Before Travel",
+  },
+  {
+    href: "/blog/how-to-choose-colors-for-a-small-website-or-brand",
+    category: "Design",
+    title: "How to Choose Colors for a Small Website or Brand",
+  },
+];
+
 function ToolSection({
   title,
   eyebrow,
@@ -190,6 +218,44 @@ export default function Home() {
             →
           </span>
         </div>
+      </Link>
+    ))}
+  </div>
+</section>
+
+<section className="mt-12">
+  <div className="mb-6">
+    <p className="mb-2 text-sm font-semibold text-amber-300">
+      Latest Guides
+    </p>
+
+    <h2 className="text-3xl font-bold">
+      Learn the idea, then use the tool.
+    </h2>
+
+    <p className="mt-2 max-w-2xl text-zinc-400">
+      Practical articles connected directly to calculators and utilities.
+    </p>
+  </div>
+
+  <div className="grid gap-5 md:grid-cols-2">
+    {latestGuides.map((guide) => (
+      <Link
+        key={guide.href}
+        href={guide.href}
+        className="rounded-2xl border border-slate-800 bg-slate-900 p-6 transition hover:border-amber-300/60 hover:bg-slate-800"
+      >
+        <p className="text-sm font-semibold text-amber-300">
+          {guide.category}
+        </p>
+
+        <h3 className="mt-2 text-xl font-bold">
+          {guide.title}
+        </h3>
+
+        <p className="mt-3 text-zinc-400">
+          Read guide →
+        </p>
       </Link>
     ))}
   </div>
