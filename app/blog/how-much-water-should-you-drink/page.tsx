@@ -1,113 +1,131 @@
 import Link from "next/link";
 
-const posts = [
-  {
-    href: "/blog/how-much-water-should-you-drink",
-    category: "Health Guide",
-    title: "How Much Water Should You Drink Per Day?",
-    description:
-      "Learn what affects daily water needs, including body weight, activity, weather, and caffeine or alcohol intake.",
-  },
-  {
-    href: "/blog/how-to-plan-a-trip-budget-without-a-spreadsheet",
-    category: "Travel Guide",
-    title: "How to Plan a Trip Budget Without a Spreadsheet",
-    description:
-      "Learn how to estimate transportation, lodging, food, activities, and travel buffers without building a spreadsheet.",
-  },
-  {
-    href: "/blog/how-to-calculate-profit-margin-and-markup",
-    category: "Business Guide",
-    title: "How to Calculate Profit Margin and Markup",
-    description:
-      "Understand the difference between profit margin and markup so your pricing math does not get weird.",
-  },
-  {
-    href: "/blog/how-to-build-a-simple-packing-list-before-travel",
-    category: "Travel Guide",
-    title: "How to Build a Simple Packing List Before Travel",
-    description:
-      "Build a practical packing list based on trip length, weather, destination type, laundry access, and travel style.",
-  },
-  {
-    href: "/blog/how-to-choose-colors-for-a-small-website-or-brand",
-    category: "Design Guide",
-    title: "How to Choose Colors for a Small Website or Brand",
-    description:
-      "Use a base color, contrast, palette balance, and reusable CSS values to choose better website colors.",
-  },
-];
-
-export default function BlogPage() {
+export default function WaterIntakeBlogPost() {
   return (
     <main className="min-h-screen bg-slate-950 p-8 text-white">
-      <div className="mx-auto max-w-5xl">
+      <article className="mx-auto max-w-3xl">
         <Link
-          href="/"
+          href="/blog"
           className="text-sm font-semibold text-amber-300 hover:text-amber-200"
         >
-          ← Back to Goodfolk Toolbox
+          ← Back to Blog
         </Link>
 
-        <section className="mt-10 rounded-3xl border border-slate-800 bg-slate-900 p-8">
+        <header className="mt-10">
           <p className="text-sm font-semibold uppercase tracking-[0.3em] text-amber-300">
-            Goodfolk Toolbox Blog
+            Health Guide
           </p>
 
           <h1 className="mt-3 text-4xl font-bold tracking-tight sm:text-5xl">
-            Helpful guides for everyday tools.
+            How Much Water Should You Drink Per Day?
           </h1>
 
-          <p className="mt-5 max-w-3xl text-lg leading-8 text-zinc-300">
-            Practical guides, examples, and planning tips for using free
-            calculators and utilities across travel, health, business, finance,
-            design, development, home, camp, office, and student life.
+          <p className="mt-5 text-lg leading-8 text-zinc-300">
+            Daily water needs vary from person to person. Your body size,
+            activity level, climate, sweat rate, diet, and caffeine or alcohol
+            intake can all affect how much water you may need.
           </p>
-        </section>
+        </header>
 
-        <section className="mt-8">
-          <div className="mb-6">
-            <p className="text-sm font-semibold text-amber-300">
-              Latest Guides
-            </p>
+        <section className="mt-10 space-y-6 text-zinc-300">
+          <h2 className="text-2xl font-bold text-white">
+            A simple starting point
+          </h2>
 
-            <h2 className="mt-2 text-3xl font-bold">
-              Read a guide, then use the tool.
+          <p className="leading-8">
+            A common everyday estimate is to start with about half your body
+            weight in ounces of water per day. For example, a 180-pound person
+            might use 90 ounces as a rough starting point.
+          </p>
+
+          <p className="leading-8">
+            That number is not perfect, but it gives you a simple baseline. From
+            there, you can adjust based on exercise, heat, humidity, caffeine,
+            alcohol, illness, or personal guidance from a health professional.
+          </p>
+
+          <div className="rounded-2xl border border-amber-300/30 bg-amber-300/10 p-6">
+            <h2 className="text-xl font-bold text-white">
+              Try the free calculator
             </h2>
 
-            <p className="mt-2 max-w-2xl text-zinc-400">
-              Each guide is written to explain the idea, show a simple example,
-              and point you toward the matching Goodfolk Toolbox calculator.
+            <p className="mt-3 leading-7">
+              Use the Goodfolk Water Intake Calculator to estimate daily water
+              intake based on weight, activity, weather, and caffeine or alcohol
+              servings.
             </p>
+
+            <Link
+              href="/water-intake-calculator"
+              className="mt-5 inline-block rounded-xl bg-amber-300 px-5 py-3 font-semibold text-slate-950 transition hover:bg-amber-200"
+            >
+              Open Water Intake Calculator
+            </Link>
           </div>
 
-          <div className="grid gap-5 md:grid-cols-2">
-            {posts.map((post) => (
-              <Link
-                key={post.href}
-                href={post.href}
-                className="group block rounded-2xl border border-slate-800 bg-slate-900 p-6 transition hover:border-amber-300/60 hover:bg-slate-800"
-              >
-                <p className="text-sm font-semibold text-amber-300">
-                  {post.category}
-                </p>
+          <h2 className="text-2xl font-bold text-white">
+            What affects water needs?
+          </h2>
 
-                <h3 className="mt-2 text-2xl font-bold text-white">
-                  {post.title}
-                </h3>
+          <h3 className="text-xl font-semibold text-white">Body weight</h3>
+          <p className="leading-8">
+            Larger bodies generally need more total fluid than smaller bodies.
+            That is why many quick hydration estimates start with body weight
+            before adding adjustments for lifestyle and environment.
+          </p>
 
-                <p className="mt-3 leading-7 text-zinc-300">
-                  {post.description}
-                </p>
+          <h3 className="text-xl font-semibold text-white">Activity level</h3>
+          <p className="leading-8">
+            Exercise increases sweat and breathing losses. Walking, running,
+            strength training, hiking, outdoor work, and long travel days can
+            all increase fluid needs.
+          </p>
 
-                <span className="mt-5 inline-block font-semibold text-amber-300 transition group-hover:translate-x-1">
-                  Read guide →
-                </span>
-              </Link>
-            ))}
+          <h3 className="text-xl font-semibold text-white">Weather</h3>
+          <p className="leading-8">
+            Hot, humid, or dry conditions can increase how much water you lose.
+            If you are sweating heavily or spending hours outside, you may need
+            more than your usual daily amount.
+          </p>
+
+          <h3 className="text-xl font-semibold text-white">
+            Caffeine and alcohol
+          </h3>
+          <p className="leading-8">
+            Coffee, tea, energy drinks, and alcohol can affect hydration habits.
+            You do not always need to avoid them, but it can help to add extra
+            water when those drinks are part of your day.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white">
+            Signs you may need more fluid
+          </h2>
+
+          <p className="leading-8">
+            Thirst, darker urine, dry mouth, headache, fatigue, dizziness, and
+            reduced sweating during heat or exercise can be signs that you may
+            need more fluids. Severe symptoms or ongoing concerns should be
+            handled with medical guidance.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white">
+            Bottom line
+          </h2>
+
+          <p className="leading-8">
+            Start with a simple estimate, adjust for your day, and pay attention
+            to how you feel. Your ideal water intake may change depending on
+            weather, activity, travel, illness, and routine.
+          </p>
+
+          <div className="rounded-2xl border border-slate-800 bg-slate-900 p-6 text-sm leading-7 text-zinc-300">
+            This article is for general wellness planning only and is not
+            medical advice. If you have kidney disease, heart failure, fluid
+            restrictions, pregnancy, medication concerns, or ongoing symptoms,
+            ask a qualified health professional for personal guidance.
           </div>
         </section>
-      </div>
+      </article>
     </main>
   );
 }
