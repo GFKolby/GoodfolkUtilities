@@ -194,6 +194,7 @@ export default function Home() {
     ))}
   </div>
 </section>
+
  <div className="mb-6" gap-5>
     <p className="mb-2 text-sm font-semibold text-amber-300">
       Tool Categories
@@ -207,6 +208,7 @@ export default function Home() {
       Explore tools for office, camp, home, finance, student, design, developer, travel, business and health needs.
     </p>
   </div>
+  
 <div className="mt-10 grid gap-5 md:grid-cols-2">
   <Link
     href="/office"

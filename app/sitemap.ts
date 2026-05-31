@@ -4,7 +4,28 @@ import { allTools } from "@/lib/tools";
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://tools.goodfolkdigital.com";
 
-  const staticRoutes = ["", "/office", "/camp", "/home", "/finance", "/student", "/design", "/developer", "/travel", "/business", "/health", "/support", "/privacy", "/about"];
+  const staticRoutes = [
+    "",
+    "/office",
+    "/camp",
+    "/home",
+    "/finance",
+    "/student",
+    "/design",
+    "/developer",
+    "/travel",
+    "/business",
+    "/health",
+    "/support",
+    "/privacy",
+    "/about",
+    "/blog",
+    "/blog/how-much-water-should-you-drink",
+    "/blog/how-to-plan-a-trip-budget-without-a-spreadsheet",
+    "/blog/how-to-calculate-profit-margin-and-markup",
+    "/blog/how-to-build-a-simple-packing-list-before-travel",
+    "/blog/how-to-choose-colors-for-a-small-website-or-brand",
+  ];
 
   return [
     ...staticRoutes.map((route) => ({
