@@ -15,6 +15,7 @@ const popularSearches = [
   "Color Palette",
   "JSON Formatter",
   "Camping Checklist",
+  "Campsite Signal",
 ];
 
 export default function SearchBar() {

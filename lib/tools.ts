@@ -42,7 +42,7 @@ export const categories: ToolCategory[] = [
     description: "Free camping tools for packing, water planning, gear weight, and trip prep.",
     intro: "Use free camp utilities to plan water, food, power, packing, weather, trip costs, and outdoor comfort before leaving home. These camping tools are built for quick estimates and practical planning, whether you are preparing for car camping, a weekend campsite, a backpacking test, or a simple outdoor trip. Goodfolk Camp Utilities help you think through supplies, timing, gear, and basic needs so your trip feels easier, safer, and less chaotic. No signup required.",
     href: "/camp",
-    toolCount: 10,
+    toolCount: 11,
   },
   {
     slug: "home",
@@ -187,6 +187,13 @@ export const officeTools: ToolItem[] = [
 ];
 
 export const campTools: ToolItem[] = [
+  {
+    slug: "campsite-signal-finder",
+    title: "Campsite Signal Finder",
+    href: "/campsite-signal-finder",
+    description: "Estimate cell signal quality for Georgia campgrounds before booking or traveling.",
+    category: "camp",
+  },
   {
     slug: "camp-water-planner",
     title: "Camp Water Planner",
