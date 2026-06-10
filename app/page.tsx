@@ -32,6 +32,11 @@ const latestGuides = [
     title: "How Much Water Should You Drink Per Day?",
   },
   {
+    href:  "/blog/how-much-does-electricity-cost-per-month",
+    category: "Home",
+    title: "How Much Does Electricity Cost Per Month?", 
+  },
+  {
     href: "/blog/how-to-plan-a-trip-budget-without-a-spreadsheet",
     category: "Travel",
     title: "How to Plan a Trip Budget Without a Spreadsheet",
