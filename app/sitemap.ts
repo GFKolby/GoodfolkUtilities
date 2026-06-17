@@ -25,6 +25,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/blog/how-to-calculate-profit-margin-and-markup",
     "/blog/how-to-build-a-simple-packing-list-before-travel",
     "/blog/how-to-choose-colors-for-a-small-website-or-brand",
+    "/blog/how-many-moving-boxes-do-i-need",
   ];
 
   return [

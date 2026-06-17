@@ -36,6 +36,13 @@ const posts = [
     description:
       "Use a base color, contrast, palette balance, and reusable CSS values to choose better website colors.",
   },
+  {
+  href: "/blog/how-many-moving-boxes-do-i-need",
+  category: "Home Guide",
+  title: "How Many Moving Boxes Do I Need?",
+  description:
+    "Estimate how many moving boxes you need based on home size, room count, and belongings before your next move.",
+},
 ];
 
 export default function BlogPage() {
