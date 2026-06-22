@@ -56,6 +56,11 @@ const latestGuides = [
     category: "Design",
     title: "How to Choose Colors for a Small Website or Brand",
   },
+  {
+    href: "/blog/how-many-moving-boxes-do-i-need",
+    category: "Home",
+    title: "How Many Moving Boxes Do I Need?",
+  },
 ];
 
 function ToolSection({

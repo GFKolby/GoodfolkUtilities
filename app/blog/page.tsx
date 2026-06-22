@@ -9,6 +9,13 @@ const posts = [
       "Learn what affects daily water needs, including body weight, activity, weather, and caffeine or alcohol intake.",
   },
   {
+    href:  "/blog/how-much-does-electricity-cost-per-month",
+    category: "Home",
+    title: "How Much Does Electricity Cost Per Month?", 
+    description:
+      "Calculate your average monthly electricity cost based on your home's square footage, number of occupants, and energy efficiency.",
+  },
+  {
     href: "/blog/how-to-plan-a-trip-budget-without-a-spreadsheet",
     category: "Travel Guide",
     title: "How to Plan a Trip Budget Without a Spreadsheet",
