@@ -57,6 +57,13 @@ const posts = [
   description:
     "Learn how college GPA is calculated using grades, credit hours, quality points, and semester totals.",
 },
+{
+  href: "/blog/what-uses-the-most-electricity-in-a-home",
+  category: "Home Guide",
+  title: "What Uses The Most Electricity In A Home?",
+  description:
+    "Learn which appliances and systems usually use the most electricity at home and how to estimate their monthly cost.",
+},
 ];
 
 export default function BlogPage() {

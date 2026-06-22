@@ -66,6 +66,11 @@ const latestGuides = [
   category: "Student",
   title: "How To Calculate GPA In College",
   },
+  {
+  href: "/blog/what-uses-the-most-electricity-in-a-home",
+  category: "Home",
+  title: "What Uses The Most Electricity In A Home?",
+  },
 ];
 
 function ToolSection({
