@@ -50,6 +50,13 @@ const posts = [
   description:
     "Estimate how many moving boxes you need based on home size, room count, and belongings before your next move.",
 },
+{
+  href: "/blog/how-to-calculate-gpa-in-college",
+  category: "Student Guide",
+  title: "How To Calculate GPA In College",
+  description:
+    "Learn how college GPA is calculated using grades, credit hours, quality points, and semester totals.",
+},
 ];
 
 export default function BlogPage() {

@@ -21,12 +21,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/about",
     "/blog",
     "/blog/how-much-water-should-you-drink",
+    "/blog/how-much-does-electricity-cost-per-month",
     "/blog/how-to-plan-a-trip-budget-without-a-spreadsheet",
     "/blog/how-to-calculate-profit-margin-and-markup",
     "/blog/how-to-build-a-simple-packing-list-before-travel",
     "/blog/how-to-choose-colors-for-a-small-website-or-brand",
     "/blog/how-many-moving-boxes-do-i-need",
-    "/blog/how-much-does-electricity-cost-per-month",
+    "/blog/how-to-calculate-gpa-in-college",
+    
   ];
 
   return [

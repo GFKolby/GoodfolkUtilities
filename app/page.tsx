@@ -61,6 +61,11 @@ const latestGuides = [
     category: "Home",
     title: "How Many Moving Boxes Do I Need?",
   },
+  {
+  href: "/blog/how-to-calculate-gpa-in-college",
+  category: "Student",
+  title: "How To Calculate GPA In College",
+  },
 ];
 
 function ToolSection({
