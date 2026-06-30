@@ -9,9 +9,9 @@ const posts = [
       "Learn what affects daily water needs, including body weight, activity, weather, and caffeine or alcohol intake.",
   },
   {
-    href:  "/blog/how-much-does-electricity-cost-per-month",
+    href: "/blog/how-much-does-electricity-cost-per-month",
     category: "Home",
-    title: "How Much Does Electricity Cost Per Month?", 
+    title: "How Much Does Electricity Cost Per Month?",
     description:
       "Calculate your average monthly electricity cost based on your home's square footage, number of occupants, and energy efficiency.",
   },
@@ -44,26 +44,40 @@ const posts = [
       "Use a base color, contrast, palette balance, and reusable CSS values to choose better website colors.",
   },
   {
-  href: "/blog/how-many-moving-boxes-do-i-need",
-  category: "Home Guide",
-  title: "How Many Moving Boxes Do I Need?",
-  description:
-    "Estimate how many moving boxes you need based on home size, room count, and belongings before your next move.",
-},
-{
-  href: "/blog/how-to-calculate-gpa-in-college",
-  category: "Student Guide",
-  title: "How To Calculate GPA In College",
-  description:
-    "Learn how college GPA is calculated using grades, credit hours, quality points, and semester totals.",
-},
-{
-  href: "/blog/what-uses-the-most-electricity-in-a-home",
-  category: "Home Guide",
-  title: "What Uses The Most Electricity In A Home?",
-  description:
-    "Learn which appliances and systems usually use the most electricity at home and how to estimate their monthly cost.",
-},
+    href: "/blog/what-uses-the-most-electricity-in-a-home",
+    category: "Home Guide",
+    title: "What Uses The Most Electricity In A Home?",
+    description:
+      "Learn which appliances and systems usually use the most electricity at home and how to estimate their monthly cost.",
+  },
+  {
+    href: "/blog/how-many-moving-boxes-do-i-need",
+    category: "Home Guide",
+    title: "How Many Moving Boxes Do I Need?",
+    description:
+      "Estimate how many moving boxes you need based on home size, room count, and belongings before your next move.",
+  },
+  {
+    href: "/blog/how-to-calculate-gpa-in-college",
+    category: "Student Guide",
+    title: "How To Calculate GPA In College",
+    description:
+      "Learn how college GPA is calculated using grades, credit hours, quality points, and semester totals.",
+  },
+  {
+    href: "/blog/campfire-safety-tips-for-beginners",
+    category: "Camping Guide",
+    title: "Campfire Safety Tips for Beginners",
+    description:
+      "Learn how to build, manage, and extinguish a campfire safely while protecting yourself and the environment.",
+  },
+  {
+    href: "/blog/why-is-my-electric-bill-so-high",
+    category: "Home Guide",
+    title: "Why Is My Electric Bill So High?",
+    description:
+      "Learn the most common reasons for high electricity bills, including HVAC usage, seasonal weather, older appliances, and standby power.",
+  },
 ];
 
 export default function BlogPage() {

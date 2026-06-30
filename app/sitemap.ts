@@ -29,7 +29,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/blog/how-many-moving-boxes-do-i-need",
     "/blog/how-to-calculate-gpa-in-college",
     "/blog/what-uses-the-most-electricity-in-a-home",
-    
+    "/blog/campfire-safety-tips-for-beginners",
+    "/blog/why-is-my-electric-bill-so-high",
   ];
 
   return [
