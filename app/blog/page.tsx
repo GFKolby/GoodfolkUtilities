@@ -2,6 +2,13 @@ import Link from "next/link";
 
 const posts = [
   {
+    href: "/blog/how-to-read-your-electric-bill",
+    category: "Home Guide",
+    title: "How To Read Your Electric Bill",
+    description:
+      "Learn how to find your kWh usage, electricity rate, billing period, meter details, and added fees on an electric bill.",
+  },
+  {
     href: "/blog/how-much-water-should-you-drink",
     category: "Health Guide",
     title: "How Much Water Should You Drink Per Day?",

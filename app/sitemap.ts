@@ -20,6 +20,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/privacy",
     "/about",
     "/blog",
+    "/blog/how-to-read-your-electric-bill",
     "/blog/how-much-water-should-you-drink",
     "/blog/how-much-does-electricity-cost-per-month",
     "/blog/how-to-plan-a-trip-budget-without-a-spreadsheet",
