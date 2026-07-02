@@ -17,7 +17,7 @@ const posts = [
   },
   {
     href: "/blog/how-much-does-electricity-cost-per-month",
-    category: "Home",
+    category: "Home Guide",
     title: "How Much Does Electricity Cost Per Month?",
     description:
       "Calculate your average monthly electricity cost based on your home's square footage, number of occupants, and energy efficiency.",
