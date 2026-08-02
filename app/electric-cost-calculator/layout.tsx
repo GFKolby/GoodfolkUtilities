@@ -3,7 +3,7 @@ import { createToolMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = createToolMetadata(
   "Electricity Cost Calculator",
-  "Estimate how much an appliance or device costs to run."
+  "Use this electric bill estimator to calculate appliance energy costs from watts, hours used, days per month, and your price per kWh."
 );
 
 export default function ToolLayout({
