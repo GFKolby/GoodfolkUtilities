@@ -2,6 +2,15 @@ export type CarrierKey = "verizonScore" | "attScore" | "tmobileScore";
 
 export type CarrierFilter = "all" | CarrierKey;
 
+export type SignalSourceType =
+  | "placeholder"
+  | "fcc"
+  | "carrier-map"
+  | "field-test"
+  | "user-report";
+
+export type ConfidenceLevel = "low" | "medium" | "high";
+
 export type RecommendationLabel =
   | "Not recommended for remote work"
   | "Risky; backup hotspot recommended"
@@ -21,6 +30,10 @@ export type CampgroundSignalSeed = {
   remoteWorkScore: number;
   notes: string;
   lastUpdated: string;
+  sourceType: SignalSourceType;
+  sourceLabel: string;
+  confidenceLevel: ConfidenceLevel;
+  lastVerified: string | null;
 };
 
 export type CampgroundSignalEntry = CampgroundSignalSeed & {
@@ -123,8 +136,12 @@ const campgroundSignalSeeds: CampgroundSignalSeed[] = [
     tmobileScore: 6,
     remoteWorkScore: 7,
     notes:
-      "Reliable morning and midday signal near the lake loop. Video calls may need a hotspot boost at busier times.",
+      "Estimated stronger coverage near developed areas. Verify current conditions before relying on this campground for remote work.",
     lastUpdated: "2026-06-03",
+    sourceType: "placeholder",
+    sourceLabel: "MVP planning estimate",
+    confidenceLevel: "low",
+    lastVerified: null,
   },
   {
     name: "Hard Labor Creek Campground",
@@ -138,8 +155,12 @@ const campgroundSignalSeeds: CampgroundSignalSeed[] = [
     tmobileScore: 4,
     remoteWorkScore: 5,
     notes:
-      "Usable for email and messaging at most sites. Backup connectivity is wise for longer work sessions.",
+      "Estimated coverage may support basic messaging in some areas, but a backup connection is recommended.",
     lastUpdated: "2026-06-03",
+    sourceType: "placeholder",
+    sourceLabel: "MVP planning estimate",
+    confidenceLevel: "low",
+    lastVerified: null,
   },
   {
     name: "Cloudland Canyon West Rim Campground",
@@ -153,8 +174,12 @@ const campgroundSignalSeeds: CampgroundSignalSeed[] = [
     tmobileScore: 3,
     remoteWorkScore: 3,
     notes:
-      "Scenic but patchy. Expect dropped calls in lower areas and plan offline work if you are staying deep in the canyon area.",
+      "Terrain may create inconsistent coverage. Plan for offline use and verify conditions before arrival.",
     lastUpdated: "2026-06-03",
+    sourceType: "placeholder",
+    sourceLabel: "MVP planning estimate",
+    confidenceLevel: "low",
+    lastVerified: null,
   },
   {
     name: "Vogel State Park Campground",
@@ -168,8 +193,12 @@ const campgroundSignalSeeds: CampgroundSignalSeed[] = [
     tmobileScore: 2,
     remoteWorkScore: 4,
     notes:
-      "Signal improves closer to the park entrance. Good enough for light planning, but not ideal for a full remote-work day.",
+      "Coverage may be stronger near developed areas, but this estimate is not suitable for planning a guaranteed workday.",
     lastUpdated: "2026-06-03",
+    sourceType: "placeholder",
+    sourceLabel: "MVP planning estimate",
+    confidenceLevel: "low",
+    lastVerified: null,
   },
   {
     name: "Tallulah Gorge Campground",
@@ -183,8 +212,12 @@ const campgroundSignalSeeds: CampgroundSignalSeed[] = [
     tmobileScore: 5,
     remoteWorkScore: 6,
     notes:
-      "Strongest performance near the campground road and visitor area. Enough for light remote work with modest upload demands.",
+      "Estimated service may be more usable near visitor and campground facilities. Confirm before depending on it for calls or uploads.",
     lastUpdated: "2026-06-03",
+    sourceType: "placeholder",
+    sourceLabel: "MVP planning estimate",
+    confidenceLevel: "low",
+    lastVerified: null,
   },
   {
     name: "Unicoi State Park Campground",
@@ -198,8 +231,12 @@ const campgroundSignalSeeds: CampgroundSignalSeed[] = [
     tmobileScore: 5,
     remoteWorkScore: 7,
     notes:
-      "Balanced carrier coverage around the main campground. Shared lodge traffic can make evening speeds less predictable.",
+      "Estimated coverage appears comparatively balanced, but congestion and site placement may significantly affect results.",
     lastUpdated: "2026-06-03",
+    sourceType: "placeholder",
+    sourceLabel: "MVP planning estimate",
+    confidenceLevel: "low",
+    lastVerified: null,
   },
   {
     name: "Red Top Mountain Campground",
@@ -213,8 +250,12 @@ const campgroundSignalSeeds: CampgroundSignalSeed[] = [
     tmobileScore: 6,
     remoteWorkScore: 8,
     notes:
-      "Consistent coverage close to the lake and campground loops. One of the stronger options for dependable weekday camp work.",
+      "This estimate suggests comparatively stronger coverage, but it has not been verified through live carrier or field-test data.",
     lastUpdated: "2026-06-03",
+    sourceType: "placeholder",
+    sourceLabel: "MVP planning estimate",
+    confidenceLevel: "low",
+    lastVerified: null,
   },
   {
     name: "Amicalola Falls Campground",
@@ -228,8 +269,12 @@ const campgroundSignalSeeds: CampgroundSignalSeed[] = [
     tmobileScore: 4,
     remoteWorkScore: 6,
     notes:
-      "Moderate all-around service. Fine for messaging and lighter work, but large uploads may be frustrating.",
+      "Estimated moderate service may support basic use, though large uploads and video calls should not be assumed.",
     lastUpdated: "2026-06-03",
+    sourceType: "placeholder",
+    sourceLabel: "MVP planning estimate",
+    confidenceLevel: "low",
+    lastVerified: null,
   },
   {
     name: "Black Rock Mountain Campground",
@@ -243,8 +288,12 @@ const campgroundSignalSeeds: CampgroundSignalSeed[] = [
     tmobileScore: 3,
     remoteWorkScore: 5,
     notes:
-      "Elevation helps in some spots, but coverage varies across the mountain. Bring backup power and offline work if deadlines matter.",
+      "Mountain terrain may cause substantial variation. Bring an offline plan if connectivity is important.",
     lastUpdated: "2026-06-03",
+    sourceType: "placeholder",
+    sourceLabel: "MVP planning estimate",
+    confidenceLevel: "low",
+    lastVerified: null,
   },
   {
     name: "Skidaway Island Campground",
@@ -258,8 +307,12 @@ const campgroundSignalSeeds: CampgroundSignalSeed[] = [
     tmobileScore: 7,
     remoteWorkScore: 9,
     notes:
-      "Strong coastal coverage and one of the most remote-work-friendly options in this Georgia MVP set.",
+      "This estimate suggests comparatively stronger coverage, but it is not yet verified through live measurements.",
     lastUpdated: "2026-06-03",
+    sourceType: "placeholder",
+    sourceLabel: "MVP planning estimate",
+    confidenceLevel: "low",
+    lastVerified: null,
   },
 ];
 

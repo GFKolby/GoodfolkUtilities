@@ -66,6 +66,10 @@ export default function CampsiteSignalFinderPage() {
       title="Campsite Signal Finder"
       description="Estimate campground cell signal quality for Georgia state park camping before you book or pack your work setup."
     >
+      <div className="mb-6 inline-flex items-center rounded-full border border-amber-300/30 bg-amber-300/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-amber-200">
+        Prototype data · Unverified estimates
+      </div>
+
       <div className="grid gap-8 lg:grid-cols-[1fr_0.9fr]">
         <section className="rounded-2xl border border-slate-800 bg-slate-900 p-6">
           <div className="grid gap-4 md:grid-cols-[1.4fr_0.8fr]">
@@ -100,10 +104,11 @@ export default function CampsiteSignalFinderPage() {
           </div>
 
           <p className="mt-4 text-sm leading-6 text-zinc-400">
-            This MVP uses static Georgia campground seed data so you can compare
-            likely signal strength before booking. Carrier filtering shows
-            campgrounds where the selected network is tied for the strongest
-            score in the record.
+            These scores are unverified planning estimates created for this
+            prototype. They are not live carrier measurements and should not be
+            relied on as a guarantee of campsite connectivity. Carrier
+            filtering shows campgrounds where the selected network is tied for
+            the strongest score in the current record.
           </p>
         </section>
 
@@ -161,9 +166,9 @@ export default function CampsiteSignalFinderPage() {
       </section>
 
       <p className="mt-8 text-sm leading-6 text-zinc-500">
-        These scores are planning estimates for an MVP dataset, not live tower
-        measurements. Terrain, weather, foliage, site placement, congestion,
-        and device hardware can all change your real-world results.
+        Prototype data only. Terrain, weather, foliage, site placement,
+        congestion, carrier changes, and device hardware can all affect
+        real-world results.
       </p>
 
       <RelatedTools currentHref="/campsite-signal-finder" category="camp" />
@@ -250,9 +255,24 @@ function CampgroundCard({
           <p className="mt-2 text-sm leading-6 text-zinc-300">
             {campground.notes}
           </p>
-          <p className="mt-4 text-xs uppercase tracking-[0.2em] text-zinc-500">
-            Last updated {campground.lastUpdated}
-          </p>
+          <dl className="mt-4 space-y-2 text-xs uppercase tracking-[0.16em] text-zinc-500">
+            <div className="flex flex-wrap gap-2">
+              <dt>Source:</dt>
+              <dd>{campground.sourceLabel}</dd>
+            </div>
+            <div className="flex flex-wrap gap-2">
+              <dt>Confidence:</dt>
+              <dd>{campground.confidenceLevel}</dd>
+            </div>
+            <div className="flex flex-wrap gap-2">
+              <dt>Last verified:</dt>
+              <dd>{campground.lastVerified ?? "Not yet verified"}</dd>
+            </div>
+            <div className="flex flex-wrap gap-2">
+              <dt>Record updated:</dt>
+              <dd>{campground.lastUpdated}</dd>
+            </div>
+          </dl>
         </div>
       </div>
     </article>
