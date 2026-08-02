@@ -64,8 +64,15 @@ export default function ElectricCostCalculator() {
     <ToolPage
       line="Goodfolk Home Utilities"
       title="Electric Cost Calculator"
-      description="Estimate how much it costs to run a device based on watts, hours used, days per month, and your electric rate."
+      description="Use this electric bill estimator to calculate how much an appliance or device costs to run from its wattage, daily use, monthly use, and your electricity price per kWh."
     >
+      <p className="mb-6 max-w-3xl leading-7 text-zinc-300">
+        Enter the device wattage, how many hours you use it each day, how many
+        days you use it each month, and the rate shown on your electric bill.
+        The calculator converts watts into kilowatt-hours and estimates daily,
+        monthly, and yearly energy costs.
+      </p>
+
       <div className="grid gap-5 rounded-2xl border border-slate-800 bg-slate-900 p-6">
         <div className="grid gap-4 md:grid-cols-2">
           <label>
@@ -161,9 +168,51 @@ export default function ElectricCostCalculator() {
         </div>
       </div>
 
+      <section className="mt-10 rounded-2xl border border-slate-800 bg-slate-900 p-6">
+        <h2 className="text-xl font-bold text-white">
+          How the electricity cost calculation works
+        </h2>
+
+        <div className="mt-4 space-y-3 leading-7 text-zinc-300">
+          <p>
+            First, the calculator converts watts into kilowatt-hours by
+            multiplying watts by hours used and dividing by 1,000.
+          </p>
+          <p>
+            Then it multiplies the kilowatt-hours by your electricity rate. For
+            a monthly estimate, it also multiplies by the number of days used.
+          </p>
+          <p className="font-semibold text-white">
+            Monthly cost = (watts × hours per day ÷ 1,000) × days per month ×
+            price per kWh
+          </p>
+        </div>
+      </section>
+
+      <section className="mt-8 rounded-2xl border border-slate-800 bg-slate-900 p-6">
+        <h2 className="text-xl font-bold text-white">Worked example</h2>
+
+        <div className="mt-4 space-y-3 leading-7 text-zinc-300">
+          <p>
+            A 100-watt device used for 8 hours per day uses 0.8 kWh each day.
+            Used for 30 days, that becomes 24 kWh per month.
+          </p>
+          <p>
+            At an electricity price of $0.16 per kWh, the estimated monthly cost
+            is <strong className="text-white">$3.84</strong>.
+          </p>
+          <p>
+            This same formula makes the tool useful as a kWh cost calculator,
+            appliance cost calculator, or quick utility cost calculator for one
+            device at a time.
+          </p>
+        </div>
+      </section>
+
       <p className="mt-6 text-sm text-zinc-500">
         This is a planning estimate. Actual costs can vary based on your utility
-        rate, device efficiency, standby power, and sneaky little electricity goblins.
+        rate, device efficiency, standby power, and sneaky little electricity
+        goblins.
       </p>
 
       <section className="mt-10">
