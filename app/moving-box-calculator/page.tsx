@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import Link from "next/link";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
 
@@ -63,8 +64,15 @@ export default function MovingBoxCalculator() {
     <ToolPage
       line="Goodfolk Home Utilities"
       title="Moving Box Calculator"
-      description="Estimate how many moving boxes you may need based on bedrooms, bathrooms, common rooms, storage, and packing style."
+      description="Estimate how many moving boxes you need based on bedrooms, bathrooms, common rooms, storage areas, and how heavily you pack."
     >
+      <p className="mb-6 max-w-3xl leading-7 text-zinc-300">
+        Enter the rooms in your home, choose your packing style, and include any
+        garage, attic, basement, or storage space. The calculator estimates your
+        total boxes and gives you a suggested mix of small, medium, large, and
+        wardrobe boxes.
+      </p>
+
       <div className="grid gap-5 rounded-2xl border border-slate-800 bg-slate-900 p-6">
         <div className="grid gap-4 md:grid-cols-3">
           <label>
@@ -178,6 +186,50 @@ export default function MovingBoxCalculator() {
           </p>
         </div>
       </div>
+
+      <section className="mt-10 rounded-2xl border border-slate-800 bg-slate-900 p-6">
+        <h2 className="text-xl font-bold text-white">
+          Room-by-room moving box example
+        </h2>
+
+        <div className="mt-4 space-y-3 leading-7 text-zinc-300">
+          <p>
+            For a two-bedroom, two-bathroom home with one living room, a kitchen,
+            and an average amount of belongings, the calculator starts with a
+            separate estimate for each room and then combines them into one box
+            plan.
+          </p>
+          <ul className="list-disc space-y-2 pl-6">
+            <li>Bedrooms add clothing, linens, books, and personal items.</li>
+            <li>Bathrooms add toiletries, towels, and small household items.</li>
+            <li>The kitchen adds extra small and medium boxes for dishes and pantry goods.</li>
+            <li>Living areas add boxes for decor, electronics, and shared items.</li>
+          </ul>
+          <p>
+            Your actual total can be lower after decluttering or higher when
+            closets and storage spaces are full. Treat the result as a starting
+            point and keep a few extra small and medium boxes available.
+          </p>
+        </div>
+      </section>
+
+      <section className="mt-8 rounded-2xl border border-amber-300/30 bg-amber-300/10 p-6">
+        <h2 className="text-xl font-bold text-white">
+          Need help planning the estimate?
+        </h2>
+
+        <p className="mt-3 leading-7 text-zinc-300">
+          Read our guide to how many moving boxes you may need, including the
+          biggest factors that change the total and common packing mistakes.
+        </p>
+
+        <Link
+          href="/blog/how-many-moving-boxes-do-i-need"
+          className="mt-5 inline-block rounded-xl bg-amber-300 px-5 py-3 font-semibold text-slate-950 transition hover:bg-amber-200"
+        >
+          Read the Moving Box Guide
+        </Link>
+      </section>
 
       <p className="mt-6 text-sm text-zinc-500">
         This is a planning estimate. Add extra boxes for books, decorations,
