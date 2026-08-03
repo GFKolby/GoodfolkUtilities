@@ -21,67 +21,37 @@ export default function GpaBlogPost() {
           </h1>
 
           <p className="mt-5 text-lg leading-8 text-zinc-300">
-            College GPA is usually calculated using grades, credit hours, and
-            quality points. Once you understand the basic formula, it becomes
-            much easier to estimate your semester GPA or see how future grades
-            may affect your cumulative GPA.
+            To calculate your college GPA, multiply each course&apos;s grade
+            points by its credit hours, add the quality points from every
+            course, and divide that total by the number of credit hours.
           </p>
+
+          <Link
+            href="/gpa-calculator"
+            className="mt-6 inline-block rounded-xl bg-amber-300 px-5 py-3 font-semibold text-slate-950 transition hover:bg-amber-200"
+          >
+            Calculate Your College GPA
+          </Link>
         </header>
 
         <section className="mt-10 space-y-6 text-zinc-300">
           <h2 className="text-2xl font-bold text-white">
-            What does GPA mean?
+            The college GPA formula
           </h2>
 
           <p className="leading-8">
-            GPA stands for grade point average. It is a number that represents
-            your academic performance across classes. Most colleges use a 4.0
-            scale where an A is usually worth 4 points, a B is worth 3 points,
-            a C is worth 2 points, and so on.
+            College GPA is weighted by credit hours, so it is not simply the
+            average of your letter grades. A course worth more credits has a
+            larger effect on your GPA.
           </p>
 
-          <h2 className="text-2xl font-bold text-white">
-            Why credit hours matter
-          </h2>
-
-          <p className="leading-8">
-            College GPA is weighted by credit hours. A 4-credit class affects
-            your GPA more than a 1-credit class because it carries more academic
-            weight. That means your final grade in a larger class can move your
-            GPA more than a smaller elective.
-          </p>
-
-          <h2 className="text-2xl font-bold text-white">
-            The basic GPA formula
-          </h2>
-
-          <p className="leading-8">
-            To calculate GPA, multiply each course grade point by the number of
-            credit hours for that course. Then add those quality points together
-            and divide by the total number of credit hours.
-          </p>
-
-          <ul className="list-disc space-y-2 pl-6">
-            <li>Grade points × credit hours = quality points</li>
-            <li>Total quality points ÷ total credit hours = GPA</li>
-          </ul>
-
-          <div className="rounded-2xl border border-amber-300/30 bg-amber-300/10 p-6">
-            <h2 className="text-xl font-bold text-white">
-              Calculate your GPA faster
-            </h2>
-
-            <p className="mt-3 leading-7">
-              Use the Goodfolk GPA Calculator to estimate your semester GPA
-              from grades and credit hours.
+          <div className="rounded-2xl border border-slate-800 bg-slate-900 p-6">
+            <p className="font-semibold text-white">
+              Grade points × credit hours = quality points
             </p>
-
-            <Link
-              href="/gpa-calculator"
-              className="mt-5 inline-block rounded-xl bg-amber-300 px-5 py-3 font-semibold text-slate-950 transition hover:bg-amber-200"
-            >
-              Open GPA Calculator
-            </Link>
+            <p className="mt-3 font-semibold text-white">
+              Total quality points ÷ total credit hours = GPA
+            </p>
           </div>
 
           <h2 className="text-2xl font-bold text-white">
@@ -89,30 +59,86 @@ export default function GpaBlogPost() {
           </h2>
 
           <p className="leading-8">
-            Suppose you take three classes: a 4-credit class with an A, a
-            3-credit class with a B, and a 3-credit class with an A. The quality
-            points would be 16, 9, and 12. That gives you 37 total quality
-            points across 10 credit hours.
+            Suppose you take three courses: a 4-credit course with an A, a
+            3-credit course with a B, and a 3-credit course with an A.
           </p>
 
+          <ul className="list-disc space-y-2 pl-6">
+            <li>A in a 4-credit course: 4.0 × 4 = 16 quality points</li>
+            <li>B in a 3-credit course: 3.0 × 3 = 9 quality points</li>
+            <li>A in a 3-credit course: 4.0 × 3 = 12 quality points</li>
+          </ul>
+
           <p className="leading-8">
-            Divide 37 by 10 and your GPA would be 3.7 for that set of classes.
+            Those courses produce 37 quality points across 10 credit hours.
+            Divide 37 by 10, and the semester GPA is{" ""}
+            <strong className="text-white">3.70</strong>.
           </p>
 
           <h2 className="text-2xl font-bold text-white">
-            Bottom line
+            Why credit hours matter
           </h2>
 
           <p className="leading-8">
-            GPA is not just an average of letter grades. Credit hours matter,
-            and larger classes have a bigger impact. Once you know your grade
-            points and credit hours, GPA becomes much easier to estimate.
+            A 4-credit course affects your GPA more than a 1-credit course. For
+            example, earning an A in a 4-credit course adds 16 quality points,
+            while an A in a 1-credit course adds only 4. This is why higher-credit
+            courses can move your GPA more noticeably.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white">
+            Convert letter grades to grade points
+          </h2>
+
+          <p className="leading-8">
+            On a basic unweighted 4.0 scale, an A is worth 4.0 points, a B is
+            worth 3.0, a C is worth 2.0, a D is worth 1.0, and an F is worth 0.
+            Schools may use different values for plus and minus grades.
+          </p>
+
+          <div className="rounded-2xl border border-amber-300/30 bg-amber-300/10 p-6">
+            <h2 className="text-xl font-bold text-white">
+              Enter your courses and calculate the result
+            </h2>
+
+            <p className="mt-3 leading-7">
+              Use the Goodfolk College GPA Calculator to enter each course,
+              credit-hour value, and grade. The tool totals your quality points
+              and calculates the weighted GPA automatically.
+            </p>
+
+            <Link
+              href="/gpa-calculator"
+              className="mt-5 inline-block rounded-xl bg-amber-300 px-5 py-3 font-semibold text-slate-950 transition hover:bg-amber-200"
+            >
+              Open College GPA Calculator
+            </Link>
+          </div>
+
+          <h2 className="text-2xl font-bold text-white">
+            Semester GPA versus cumulative GPA
+          </h2>
+
+          <p className="leading-8">
+            A semester GPA uses only the courses taken during one term. A
+            cumulative GPA uses all GPA-eligible courses and credit hours
+            included by your school. The same quality-points formula applies,
+            but cumulative calculations require your full academic record.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white">Bottom line</h2>
+
+          <p className="leading-8">
+            Multiply each grade-point value by the course&apos;s credit hours,
+            total the resulting quality points, and divide by total credit
+            hours. That produces a credit-weighted college GPA rather than a
+            simple average of letter grades.
           </p>
 
           <div className="rounded-2xl border border-slate-800 bg-slate-900 p-6 text-sm leading-7 text-zinc-300">
             This guide is for general academic planning only. GPA rules can vary
             by school, program, grading scale, repeated courses, withdrawals,
-            and transfer credit policies.
+            pass/fail classes, and transfer-credit policies.
           </div>
         </section>
       </article>
