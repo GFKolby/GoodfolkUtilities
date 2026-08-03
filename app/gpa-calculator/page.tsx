@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import Link from "next/link";
 import ToolPage from "@/components/ToolPage";
 import RelatedTools from "@/components/RelatedTools";
 
@@ -86,9 +87,15 @@ export default function GpaCalculatorPage() {
   return (
     <ToolPage
       line="Goodfolk Student Utilities"
-      title="GPA Calculator"
-      description="Calculate your GPA using course credit hours and grade points."
+      title="College GPA Calculator"
+      description="Calculate your college GPA using course grades and credit hours on a standard 4.0 scale."
     >
+      <p className="mb-6 max-w-3xl leading-7 text-zinc-300">
+        Add each course, enter its credit hours, and select the grade you earned.
+        The calculator weights every grade by the course credit hours, adds the
+        quality points, and divides by your total attempted credits.
+      </p>
+
       <div className="grid gap-8 lg:grid-cols-[1fr_0.9fr]">
         <section className="rounded-2xl border border-slate-800 bg-slate-900 p-6">
           <div className="space-y-4">
@@ -110,7 +117,7 @@ export default function GpaCalculatorPage() {
                 </label>
 
                 <label className="block">
-                  <span className="text-sm text-zinc-300">Credits</span>
+                  <span className="text-sm text-zinc-300">Credit hours</span>
                   <input
                     type="number"
                     min="0"
@@ -164,8 +171,9 @@ export default function GpaCalculatorPage() {
           </button>
 
           <p className="mt-4 text-sm leading-6 text-zinc-400">
-            This uses a standard 4.0 scale. Check your school policy for plus,
-            minus, weighted, repeated, or pass/fail grading rules.
+            This calculator uses an unweighted 4.0 scale with whole-letter
+            grades. Check your school policy for plus/minus grades, weighted
+            courses, repeated classes, withdrawals, and pass/fail rules.
           </p>
         </section>
 
@@ -174,7 +182,7 @@ export default function GpaCalculatorPage() {
 
           <div className="mt-6 space-y-4">
             <ResultRow
-              label="Total credits"
+              label="Total credit hours"
               value={results.totalCredits.toFixed(1)}
             />
             <ResultRow
@@ -184,12 +192,66 @@ export default function GpaCalculatorPage() {
             <ResultRow label="Estimated GPA" value={results.gpa.toFixed(2)} />
 
             <div className="rounded-xl border border-slate-800 bg-slate-950 p-4 text-sm leading-6 text-zinc-300">
-              GPA is calculated as total quality points divided by total credit
-              hours. Tiny transcript goblin likes clean math.
+              GPA = total quality points ÷ total credit hours. A course with more
+              credit hours has a larger effect on the final GPA.
             </div>
           </div>
         </section>
       </div>
+
+      <section className="mt-10 rounded-2xl border border-slate-800 bg-slate-900 p-6">
+        <h2 className="text-xl font-bold text-white">
+          How college GPA is calculated
+        </h2>
+
+        <div className="mt-4 space-y-3 leading-7 text-zinc-300">
+          <p>
+            Convert each letter grade into grade points, then multiply those
+            grade points by the course credit hours. That result is the course's
+            quality points.
+          </p>
+          <p className="font-semibold text-white">
+            Course quality points = grade points × credit hours
+          </p>
+          <p className="font-semibold text-white">
+            GPA = total quality points ÷ total credit hours
+          </p>
+        </div>
+      </section>
+
+      <section className="mt-8 rounded-2xl border border-slate-800 bg-slate-900 p-6">
+        <h2 className="text-xl font-bold text-white">Worked example</h2>
+
+        <div className="mt-4 space-y-3 leading-7 text-zinc-300">
+          <p>
+            Suppose you earn an A in a 4-credit course, a B in a 3-credit
+            course, and an A in another 3-credit course.
+          </p>
+          <p>
+            The courses produce 16, 9, and 12 quality points. That is 37 quality
+            points across 10 credit hours, so the estimated GPA is
+            <strong className="text-white"> 3.70</strong>.
+          </p>
+        </div>
+      </section>
+
+      <section className="mt-8 rounded-2xl border border-amber-300/30 bg-amber-300/10 p-6">
+        <h2 className="text-xl font-bold text-white">
+          Learn how credit hours affect GPA
+        </h2>
+
+        <p className="mt-3 leading-7 text-zinc-300">
+          Read the college GPA guide for the formula, a step-by-step example,
+          and an explanation of why higher-credit courses carry more weight.
+        </p>
+
+        <Link
+          href="/blog/how-to-calculate-gpa-in-college"
+          className="mt-5 inline-block rounded-xl bg-amber-300 px-5 py-3 font-semibold text-slate-950 transition hover:bg-amber-200"
+        >
+          Read the College GPA Guide
+        </Link>
+      </section>
 
       <RelatedTools currentHref="/gpa-calculator" category="student" />
     </ToolPage>
