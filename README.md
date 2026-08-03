@@ -83,15 +83,6 @@ lib/
   seo.ts                Shared metadata helpers
 ```
 
-The repository also includes internal project guidance:
-
-```text
-AGENT.md
-BLOG_STYLE_GUIDE.md
-CLUSTER_RULES.md
-CONTENT_ROADMAP.md
-PR_CHECKLIST.md
-```
 
 ## Adding a New Tool
 
