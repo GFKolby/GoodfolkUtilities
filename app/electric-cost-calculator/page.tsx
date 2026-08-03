@@ -43,7 +43,7 @@ export default function ElectricCostCalculator() {
     const dailyCost = kwhPerDay * ratePerKwh;
     const monthlyKwh = kwhPerDay * daysPerMonth;
     const monthlyCost = monthlyKwh * ratePerKwh;
-    const yearlyCost = dailyCost * 365;
+    const yearlyCost = monthlyCost * 12;
 
     return {
       kwhPerDay,
