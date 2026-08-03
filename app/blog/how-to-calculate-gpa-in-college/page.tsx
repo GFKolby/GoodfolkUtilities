@@ -71,7 +71,7 @@ export default function GpaBlogPost() {
 
           <p className="leading-8">
             Those courses produce 37 quality points across 10 credit hours.
-            Divide 37 by 10, and the semester GPA is{" ""}
+            Divide 37 by 10, and the semester GPA is{" "}
             <strong className="text-white">3.70</strong>.
           </p>
 
